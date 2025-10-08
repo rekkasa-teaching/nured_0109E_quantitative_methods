@@ -13,7 +13,7 @@ format:
     toc: false
     code-overflow: wrap
     controls: true
-    footer: "Στατιστική — Τελικό Μάθημα Ανακεφαλαίωσης"
+    footer: "Πανεπιστήμιο Δυτικής Μακεδονίας -- Παιδαγωγικό Τμήμα Νηπιαγωγών"
     incremental: false
 execute:
   echo: false
