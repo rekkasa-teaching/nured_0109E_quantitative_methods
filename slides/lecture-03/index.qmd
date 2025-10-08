@@ -1,0 +1,20 @@
+---
+title: "Στατιστική για Νηπιαγωγούς — Ανακεφαλαίωση"
+subtitle: "135′ μάθημα: υπενθυμίσεις & σύντομες ασκήσεις"
+author: "Τμήμα Νηπιαγωγών"
+date: "2025-10-08"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: logo.jpg
+    slide-number: c/t
+    transition: slide
+    overview: true
+    toc: false
+    code-overflow: wrap
+    controls: true
+    footer: "Στατιστική — Τελικό Μάθημα Ανακεφαλαίωσης"
+execute:
+  echo: false
+lang: el
+---
