@@ -9,9 +9,9 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
-  <meta name="author" content="Τμήμα Νηπιαγωγών">
-  <meta name="dcterms.date" content="2025-10-08">
-  <title>Στατιστική στην εκπαιδευτική έρευνα – Στατιστική για Νηπιαγωγούς — Ανακεφαλαίωση</title>
+  <meta name="author" content="Αλέξανδρος Ρέκκας">
+  <meta name="dcterms.date" content="2025-10-16">
+  <title>Στατιστική στην εκπαιδευτική έρευνα – Απλή γραμμική παλινδρόμηση</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-7aef3c89d87df8db422d9c5dcd7136b2.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-fd6258bbe11df0d8a245b991c6c57061.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -128,21 +128,163 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Στατιστική για Νηπιαγωγούς — Ανακεφαλαίωση</h1>
-  <p class="subtitle">135′ μάθημα: υπενθυμίσεις &amp; σύντομες ασκήσεις</p>
+  <h1 class="title">Απλή γραμμική παλινδρόμηση</h1>
+  <p class="subtitle">2ο μάθημα</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Τμήμα Νηπιαγωγών 
+Αλέξανδρος Ρέκκας 
 </div>
 </div>
 </div>
 
-  <p class="date">2025-10-08</p>
+  <p class="date">2025-10-16</p>
 </section>
-<section class="slide level2">
-
+<section id="περιεχόμενα" class="slide level2">
+<h2>Περιεχόμενα</h2>
+<ul>
+<li>Ορισμός συντελεστή συσχέτισης <span class="math inline">\(r\)</span></li>
+<li>Εισαγωγή στα αθροίσματα τετραγώνων και γινομένων</li>
+<li>Μοντέλο απλής γραμμικής παλινδρόμησης</li>
+<li>Πρόβλεψη με την ευθεία</li>
+<li>Σφάλμα πρόβλεψης (υπόλοιπα)</li>
+<li>Έλεγχος υποθέσεων (μόνο απλή παλινδρόμηση)</li>
+</ul>
+</section>
+<section id="συσχέτιση-ορισμός" class="slide level2">
+<h2>Συσχέτιση (ορισμός)</h2>
+<p><br>
+</p>
+<p>\[ r = \frac{\sum (x_i-\bar x)(y_i-\bar y)}{\sqrt{\sum (x_i-\bar x)^2\,\sum (y_i-\bar y)^2}} \]</p>
+</section>
+<section id="άθροισμα-γινομένων" class="slide level2">
+<h2>Άθροισμα γινομένων</h2>
+<ul>
+<li><span class="math inline">\(S_{xy} = \sum (x_i - \mu_x)(y_i-\mu_y)\)</span></li>
+<li><span class="math inline">\(S_{xx} = \sum (x_i - \mu_x)^2\)</span></li>
+<li><span class="math inline">\(S_{yy}= \sum (y_i - \mu_y)^2\)</span></li>
+</ul>
+</section>
+<section id="συσχέτιση" class="slide level2">
+<h2>Συσχέτιση</h2>
+<p><br>
+</p>
+<p><span class="math display">\[
+r = \frac{S_{xy}}{\sqrt{S_{xx}S_{yy}}}
+\]</span></p>
+</section>
+<section id="απλή-γραμμική-παλινδρόμηση-ιδέα" class="slide level2">
+<h2>Απλή Γραμμική Παλινδρόμηση: ιδέα</h2>
+<ul>
+<li>Στόχος: εύρεση ευθείας που ελαχιστοποιεί τα τετράγωνα των σφαλμάτων</li>
+<li>Μοντέλο: <span class="math inline">\(\hat{y} = \beta_0 + \beta_1 x\)</span></li>
+<li>Προβλέπουμε τη <strong>αναμενόμενη</strong> τιμή του <span class="math inline">\(Y\)</span> για δοσμένο <span class="math inline">\(X\)</span></li>
+</ul>
+</section>
+<section id="η-ευθεία-παλινδρόμησης" class="slide level2">
+<h2>Η ευθεία παλινδρόμησης</h2>
+<ul>
+<li><span class="math inline">\(\hat{y}_i = \beta_0 + \beta_1 x_i\)</span></li>
+<li><span class="math inline">\(\beta_1\)</span>: κλίση (μεταβολή στο <span class="math inline">\(Y\)</span> ανά 1 μονάδα <span class="math inline">\(X\)</span>)</li>
+<li><span class="math inline">\(\beta_0\)</span>: τομή με τον άξονα <span class="math inline">\(Y\)</span> (αναμενόμενη τιμή του <span class="math inline">\(Y\)</span> όταν <span class="math inline">\(x=0\)</span>)</li>
+<li>Η ευθεία περνά από <span class="math inline">\((\bar{x}, \bar{y})\)</span></li>
+</ul>
+</section>
+<section id="υπολογισμός-κλίσης-beta_1" class="slide level2">
+<h2>Υπολογισμός κλίσης <span class="math inline">\(\beta_1\)</span></h2>
+<p><br>
+</p>
+<ul>
+<li><span class="math inline">\(\beta_1 = \frac{S_{xy}}{S_{xx}}\)</span></li>
+<li><span class="math inline">\(\beta_0 = \bar{y} - \beta_1 \bar{x}\)</span></li>
+</ul>
+</section>
+<section id="παράδειγμα" class="slide level2">
+<h2>Παράδειγμα</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">X</th>
+<th style="text-align: right;">Y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ερμηνεία-beta_1-και-beta_0" class="slide level2">
+<h2>Ερμηνεία <span class="math inline">\(\beta_1\)</span> και <span class="math inline">\(\beta_0\)</span></h2>
+<ul>
+<li><span class="math inline">\(\beta_1\)</span>: μέση αλλαγή στο <span class="math inline">\(Y\)</span> ανά 1 μονάδα <span class="math inline">\(X\)</span></li>
+<li><span class="math inline">\(\beta_0\)</span>: σημείο αναφοράς</li>
+</ul>
+</section>
+<section id="πρόβλεψη-με-τη-γραμμή" class="slide level2">
+<h2>Πρόβλεψη με τη γραμμή</h2>
+<ul>
+<li>Για <span class="math inline">\(x_0\)</span>: <span class="math inline">\(\hat{y}(x_0) = \beta_0 + \beta_1 x_0\)</span></li>
+<li><strong>Εσωπαρεμβολή</strong> (εντός εύρους <span class="math inline">\(X\)</span>): ασφαλέστερη</li>
+<li><strong>Προβολή</strong> (εκτός εύρους): ριψοκίνδυνη και ανεπιβεβαίωτη</li>
+</ul>
+</section>
+<section id="τυπικό-σφάλμα-εκτίμησης-s_e" class="slide level2">
+<h2>Τυπικό σφάλμα εκτίμησης (s_e)</h2>
+<ul>
+<li><span class="math inline">\(s_e = \sqrt{\frac{S_{υπόλοιπο}}{n-2}}\)</span> (<span class="math inline">\(\text{df}= n-2\)</span>)</li>
+<li><span class="math inline">\(r^2\)</span> μας δίνει το ποσοστό της διακύμανσης της <span class="math inline">\(Y\)</span> που εξηγείται από τη <span class="math inline">\(X\)</span></li>
+<li><span class="math inline">\(SS_{παλινδρόμηση} = r^2 S_{yy}\)</span></li>
+<li><span class="math inline">\(SS_{υπόλοιπο} = (1 - r^2) S_{yy}\)</span></li>
+</ul>
+</section>
+<section id="έλεγχος-υπόθεσης" class="slide level2">
+<h2>Έλεγχος υπόθεσης</h2>
+<ul>
+<li><span class="math inline">\(H_0: \beta_1 = 0\)</span> (καμία γραμμική σχέση)</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li><span class="math inline">\(MS_{παλινδρομηση} = \frac{SS_{παλινδρομηση}}{df}\)</span> (<span class="math inline">\(\text{df} = 1\)</span>)</li>
+<li><span class="math inline">\(MS_{υπολοιπο} = \frac{SS_{υπολοιπο}}{df}\)</span> (<span class="math inline">\(\text{df} = n - 2\)</span>)</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li><span class="math inline">\(F = \frac{MS_{παλινδρομηση}}{MS_{υπολοιπο}}\)</span> με <span class="math inline">\(\text{df} = 1, n-2\)</span></li>
+</ul>
 
 
 </section>
@@ -150,7 +292,7 @@
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="logo.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Στατιστική — Τελικό Μάθημα Ανακεφαλαίωσης</p>
+<p>Πανεπιστήμιο Δυτικής Μακεδονίας – Παιδαγωγικό Τμήμα Νηπιαγωγών</p>
 </div>
 </div></div>
 
@@ -175,7 +317,7 @@
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': false,
+'controlsAuto': true,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -186,7 +328,7 @@
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
