@@ -256,6 +256,16 @@ H_0: \beta_1 = \beta_2 = 0
 F^* = \frac{\frac{SS_{RED} - SS_{FULL}}{df_{RED} - df_{FULL}}}{SSE_{FULL} - {df_{FULL}}}
 \]</span></p>
 </section>
+<section id="μερικός-συντελεστής-προσδιορισμού" class="slide level2">
+<h2>Μερικός συντελεστής προσδιορισμού</h2>
+<blockquote>
+<p><strong>Ορισμός</strong></p>
+<p>Ο μερικός συντελεστής προσδιορισμόυ μας δίνει το ποσοστό της διασποράς του <span class="math inline">\(Y\)</span> που οι επιπλέον μεταβλητές το πλήρους μοντέλου εξηγούν η οποία δεν εξηγείται από το απλούστερο μοντέλο</p>
+</blockquote>
+<p><span class="math display">\[
+R^2_{FULL|RED} = \frac{SS_{RES}^{RED} - SS_{RES}^{FULL}}{SS_{RES}^{RED}}
+\]</span></p>
+</section>
 <section id="έλεγχος-των-προϋποθέσεων" class="slide level2">
 <h2>Έλεγχος των προϋποθέσεων</h2>
 <p>Οι προϋποθέσεις ενός μοντέλου γραμμικής παλινδρόμησης είναι οι ακόλουθες:</p>
@@ -265,6 +275,55 @@ F^* = \frac{\frac{SS_{RED} - SS_{FULL}}{df_{RED} - df_{FULL}}}{SSE_{FULL} - {df_
 <li>Τα σφάλματα για κάθε σετ των <span class="math inline">\((x_1,\dots,x_k)\)</span> είναι κανονικά κατανεμημένα.</li>
 <li>Τα σφάλματα για κάθε σετ των <span class="math inline">\((x_1,\dots,x_k)\)</span> έχουν ίσες διασπορές.</li>
 </ol>
+</section>
+<section id="παράδειγμα" class="slide level2">
+<h2>Παράδειγμα</h2>
+<p>Χρησιμοποιώντας τα δεδομένα της <a href="https://github.com/rekkasa-teaching/nured_0109E_quantitative_methods/blob/main/data/sample_child.csv"><code>sample_data.csv</code></a> υπολογίστε το μοντέλο γραμμικής παλινδρόμησης για την μέτρηση ικανότητας ανάγνωσης (<code>child_reading_irt</code>) με τις μεταβλητές:</p>
+</section>
+<section id="παράδειγμα-1" class="slide level2">
+<h2>Παράδειγμα</h2>
+<ul>
+<li>το φύλο (<code>child_gender</code>)</li>
+<li>την ηλικία (<code>child_age</code>)</li>
+<li>τη συχνότητα που οι γονείς διαβάζουν στα παιδιά (<code>parent_read_to_child</code>)</li>
+<li>την κοινωνικο/οικονομική κατάσταση (<code>socioeconomic_status</code>)</li>
+<li>το είδος τους σχολείου, δημόσιο/ιδιωτικό (<code>school_type</code>)</li>
+<li>το μορφωτικό επίπεδο της μητέρας (<code>mother_education</code>)</li>
+<li>το μορφωτικό επίπεδο του πατέρα (<code>father_education</code>)</li>
+</ul>
+</section>
+<section id="παράδειγμα-2" class="slide level2">
+<h2>Παράδειγμα</h2>
+<p><br>
+</p>
+<ul>
+<li>Τι ποσοστό της διασποράς της ικανότητας ανάγνωσης των παιδιών εξηγείται από το μοντέλο;</li>
+<li>Έχει νόημα να κάνουμε την παλινδρόμηση;</li>
+</ul>
+</section>
+<section id="παράδειγμα-3" class="slide level2">
+<h2>Παράδειγμα</h2>
+<p><br>
+</p>
+<p>Αξίζει να προσθέσουμε την κοινωνικο/οικονομική κατάσταση στο μοντέλο;</p>
+</section>
+<section id="παράδειγμα-4" class="slide level2">
+<h2>Παράδειγμα</h2>
+<p><br>
+</p>
+<p>Μήπως ένα μοντέλο μόνο με την ηλικία, την κοινωνικο/οικονομική κατάσταση, το φύλο είναι αρκετό;</p>
+</section>
+<section id="παράδειγμα-5" class="slide level2">
+<h2>Παράδειγμα</h2>
+<p><br>
+</p>
+<p>Τι ποσοστό της διακύμανσης της ικανότητας της ανάγνωσης των παιδιών εξηγείται από τις υπόλοιπες μεταβλητές (συχνότητα που γονείς διαβάζουν στα παιδιά, μορφωτικό επίπεδο πατέρα/μητέρας, τύπος σχολείου) που δεν εξηγείται από το απλούστερο μοντέλο;</p>
+</section>
+<section id="παράδειγμα-6" class="slide level2">
+<h2>Παράδειγμα</h2>
+<p><br>
+</p>
+<p>Ελέγξτε κατά πόσο το μοντέλο ικανοποιεί τις προϋποθέσεις της παλινδρόμησης.</p>
 
 
 </section></section>
