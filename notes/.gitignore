@@ -1,1 +1,6 @@
 /.quarto/
+*.typ
+*.tex
+*.html
+/*_files/
+*.pdf
