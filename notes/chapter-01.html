@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -115,8 +144,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Περιεχόμενα</h2>
+   
+  <ul>
+  <li><a href="#γραμμική-παλινδρόμηση" id="toc-γραμμική-παλινδρόμηση" class="nav-link active" data-scroll-target="#γραμμική-παλινδρόμηση">Γραμμική παλινδρόμηση</a>
+  <ul>
+  <li><a href="#απλή-γραμμική-παλινδρόμηση" id="toc-απλή-γραμμική-παλινδρόμηση" class="nav-link" data-scroll-target="#απλή-γραμμική-παλινδρόμηση">Απλή γραμμική παλινδρόμηση</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -124,8 +162,109 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="γραμμική-παλινδρόμηση" class="level1">
+<h1>Γραμμική παλινδρόμηση</h1>
+<section id="απλή-γραμμική-παλινδρόμηση" class="level2">
+<h2 class="anchored" data-anchor-id="απλή-γραμμική-παλινδρόμηση">Απλή γραμμική παλινδρόμηση</h2>
+<p>Μία γραμμική σχέση μεταξύ δύο μεταβλητών <span class="math inline">\(Y\)</span> και <span class="math inline">\(X\)</span> μπορεί να περιγραφεί από την εξίσωση:</p>
+<p><span class="math display">\[ Y = \beta_0 + \beta_1 X \]</span></p>
+<p>Για παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος <span class="math inline">\(Y\)</span> για <span class="math inline">\(X\)</span> μήνες εγγραφής θα δίνεται από τη σχέση:</p>
+<p><span class="math display">\[ Y = 50 + 30X \]</span></p>
+<p>Καθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η <strong>απλή γραμμική παλινδρόμηση</strong> έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;</p>
+<p>Ας υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή <span class="math inline">\(Y\)</span> (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής <span class="math inline">\(X\)</span> (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από <span class="math inline">\(n = 100\)</span> μαθητές και έχουμε μετρήσει τα ύψη (<span class="math inline">\(X\)</span>) και τα βάρη τους (<span class="math inline">\(Y\)</span>). Θα συμβολίζουμε με κεφαλαία <span class="math inline">\(X\)</span> και <span class="math inline">\(Y\)</span> τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά <span class="math inline">\(x\)</span> και <span class="math inline">\(y\)</span> τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους <span class="math inline">\(n=100\)</span> συμβολίζουμε τις 100 μετρήσεις του ύψους <span class="math inline">\(X\)</span> με <span class="math inline">\(x_1,x_2,\dots,x_100\)</span> και τις 100 μετρήσεις του βάρους <span class="math inline">\(Y\)</span> με <span class="math inline">\(y_1,y_2,\dots,y_100\)</span>.</p>
+<p>Η λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα <span class="math inline">\(\beta_0\)</span> και <span class="math inline">\(\beta_1\)</span>), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των <span class="math inline">\(X\)</span> και <span class="math inline">\(Y\)</span> από αυτή να είναι η ελάχιστη (<a href="#fig-errors-slr" class="quarto-xref">Figure&nbsp;1</a>). Αν, λοιπόν, συμβολίσουμε με <span class="math inline">\(\hat{y}\)</span> τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής <span class="math inline">\(\hat{\beta}_0 + \hat{\beta}_1x\)</span>, γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (<span class="math inline">\(y - \hat{y}\)</span>). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε <em>σφάλματα</em>, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (<span class="math inline">\(y\)</span>) από την πρόβλεψή μας με βάση τη γραμμή (<span class="math inline">\(\hat{y}\)</span>). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα <span class="math inline">\(\hat{\beta}_0\)</span> και <span class="math inline">\(\hat{\beta}_1\)</span> τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων <span class="math inline">\((y_1 - \hat{y}), (y_2 -
+\hat{y}), \dots, y_{100} - \hat{y}\)</span>. Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε <span class="math inline">\((y_i - \hat{y}), \
+i=1,\dots,100\)</span>.</p>
+<div class="cell" data-caption="Test">
+<div class="cell-output-display">
+<div id="fig-errors-slr" class="quarto-float quarto-figure quarto-figure-center anchored" width="960">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-errors-slr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="chapter-01_files/figure-html/fig-errors-slr-1.svg" id="fig-errors-slr" class="img-fluid figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-errors-slr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Καθώς τα σφάλματα <span class="math inline">\(y_i-\hat{y}\)</span> μπορούν να είναι είτε θετικά είτε αρνητικά, αναλόγως αν η γραμμή περνά πάνω ή κάτω από το πραγματικό σημείο <span class="math inline">\((x_i,y_i)\)</span>, το άθροισμα αυτό δε θα μας δώσει το σύνολο των αποστάσεων. Οι αποστάσεις ως μήκος χρειάζεται να είναι πάντα θετικές. Για το λόγο αυτό, είναι σύνηθες να υψώνουμε στο τετράγωνο τα σφάλματα ώστε να διασφαλίσουμε ότι θα δουλεύουμε με θετικούς αριθμούς. Επομένως, αναζητούμε εκείνα τα <span class="math inline">\(\hat{\beta}_0\)</span> και <span class="math inline">\(\hat{\beta}_1\)</span> τα οποία θα ελαχιστοποιήσουν το άθροισμα των τετραγώνων των σφαλμάτων <span class="math inline">\((y-\hat{y})^2\)</span>. Επειδή το άθροισμα αυτό θα το συναντάμε συχνά, θα το συμβολίζουμε για συντομία με <span class="math inline">\(SS_{RES}\)</span>, από την αγγλική ορολογία <em>sum of squares residuals</em> (residual: υπόλοιπο – σφάλμα) <span class="math display">\[
+SS_{RES} = (y_1-\hat{y})^2 + (y_2-\hat{y})^2 + \dots + (y_n - \hat{y})^2 = \sum_{i = 1}^n(y_i-\hat{y})^2
+\]</span></p>
+<p>Με βάση τα παραπάνω μπορεί να αποδειχθεί ότι τα <span class="math inline">\(\hat{\beta}_0\)</span> και <span class="math inline">\(\hat{\beta}_1\)</span> που ζητάμε μπορούν να υπολογιστούν από τους τύπους:</p>
+<p><span class="math display">\[
+\hat{\beta}_1=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i - \bar{y})}{\sum_{i=1}^n{(x_i - \bar{x})^2}}
+\]</span></p>
+<p>και</p>
+<p><span class="math display">\[
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x}
+\]</span></p>
+<p>Στις παραπάνω εξισώσεις, τα <span class="math inline">\(\bar{x}\)</span> και <span class="math inline">\(\bar{y}\)</span> συμβολίζουν τη μέση τιμή (μέσος όρος) των μετρήσεων της <span class="math inline">\(X\)</span> (ύψος) και της <span class="math inline">\(Y\)</span> (βάρος) στο δείγμα των 100 μαθητών, αντίστοιχα.</p>
+<p>Για παράδειγμα, έστω ότι είχαμε συλλέξει ένα δείγμα 5 μαθητών με τις μετρήσεις του ύψους και του βάρους να δίνονται παρακάτω:</p>
+<div class="cell">
+<div id="tbl-example-slr" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-example-slr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Μετρήσεις ύψους και βάρους πέντε μαθητών ενός νηπιαγωγείου.
+</figcaption>
+<div aria-describedby="tbl-example-slr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Ύψος (εκατοστά)</th>
+<th style="text-align: center;">Βάρος (κιλά)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">94</td>
+<td style="text-align: center;">19</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Για να υπολογίσουμε την εξίσωση της γραμμής παλινδρόμησης στο συγκεκριμένο παράδειγμα, πρέπει πρώτα από όλα να υπολογίσουμε τα <span class="math inline">\(\bar{x}\)</span> και <span class="math inline">\(\bar{y}\)</span>. Αν γυρίσετε πίσω στις προηγούμενες εξισώσεις θα δείτε ότι οι ποσότητες αυτές χρησιμοποιούνται αρκετές φορές. Το <span class="math inline">\(\bar{x}\)</span> είναι ο μέσος όρος του ύψους των 5 μαθητών και υπολογίζεται ως <span class="math display">\[
+\bar{x} = \frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = \frac{92 + 98 + 100 + 98 +94}{5} = 96.4
+\]</span></p>
+<p>Αντίστοιχα, ο μέσος όρος του βάρους των μαθητών είναι: <span class="math display">\[
+\bar{y} = \frac{y_1+y_2+y_3+y_4+y_5}{5} = \frac{16+18+17+20+19}{5} = 18
+\]</span></p>
+<p>Τώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:</p>
+<p>Τώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: <span class="math display">\[
+\hat{\beta}_1=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i - \bar{y})}{\sum_{i=1}^n{(x_i - \bar{x})^2}} = \frac{5.8}{43.5} \approx 0.13
+\]</span></p>
+<p><span class="math display">\[
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x} = 18 - 0.13\times 96.4\approx 5.47
+\]</span></p>
+<p>Επομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: <span class="math display">\[
+\text{βάρος} = 5.47 + 0.13 \times \text{ύψος}
+\]</span></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
