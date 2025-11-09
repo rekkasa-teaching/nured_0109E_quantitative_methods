@@ -33,10 +33,19 @@ format:
 #pagebreak()
 ```
 
-{{< include chapter-01.qmd >}}
+```{=typst}
+#outline(title: [Περιεχόμενα], depth: 3)
+```
+```{=typst}
+#pagebreak()
+```
 
 ```{=typst}
 #pagebreak()
 ```
 
-{{< include chapter-02.qmd >}}
+{{< include chapter-01.qmd >}}
+
+```{=typst}
+#pagebreak()
+```

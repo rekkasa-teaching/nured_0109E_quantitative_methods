@@ -3,7 +3,7 @@ project:
   output-dir: ../docs/notes
 
 book:
-  title: "Στατιστική στην εκπαιδευτική έρευνα"
+  title: "Ποσοτικές Μέθοδοι"
   author: "Αλέξανδρος Ρέκκας"
   chapters:
     - index.qmd
