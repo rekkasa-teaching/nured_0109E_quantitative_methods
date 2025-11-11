@@ -2,7 +2,7 @@ library(EdSurvey)
 
 set.seed(19910930)
 
-eclsk <- readECLS_K1998("./ECLS_K/1998")
+eclsk <- readECLS_K1998("data/ECLS_K/1998")
 
 schools <- sample(1:3000, 100)
 
@@ -42,6 +42,12 @@ dplyr::tibble(
       TRUE ~ NA_character_
     )
   ) |>
+  dplyr::mutate(
+    child_knows_letter_names = dplyr::case_when(
+      child_knows_letter_names %in% c("NOT YET", "BEGINNING") ~ 0,
+      TRUE ~ 1
+    )
+  ) |>
   dplyr::select(-mother_education_raw, -father_education_raw) |>
   tidyr::drop_na() |>
-  readr::write_csv("sample_child.csv")
+  readr::write_csv("data/sample_child.csv")
