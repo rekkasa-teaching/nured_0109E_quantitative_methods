@@ -1,0 +1,234 @@
+---
+title: "Λογιστική παλινδρόμηση"
+subtitle: ""
+author: "Αλέξανδρος Ρέκκας"
+date: "2025-11-06"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: logo.jpg
+    footer: "Ποσοτικές Μέθοδοι | Παιδαγωγικό Τμήμα Νηπιαγωγών - ΠΔΜ"
+    slide-number: c/t
+    incremental: false
+    transition: slide
+    background-transition: fade
+    highlight-style: monokai
+    code-line-numbers: false
+    preview-links: auto
+    width: 1280
+    height: 720
+knitr:
+  opts_chunk:
+    fig.width: 10
+    fig.height: 6
+    dev: "svglite"
+execute:
+  echo: false
+lang: el
+---
+
+
+# Το πρόβλημα
+
+## Ορισμός του προβλήματος
+
+Έστω ότι έχουμε παρατηρήσει τις μεταβλητές:
+
+* $X$: το κοινωνικό/οικονομικό επίπεδο της οικογένειας
+* $Y$: το παιδί γνωρίζει τα γράμματα
+
+σε δείγμα μεγέθους $n = 100$ ατόμων.
+
+\
+
+Η $X$ είναι συνεχής.  
+H $Y$ είναι δυαδική (ναι/όχι)
+
+## Ορισμός του προβλήματος
+
+```{r}
+eclsk <- readr::read_csv("../../data/sample_child.csv")
+
+plot <- ggplot2::ggplot(eclsk, ggplot2::aes(x = socioeconomic_status, 
+                                           y = child_knows_letter_names)) +
+  ggplot2::geom_jitter(width = 0.15,
+                      height = 0.05,
+                      alpha = 0.6,
+                      size = 2,
+                      color = "darkblue") +
+  ggplot2::labs(x = "Κοινωνικο/οικονομική κατάσταση",
+               y = "Το παιδί γνωρίζει τα γράμματα (0 = ΟΧΙ, 1 = ΝΑΙ)",
+               title = "Σχέση μεταξύ κοινωνικο/οικονομικής κατάστασης και γνώσης γραμμάτων") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5, size = 14),
+                axis.title = ggplot2::element_text(size = 12),
+                axis.text = ggplot2::element_text(size = 10))
+
+plot
+
+```
+
+## Λογιστική συνάρτηση
+
+```{r}
+
+# Generate x grid and logistic values
+grid <- base::data.frame(
+  x = base::seq(-8, 8, length.out = 500)
+) |>
+  base::transform(fx = stats::plogis(x))
+
+# Plot f(x) = 1 / (1 + e^{-x})
+ggplot2::ggplot(grid, ggplot2::aes(x = x, y = fx)) +
+  ggplot2::geom_line(size = 1) +
+  ggplot2::scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.25, 0.5, 0.75, 1)) +
+  ggplot2::labs(x = "X", y = "Y = f(X)", title = "Λογιστική συνάρτηση") +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(
+    plot.title = ggplot2::element_text(hjust = 0.5, size = 14),
+    axis.title  = ggplot2::element_text(size = 12),
+    axis.text   = ggplot2::element_text(size = 10)
+  )
+
+```
+
+## Λογιστική παλινδρόμηση
+
+```{r}
+
+# Fit logistic model on eclsk
+fit <- stats::glm(child_knows_letter_names ~ socioeconomic_status,
+                  data = eclsk, family = stats::binomial())
+
+# Smooth grid over SES
+ses_grid <- base::data.frame(
+  socioeconomic_status = base::seq(
+    base::min(eclsk$socioeconomic_status, na.rm = TRUE),
+    base::max(eclsk$socioeconomic_status, na.rm = TRUE),
+    length.out = 300
+  )
+)
+
+# Predictions on logit scale
+pred <- stats::predict(fit, newdata = ses_grid, type = "link", se.fit = TRUE)
+
+# Add probabilities and 95% CI
+ses_grid <- ses_grid |>
+  base::transform(
+    prob  = stats::plogis(pred$fit),
+    lower = stats::plogis(pred$fit - 1.96 * pred$se.fit),
+    upper = stats::plogis(pred$fit + 1.96 * pred$se.fit)
+  )
+
+# Plot points + logistic curve + CI ribbon
+ggplot2::ggplot(eclsk, ggplot2::aes(x = socioeconomic_status,
+                                    y = child_knows_letter_names)) +
+  ggplot2::geom_jitter(width = 0.15, height = 0.05, alpha = 0.6,
+                       size = 2, color = "darkblue") +
+  ggplot2::geom_ribbon(
+    data = ses_grid,
+    ggplot2::aes(x = socioeconomic_status, ymin = lower, ymax = upper),
+    inherit.aes = FALSE, alpha = 0.15, fill = "red"
+  ) +
+  ggplot2::geom_line(
+    data = ses_grid,
+    ggplot2::aes(x = socioeconomic_status, y = prob),
+    inherit.aes = FALSE, size = 1, color = "red"
+  ) +
+  ggplot2::scale_y_continuous(
+    limits = c(0, 1),
+    breaks = c(0, 0.25, 0.5, 0.75, 1),
+    name = "P(Γνωρίζει τα γράμματα)"
+  ) +
+  ggplot2::labs(
+    x = "Κοινωνικο/οικονομική κατάσταση",
+    title = "Λογιστική παλινδρόμηση κοινωνικο/οικονομικής κατάστασης vs γνώση γραμμάτων"
+  ) +
+  ggplot2::theme_minimal() +
+  ggplot2::theme(
+    plot.title = ggplot2::element_text(hjust = 0.5, size = 14),
+    axis.title = ggplot2::element_text(size = 12),
+    axis.text = ggplot2::element_text(size = 10)
+  )
+
+
+```
+
+## Ορισμός
+
+Το μοντέλο της λογιστικής παλινδρόμησης έχει τη μορφή:
+$$
+P(Y=1) = \frac{1}{1 + e^{(\beta_0 + \beta_1X)}}
+$$
+
+\
+
+Ένας άλλος τρόπος γραφής του μοντέλου είναι:
+$$
+\log\Big(\frac{P(Y = 1)}{1 - P(Y = 1)}\Big) = \beta_0 + \beta_1X
+$$
+
+## Ερμηνεία του μοντέλου
+
+Ο λόγος $P(Y = 1)/(1 - P(Y = 1))$ ονομάζεται **λόγος συμπληρωματικών
+πιθανοτήτων (odds)**.  
+
+\
+
+Άυξηση κατά μία μονάδα της τιμής της $X$, συνεπάγεται αύξηση κατά $\beta_1$ του
+λόγου συμπληρωματικών πιθανοτήτων της $Y$.
+
+# Αξιολόγηση του μοντέλου
+
+## Συνάρτηση πιθανοφάνειας
+ 
+Η **συνάρτηση πιθανοφάνειας** (likelihood function) μας δίνει την πιθανότητα
+εμφάνισης του δείγματος που συλλέχθηκε ως συνάρτηση των συντελεστών ($\beta_0$
+και $\beta_1$).
+
+\
+
+Συνήθως, δουλεύουμε με τον λογάριθμο της συνάρτησης πιθανοφάνειας:
+
+$$
+\text{log-likelihood} = \sum_{i = 1}^{100}[y_i\log(P(y_i)) + (1-y_i)\log(1-P(y_i))]
+$$
+
+## Απόκλιση
+
+Για να αξιολογήσουμε ένα μοντέλο λογιστικής παλινδρόμησης χρησιμοποιούμε την απόκλιση (deviance):
+
+$$
+\text{Deviance} = -2\times\text{log-likelihood}
+$$
+
+Την ποσότητα αυτή τη συμβολίζουμε με **-2LL**.
+
+## Δοκιμασία λόγου πιθανοφανειών
+
+Για να αξιολογήσουμε αν είχε νόημα το μοντέλο που χρησιμοποιήσαμε χρησιμοποιούμε
+τον έλεγχο $X^2$ .
+
+\
+
+Υπολογίζουμε το στατιστικό
+$$
+\begin{aligned}
+\chi^2 &= (-2LL(\text{basic})) - (-2LL(\text{full})) \\
+       &= \operatorname{deviance}(\text{basic}) - \operatorname{deviance}(\text{full})
+\end{aligned}
+$$
+
+Οι βαθμοί ελευθερίας του ελέγχου είναι:
+
+$$
+\text{df} = k_{full} - k_{basic}
+$$
+
+## $R^2$ στη λογιστική παλινδρόμηση
+
+Δεν υπάρχει ακριβώς αντίστοιχο μέτρο με το $R^2$ της γραμμικής παλινδρόμησης.
+
+$$
+R^2_{HL} = \frac{(\operatorname{-2LL}(\text{baseline})) - (\operatorname{-2LL}(\text{full}))}{\operatorname{-2LL}(\text{baseline})}
+$$
