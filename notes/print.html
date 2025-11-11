@@ -158,7 +158,12 @@ window.Quarto = {
   </ul></li>
   <li><a href="#γραμμική-παλινδρόμηση" id="toc-γραμμική-παλινδρόμηση" class="nav-link" data-scroll-target="#γραμμική-παλινδρόμηση">Γραμμική παλινδρόμηση</a>
   <ul>
-  <li><a href="#απλή-γραμμική-παλινδρόμηση" id="toc-απλή-γραμμική-παλινδρόμηση" class="nav-link" data-scroll-target="#απλή-γραμμική-παλινδρόμηση">Απλή γραμμική παλινδρόμηση</a></li>
+  <li><a href="#απλή-γραμμική-παλινδρόμηση" id="toc-απλή-γραμμική-παλινδρόμηση" class="nav-link" data-scroll-target="#απλή-γραμμική-παλινδρόμηση">Απλή γραμμική παλινδρόμηση</a>
+  <ul>
+  <li><a href="#γενικά" id="toc-γενικά" class="nav-link" data-scroll-target="#γενικά">Γενικά</a></li>
+  <li><a href="#υπολογισμός-της-ευθείας" id="toc-υπολογισμός-της-ευθείας" class="nav-link" data-scroll-target="#υπολογισμός-της-ευθείας">Υπολογισμός της ευθείας</a></li>
+  <li><a href="#ανάλυση-διασποράς" id="toc-ανάλυση-διασποράς" class="nav-link" data-scroll-target="#ανάλυση-διασποράς">Ανάλυση διασποράς</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -225,11 +230,16 @@ window.Quarto = {
 <h1>Γραμμική παλινδρόμηση</h1>
 <section id="απλή-γραμμική-παλινδρόμηση" class="level2">
 <h2 class="anchored" data-anchor-id="απλή-γραμμική-παλινδρόμηση">Απλή γραμμική παλινδρόμηση</h2>
+<section id="γενικά" class="level3">
+<h3 class="anchored" data-anchor-id="γενικά">Γενικά</h3>
 <p>Μία γραμμική σχέση μεταξύ δύο μεταβλητών <span class="math inline">\(Y\)</span> και <span class="math inline">\(X\)</span> μπορεί να περιγραφεί από την εξίσωση:</p>
 <p><span class="math display">\[ Y = \beta_0 + \beta_1 X \]</span></p>
 <p>Για παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος <span class="math inline">\(Y\)</span> για <span class="math inline">\(X\)</span> μήνες εγγραφής θα δίνεται από τη σχέση:</p>
 <p><span class="math display">\[ Y = 50 + 30X \]</span></p>
 <p>Καθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η <strong>απλή γραμμική παλινδρόμηση</strong> έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;</p>
+</section>
+<section id="υπολογισμός-της-ευθείας" class="level3">
+<h3 class="anchored" data-anchor-id="υπολογισμός-της-ευθείας">Υπολογισμός της ευθείας</h3>
 <p>Ας υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή <span class="math inline">\(Y\)</span> (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής <span class="math inline">\(X\)</span> (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από <span class="math inline">\(n = 100\)</span> μαθητές και έχουμε μετρήσει τα ύψη (<span class="math inline">\(X\)</span>) και τα βάρη τους (<span class="math inline">\(Y\)</span>). Θα συμβολίζουμε με κεφαλαία <span class="math inline">\(X\)</span> και <span class="math inline">\(Y\)</span> τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά <span class="math inline">\(x\)</span> και <span class="math inline">\(y\)</span> τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους <span class="math inline">\(n=100\)</span> συμβολίζουμε τις 100 μετρήσεις του ύψους <span class="math inline">\(X\)</span> με <span class="math inline">\(x_1,x_2,\dots,x_100\)</span> και τις 100 μετρήσεις του βάρους <span class="math inline">\(Y\)</span> με <span class="math inline">\(y_1,y_2,\dots,y_100\)</span>.</p>
 <p>Η λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα <span class="math inline">\(\beta_0\)</span> και <span class="math inline">\(\beta_1\)</span>), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των <span class="math inline">\(X\)</span> και <span class="math inline">\(Y\)</span> από αυτή να είναι η ελάχιστη (<a href="#fig-errors-slr" class="quarto-xref">Σχήμα&nbsp;1</a>). Αν, λοιπόν, συμβολίσουμε με <span class="math inline">\(\hat{y}\)</span> τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής <span class="math inline">\(\hat{\beta}_0 + \hat{\beta}_1x\)</span>, γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (<span class="math inline">\(y - \hat{y}\)</span>). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε <em>σφάλματα</em>, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (<span class="math inline">\(y\)</span>) από την πρόβλεψή μας με βάση τη γραμμή (<span class="math inline">\(\hat{y}\)</span>). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα <span class="math inline">\(\hat{\beta}_0\)</span> και <span class="math inline">\(\hat{\beta}_1\)</span> τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων <span class="math inline">\((y_1 - \hat{y}), (y_2 -
 \hat{y}), \dots, y_{100} - \hat{y}\)</span>. Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε <span class="math inline">\((y_i - \hat{y}), \
@@ -312,7 +322,7 @@ SS_{RES} = (y_1-\hat{y})^2 + (y_2-\hat{y})^2 + \dots + (y_n - \hat{y})^2 = \sum_
 \]</span></p>
 <p>Τώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:</p>
 <p>Τώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: <span class="math display">\[
-\hat{\beta}_1=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i - \bar{y})}{\sum_{i=1}^n{(x_i - \bar{x})^2}} = \frac{5.8}{43.5} \approx 0.13
+\hat{\beta}_1=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i - \bar{y})}{\sum_{i=1}^n{(x_i - \bar{x})^2}} = \frac{5.8}{43.2} \approx 0.13
 \]</span></p>
 <p><span class="math display">\[
 \hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x} = 18 - 0.13\times 96.4\approx 5.47
@@ -320,8 +330,12 @@ SS_{RES} = (y_1-\hat{y})^2 + (y_2-\hat{y})^2 + \dots + (y_n - \hat{y})^2 = \sum_
 <p>Επομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: <span class="math display">\[
 \text{βάρος} = 5.47 + 0.13 \times \text{ύψος}
 \]</span></p>
+</section>
+<section id="ανάλυση-διασποράς" class="level3">
+<h3 class="anchored" data-anchor-id="ανάλυση-διασποράς">Ανάλυση διασποράς</h3>
 
 
+</section>
 </section>
 </section>
 
