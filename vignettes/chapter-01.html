@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>chapter-02 – Στατιστική στην εκπαιδευτική έρευνα</title>
+<title>chapter-01 – Στατιστική στην εκπαιδευτική έρευνα</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,8 +113,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Περιεχόμενα</h2>
+   
+  <ul>
+  <li><a href="#εισαγωγή-και-επεξεργασία-δεδομένων" id="toc-εισαγωγή-και-επεξεργασία-δεδομένων" class="nav-link active" data-scroll-target="#εισαγωγή-και-επεξεργασία-δεδομένων">Εισαγωγή και επεξεργασία δεδομένων</a>
+  <ul>
+  <li><a href="#εισαγωγή-δεδομένων" id="toc-εισαγωγή-δεδομένων" class="nav-link" data-scroll-target="#εισαγωγή-δεδομένων">Εισαγωγή δεδομένων</a></li>
+  <li><a href="#αρχική-επεξεργασία" id="toc-αρχική-επεξεργασία" class="nav-link" data-scroll-target="#αρχική-επεξεργασία">Αρχική επεξεργασία</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -122,8 +132,200 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="εισαγωγή-και-επεξεργασία-δεδομένων" class="level1">
+<h1>Εισαγωγή και επεξεργασία δεδομένων</h1>
+<section id="εισαγωγή-δεδομένων" class="level2">
+<h2 class="anchored" data-anchor-id="εισαγωγή-δεδομένων">Εισαγωγή δεδομένων</h2>
+<p>Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται <a href="https://github.com/rekkasa-teaching/nured_0109E_quantitative_methods/blob/main/data/sample_child.csv">εδώ</a>. Για να τα κατεβάσετε απλά πατάτε το κουμπί <code>download</code> στο πάνω δεξιά μέρος της σελίδας.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-download" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-download-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/download_data.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-download-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Κουμπί download
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Το αρχείο που θα κατέβει ονομάζεται <code>sample_child.csv</code>. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.</p>
+<p>Αν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:</p>
+<div id="fig-load-data" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-load-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-load-data" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-load-data-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-load-data-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/load_data_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-load-data">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-load-data-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Βήμα 1
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-load-data" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-load-data-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-load-data-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/load_data_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-load-data">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-load-data-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Βήμα 2
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-load-data" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-load-data-3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-load-data-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/load_data_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-load-data">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-load-data-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Βήμα 3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-load-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.
+</figcaption>
+</figure>
+</div>
+<p>Αν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο <a href="#fig-data-are-loaded" class="quarto-xref">Figure&nbsp;3</a>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-data-are-loaded" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-are-loaded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/data_are_loaded.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-are-loaded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="αρχική-επεξεργασία" class="level2">
+<h2 class="anchored" data-anchor-id="αρχική-επεξεργασία">Αρχική επεξεργασία</h2>
+<p>Όταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:</p>
+<ol type="1">
+<li>Αναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.</li>
+<li>Ονομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.</li>
+<li>Διατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.</li>
+<li>Συνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.</li>
+</ol>
+<p>Αν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται <code>school_id</code> την οποία το Jamovi θεώρησε ονομαστική (<a href="#fig-shoool-id-wrong-type" class="quarto-xref">Figure&nbsp;4</a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-shoool-id-wrong-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shoool-id-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/school_id_wrong_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shoool-id-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Για να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή <code>ID</code> και μετατρέπουμε τη <code>school_id</code> από ονομαστική σε αναγνωριστική (<a href="#fig-school-id-change-type" class="quarto-xref">Figure&nbsp;5</a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-school-id-change-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-school-id-change-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/school_id_change_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-school-id-change-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Αν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή <code>parent_read_to_child</code> που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-parent-read-to-child-wrong-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-parent-read-to-child-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_wrong_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parent-read-to-child-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Η αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το <a href="#fig-school-id-change-type" class="quarto-xref">Figure&nbsp;5</a>, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (<a href="#fig-change-parent-read-to-child-type" class="quarto-xref">Figure&nbsp;7</a>).</p>
+<div id="fig-change-parent-read-to-child-type" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-change-parent-read-to-child-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-change-parent-read-to-child-type" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-change-parent-read-to-child-type-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-change-parent-read-to-child-type-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_change_type_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-change-parent-read-to-child-type">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-change-parent-read-to-child-type-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Αλλαγή τύπου της μεταβλητής.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-change-parent-read-to-child-type" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-change-parent-read-to-child-type-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-change-parent-read-to-child-type-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_change_type_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-change-parent-read-to-child-type">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-change-parent-read-to-child-type-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Αναδιάταξη σε αύξουσα σειρά.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-change-parent-read-to-child-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.
+</figcaption>
+</figure>
+</div>
+<p>Στο τέλος, η μεταβλητή <code>parent_read_to_child</code> θα πρέπει να έχει τη μορφή που φαίνεται στο <a href="#fig-parent-read-to-child-fixed-type" class="quarto-xref">Figure&nbsp;8</a>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-parent-read-to-child-fixed-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-parent-read-to-child-fixed-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_fixed_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parent-read-to-child-fixed-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Η σωστή μορφή που παίρνει η μεταβλητή <code>parent_read_to_child</code> μετά τις αλλαγές.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Με τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών <code>mother_education</code> και <code>father_education</code>, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

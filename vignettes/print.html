@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="el" xml:lang="el"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Αλέξανδρος Ρέκκας">
+
+<title>Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi – Στατιστική στην εκπαιδευτική έρευνα</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8fd1faf6fd93e4e6d207ae0f9db51d78.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Δεν βρέθηκαν αποτελέσματα",
+    "search-matching-documents-text": "ταιριάζοντα έγγραφα",
+    "search-copy-link-title": "Αντιγραφή συνδέσμου αναζήτησης",
+    "search-hide-matches-text": "Απόκρυψη επιπλέον αντιστοιχιών",
+    "search-more-match-text": "επιπλέον αντιστοιχία σε αυτό το έγγραφο",
+    "search-more-matches-text": "επιπλέον αντιστοιχίες σε αυτό το έγγραφο",
+    "search-clear-button-title": "Καθαρισμός",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Ακύρωση",
+    "search-submit-button-title": "Υποβολή",
+    "search-label": "Αναζήτηση"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Στατιστική στην εκπαιδευτική έρευνα</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Αναζήτηση"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Εναλλαγή πλοήγησης" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Αρχική</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../slides-index.html"> 
+<span class="menu-text">Παρουσιάσεις</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes-index.html"> 
+<span class="menu-text">Σημειώσεις</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Περιεχόμενα</h2>
+   
+  <ul>
+  <li><a href="#εισαγωγή-και-επεξεργασία-δεδομένων" id="toc-εισαγωγή-και-επεξεργασία-δεδομένων" class="nav-link active" data-scroll-target="#εισαγωγή-και-επεξεργασία-δεδομένων">Εισαγωγή και επεξεργασία δεδομένων</a>
+  <ul>
+  <li><a href="#εισαγωγή-δεδομένων" id="toc-εισαγωγή-δεδομένων" class="nav-link" data-scroll-target="#εισαγωγή-δεδομένων">Εισαγωγή δεδομένων</a></li>
+  <li><a href="#αρχική-επεξεργασία" id="toc-αρχική-επεξεργασία" class="nav-link" data-scroll-target="#αρχική-επεξεργασία">Αρχική επεξεργασία</a></li>
+  </ul></li>
+  <li><a href="#γραμμική-παλινδρόμηση" id="toc-γραμμική-παλινδρόμηση" class="nav-link" data-scroll-target="#γραμμική-παλινδρόμηση">Γραμμική παλινδρόμηση</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi</h1>
+<p class="subtitle lead"><strong>Μάθημα:</strong><br>
+Ποσοτικές Μέθοδοι στην Εκπαιδευτική Έρευνα (0109Ε)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Συγγραφέας</div>
+    <div class="quarto-title-meta-contents">
+             <p>Αλέξανδρος Ρέκκας </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Δημοσιευμένο</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Παιδαγωγικό Τμήμα Νηπιαγωγών, Πανεπιστήμιο Δυτικής Μακεδονίας</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="εισαγωγή-και-επεξεργασία-δεδομένων" class="level1">
+<h1>Εισαγωγή και επεξεργασία δεδομένων</h1>
+<section id="εισαγωγή-δεδομένων" class="level2">
+<h2 class="anchored" data-anchor-id="εισαγωγή-δεδομένων">Εισαγωγή δεδομένων</h2>
+<p>Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται <a href="https://github.com/rekkasa-teaching/nured_0109E_quantitative_methods/blob/main/data/sample_child.csv">εδώ</a>. Για να τα κατεβάσετε απλά πατάτε το κουμπί <code>download</code> στο πάνω δεξιά μέρος της σελίδας.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-download" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-download-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/download_data.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-download-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;1: Κουμπί download
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Το αρχείο που θα κατέβει ονομάζεται <code>sample_child.csv</code>. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.</p>
+<p>Αν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:</p>
+<div id="fig-load-data" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-load-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-load-data" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-load-data-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-load-data-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/load_data_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-load-data">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-load-data-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Βήμα 1
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-load-data" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-load-data-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-load-data-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/load_data_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-load-data">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-load-data-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Βήμα 2
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-load-data" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-load-data-3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-load-data-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/load_data_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-load-data">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-load-data-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Βήμα 3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-load-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.
+</figcaption>
+</figure>
+</div>
+<p>Αν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο <a href="#fig-data-are-loaded" class="quarto-xref">Σχήμα&nbsp;3</a>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-data-are-loaded" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-data-are-loaded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/data_are_loaded.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-are-loaded-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="αρχική-επεξεργασία" class="level2">
+<h2 class="anchored" data-anchor-id="αρχική-επεξεργασία">Αρχική επεξεργασία</h2>
+<p>Όταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:</p>
+<ol type="1">
+<li>Αναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.</li>
+<li>Ονομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.</li>
+<li>Διατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.</li>
+<li>Συνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.</li>
+</ol>
+<p>Αν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται <code>school_id</code> την οποία το Jamovi θεώρησε ονομαστική (<a href="#fig-shoool-id-wrong-type" class="quarto-xref">Σχήμα&nbsp;4</a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-shoool-id-wrong-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shoool-id-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/school_id_wrong_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shoool-id-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Για να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή <code>ID</code> και μετατρέπουμε τη <code>school_id</code> από ονομαστική σε αναγνωριστική (<a href="#fig-school-id-change-type" class="quarto-xref">Σχήμα&nbsp;5</a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-school-id-change-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-school-id-change-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/school_id_change_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-school-id-change-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Αν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή <code>parent_read_to_child</code> που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-parent-read-to-child-wrong-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-parent-read-to-child-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_wrong_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parent-read-to-child-wrong-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Η αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το <a href="#fig-school-id-change-type" class="quarto-xref">Σχήμα&nbsp;5</a>, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (<a href="#fig-change-parent-read-to-child-type" class="quarto-xref">Σχήμα&nbsp;7</a>).</p>
+<div id="fig-change-parent-read-to-child-type" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-change-parent-read-to-child-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-change-parent-read-to-child-type" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-change-parent-read-to-child-type-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-change-parent-read-to-child-type-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_change_type_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-change-parent-read-to-child-type">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-change-parent-read-to-child-type-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Αλλαγή τύπου της μεταβλητής.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-change-parent-read-to-child-type" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-change-parent-read-to-child-type-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-change-parent-read-to-child-type-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_change_type_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-change-parent-read-to-child-type">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-change-parent-read-to-child-type-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Αναδιάταξη σε αύξουσα σειρά.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-change-parent-read-to-child-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.
+</figcaption>
+</figure>
+</div>
+<p>Στο τέλος, η μεταβλητή <code>parent_read_to_child</code> θα πρέπει να έχει τη μορφή που φαίνεται στο <a href="#fig-parent-read-to-child-fixed-type" class="quarto-xref">Σχήμα&nbsp;8</a>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-parent-read-to-child-fixed-type" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-parent-read-to-child-fixed-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_01/parent_read_to_child_fixed_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parent-read-to-child-fixed-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;8: Η σωστή μορφή που παίρνει η μεταβλητή <code>parent_read_to_child</code> μετά τις αλλαγές.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Με τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών <code>mother_education</code> και <code>father_education</code>, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές.</p>
+</section>
+</section>
+<section id="γραμμική-παλινδρόμηση" class="level1">
+<h1>Γραμμική παλινδρόμηση</h1>
+<p>Έστω τώρα ότι θέλουμε να διαμορφώσουμε ένα μοντέλο γραμμικής παλινδρόμησης για τη συνεχή μεταβλητή <code>child_reading_irt</code> που μετρά την αναγνωστική ικανότητα των παιδιών στο νηπιαγωγείο. Για την πρόβλεψη της τιμής της <code>child_reading_irt</code> θα χρησιμοποιήσουμε τις εξής μεταβλητές του δείγματος:</p>
+<ul>
+<li><code>child_gender</code>: το φύλο του παιδιού.</li>
+<li><code>child_age</code>: η ηλικία του παιδιού μετρημένη σε μήνες.</li>
+<li><code>parent_read_to_child</code>: η συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί.</li>
+<li><code>socioeconomic_status</code>: η κοινωνικο/οικονομική κατάσταση της οικογένειας.</li>
+<li><code>school_type</code>: το είδος του σχολείου που πηγαίνει το παιδί (ιδιωτικό / δημόσιο).</li>
+<li><code>mother_education</code>: το μορφωτικό επίπεδο της μητέρας.</li>
+<li><code>father_education</code>: το μορφωτικό επίπεδο του πατέρα.</li>
+</ul>
+<p>Για να τρέξουμε την παραπάνω γραμμική παλινδρόμηση (και αφού έχουμε εφαρμόσει την αρχική επεξεργασία) από την καρτέλα των Αναλύσεων (<strong>Analyses</strong>), διαλέγουμε την παλινδρόμηση (<strong>Regression</strong>) και στο μενού που ανοίγει διαλέγουμε την γραμμική παλινδρόμηση (<strong>Linear regression</strong>), όπως φαίνεται και στο <a href="#fig-linear-regression-select-from-menu" class="quarto-xref">Σχήμα&nbsp;9</a>. Εν συντομία στο Jamovi, ακολουθούμε <code>Analyses &gt; Regression &gt; Linear Regression</code>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-linear-regression-select-from-menu" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-select-from-menu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_select_from_menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-select-from-menu-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;9: Η σωστή μορφή που παίρνει η μεταβλητή <code>parent_read_to_child</code> μετά τις αλλαγές.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Το Jamovi διαχωρίζει τις μεταβλητές που χρησιμοποιούνται σε μία γραμμική παλινδρόμηση σε τρεις κατηγορίες:</p>
+<ul>
+<li>Την εξαρτημένη μεταβλητή, δηλαδή τη μεταβλητή που θέλουμε να προβλέψουμε με το μοντέλο, την οποία το πακέτο ονομάζει <em>Dependent Variable</em>.</li>
+<li>Τις συνεχείς μεταβλητές, δηλαδή τις μεταβλητές των οποίων οι τιμές είναι αριθμοί, τις οποίες το πακέτο ονομάζει <em>Covariates</em>.</li>
+<li>Τις κατηγορικές μεταβλητές, δηλαδή τις μεταβλητές των οποίων οι τιμές είναι κατηγορίες (ονομαστικές, διατάξιμες), τις οποίες το πακέτο ονομάζει <em>Factors</em>.</li>
+</ul>
+<p>Για να ορίσουμε το μοντέλο της γραμμικής παλινδρόμησης πρέπει σύρουμε και να αφήσουμε τις μεταβλητές που θα χρησιμοποιήσουμε στα σωστά σημεία (<a href="#fig-linear-regression-define-model" class="quarto-xref">Σχήμα&nbsp;10</a>):</p>
+<ul>
+<li>Η μεταβλητή <code>child_reading_irt</code> είναι η εξαρτημένη μεταβλητή (dependent variable), η μεταβλητή δηλαδή που θέλουμε να προβλέψουμε και άρα θα πάει στο κουτί <em>Dependent Variable</em>.<br>
+<strong>Προσοχή:</strong> Μόνο μία εξαρτημένη μεταβλητή μπορεί να υπάρχει στη γραμμική παλινδρόμηση.</li>
+<li>Οι μεταβλητές <code>child_age</code> και <code>socioeconomic_status</code> είναι συνεχείς (αριθμητικές), άρα θα πάνε στο κουτί <em>Covariates</em>.</li>
+<li>Οι μεταβλητές <code>child_gender</code>, <code>parent_read_to_child</code>, <code>school_type</code>, <code>mother_education</code> και <code>father_education</code> είναι όλες κατηγορικές (ορίζουν κατηγορίες) και άρα θα πάνε στο κουτί <em>Factors</em>.</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-linear-regression-define-model" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-define-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_select_from_menu.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-define-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;10: Ορισμός του μοντέλου γραμμικής παλινδρόμησης.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Στο δεξί παράθυρο του Jamovi εμφανίζονται τα αποτελέσματα της γραμμικής παλινδρόμησης. Αν κάνουμε αλλαγές στον ορισμό του μοντέλου, τα αποτελέσματα ενημερώνονται αυτόματα. Στον πρώτο πίνακα των αποτελεσμάτων έχουμε τα μέτρα επίδοσης του μοντέλου παλινδρόμησης που διαλέξαμε (<a href="#fig-linear-regression-model-fit-measures-default" class="quarto-xref">Σχήμα&nbsp;11</a>). Βλέπουμε ότι η προεπιλογή είναι να παρουσιάζονται μόνο το <span class="math inline">\(R^2\)</span> και η τετραγωνική του ρίζα. Στη συγκεκριμένη περίπτωση, το <span class="math inline">\(R^2\)</span> είναι αρκετά χαμηλό (0.186). Δηλαδή, μόνο περίπου το 18.6% της συνολικής διασποράς της εξαρτημένης μεταβλητής (<code>child_reading_irt</code>) εξηγείται από το μοντέλο της γραμμικής παλινδρόμησης που υπολογίσαμε.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-linear-regression-model-fit-measures-default" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-model-fit-measures-default-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_model_fit_measures_default.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-model-fit-measures-default-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;11: Ορισμός του μοντέλου γραμμικής παλινδρόμησης.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Αν θέλουμε να δούμε και τα αποτελέσματα και άλλων μετρικών που εξετάζουν την ποιότητα του μοντέλου που υπολογίσαμε μπορούμε να τα προσθέσουμε πατώντας στο μενού <code>Model Fit</code>. Από εκεί έχει μία σειρά από επιλογές που μπορούμε να διαλέξουμε. Για παράδειγμα, μπορούμε να υπολογίσουμε το προσαρμοσμένο <span class="math inline">\(R^2\)</span> διαλέγοντας και την επιλογή <span class="math inline">\(\text{Adjusted} R^2\)</span> (<a href="#fig-linear-regression-update-model-fit" class="quarto-xref">Σχήμα&nbsp;12</a>). Το προσαρμοσμένο <span class="math inline">\(R^2\)</span> προσθέτει ένα κόστος στη συμπερίληψη μεταβλητών στο μοντέλο με στόχο να διασφαλιστεί ότι οι επιπλέον μεταβλητές εξηγούν σημαντικό μέρος της ανεξήγητης διασποράς του μοντέλου χωρίς αυτές.</p>
+<p>Είδαμε ότι το <span class="math inline">\(R^2\)</span> του μοντέλου είναι αρκετά χαμηλό. Άρα έχουμε λόγο να ανησυχούμε αν όντως έχει νόημα να κάνουμε όλη αυτή την άσκηση υπολογισμού το μοντέλου γραμμικής παλινδρόμησης. Με άλλα λόγια, αν το μοντέλο το οποίο υπολογίσαμε μας δίνει καλύτερες προβλέψεις για την αναγνωστική ικανότητα των μαθητών (<code>child_reading_irt</code>) από ό,τι αν χρησιμοποιούσαμε μόνο την μέση τιμή της χωρίς καμία άλλη πληροφορία. Έχουμε δει ότι τον έλεγχο αυτό τον πραγματοποιούμε με τη χρήση του συνολικού <span class="math inline">\(F\)</span>-test. Αυτός ο έλεγχος μπορεί να συμπεριληφθεί στα αποτελέσματα χρησιμοποιώντας το ίδιο μενού (<code>Model Fit</code>) (<a href="#fig-linear-regression-update-model-fit" class="quarto-xref">Σχήμα&nbsp;12</a>).</p>
+<p>Στη συγκεκριμένη περίπτωση, βλέπουμε ότι το συνολικό <span class="math inline">\(F\)</span>-test έχει τιμή <span class="math inline">\(F=8.78\)</span> με <span class="math inline">\(\text{p}&lt;0.001\)</span>. Άρα μπορούμε να απορρίψουμε την <span class="math inline">\(H_0\)</span> ότι όλα τα <span class="math inline">\(\beta\)</span> του μοντέλου είναι <span class="math inline">\(0\)</span> και να δεχτούμε ότι έστω και ένα από τα <span class="math inline">\(\beta\)</span> είναι διάφορο του μηδενός. Άρα, παρά τη χαμηλή επίδοση του μοντέλου παλινδρόμησης ως προς το <span class="math inline">\(R^2\)</span>, αυτό έχει μία αξία, δηλαδή μας επιτρέπει να κάνουμε καλύτερες προβλέψεις από το να χρησιμοποιούσαμε μόνο τον μέσο όρο της <code>child_reading_rt</code>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-linear-regression-update-model-fit" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-update-model-fit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_update_model_fit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-update-model-fit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;12: Πρόσθεση του προσαρμοσμένου <span class="math inline">\(R^2\)</span> και συνολικού <span class="math inline">\(F\)</span>-test στα αποτελέσματα της αξιολόγησης του μοντέλου.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Το βασικό κομμάτι, όμως, των αποτελεσμάτων της γραμμικής παλινδρόμησης παρουσιάζεται στον παρακάτω πίνακα των αποτελεσμάτων και έχει τίτλο <em>Model Coefficients</em>. Το μοντέλο που θέλαμε να υπολογίσουμε είχε τη μορφή: <span class="math display">\[
+\begin{aligned}
+\text{child\_reading\_rt} = \beta_0 &amp;+ \beta_1\times\text{child\_age} + \beta_2\times\text{socioeconomic\_status} \\
+&amp;+ \beta_3\times\text{child\_gender} + \beta_4\times\text{mother\_education} \\
+&amp;+ \beta_5\times\text{father\_education} + \beta_6\times\text{school\_type} \\
+&amp;+ \beta_7\times\text{parent\_read\_to\_child}
+\end{aligned}
+\]</span></p>
+<p>Στο <a href="#fig-linear-regression-model-coefficients" class="quarto-xref">Σχήμα&nbsp;13</a>, όμως, βλέπουμε πολύ περισσότερα αποτελέσματα από τα 8 που φαίνονται στην παραπάνω εξίσωση. Αυτό συμβαίνει γιατί το Jamovi χωρίζει τις κατηγορικές μεταβλητές σε βοηθητικές μεταβλητές. Για τον χωρισμό σε βοηθητικές μεταβλητές χρησιμοποιείται ένα επίπεδο της κατηγορικής μεταβλητής ως σημείο αναφοράς. Στο Jamovi αυτό είναι το πρώτο επίπεδο. Για παράδειγμα, στην περίπτωση του φύλου δημιουργείται η βοηθητική μεταβλητή <span class="math inline">\(X_\text{child_gender = MALE}\)</span>, η οποία παίρνει την τιμή <span class="math inline">\(1\)</span> όταν το φύλο είναι αγόρι (MALE) και <span class="math inline">\(0\)</span> στην αντίθετη περίπτωση.</p>
+<p>Ομοίως, στην περίπτωση του μορφωτικού επιπέδου της μητέρας (LOW, MEDIUM, HIGH) δημιουργούνται 2 βοηθητικές μεταβλητές:</p>
+<ul>
+<li><span class="math inline">\(X_\text{mother_education = MEDIUM}\)</span>, η οποία παίρνει την τιμή <span class="math inline">\(1\)</span> όταν το μορφωτικό επίπεδο της μητέρας είναι MEDIUM και <span class="math inline">\(0\)</span> σε αντίθετη περίπτωση.</li>
+<li><span class="math inline">\(X_\text{mother_education = HIGH}\)</span>, η οποία παίρνει την τιμή <span class="math inline">\(1\)</span> όταν το μορφωτικό επίπεδο της μητέρας είναι HIGH και <span class="math inline">\(0\)</span> σε αντίθετη περίπτωση.</li>
+</ul>
+<p>Τι γίνεται όταν το μοφωτικό επίπεδο της μητέρας είναι χαμηλό (LOW), δηλαδή το επίπεδο αναφοράς; Τότε και οι δύο βοηθητικές μεταβλητές είναι <span class="math inline">\(0\)</span> και η επίδραση μορφωτικού επιπέδου της μητέρας απορροφάται από το <span class="math inline">\(\beta_0\)</span>. Γενικά, όταν έχουμε να κάνουμε με κατηγορικές μεταβλητές, το Jamovi θα δημιουργεί για κάθε μία από αυτές ένα πλήθος βοηθητικών μεταβλητών που παίρνουν τις τιμές 0 και 1. Το πλήθος αυτό θα είναι όσο είναι το πλήθος των επιπέδων της κατηγορικής μεταβλητής μείον 1.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-linear-regression-model-coefficients" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-model-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_model_coefficients.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-model-coefficients-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;13: Οι συντελεστές του μοντέλου της γραμμικής παλινδρόμησης που εκτιμήθηκαν χρησιμοποιώντας το δείγμα των 435 μαθητών των δεδομένων μας.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Στο αρχικό μοντέλο συμπεριλάβαμε, μεταξύ άλλων, τις μεταβλητές που περιγράφουν την κοινωνικο/οικονομική κατάσταση της οικογένειας (<code>socioeconomic_status</code>) και μεταβλητές για το μορφωτικό επίπεδο των γονέων καθώς και το είδος του σχολείου που πηγαίνουν τα παιδιά (<code>mother_education</code>, <code>father_education</code>, <code>school_type</code>). Έχει νόημα να συμπεριλάβουμε τις τελευταίες τρεις μεταβλητές ή κάνουμε πάνων-κάτω την ίδια δουλειά απλώς βάζοντας στο μοντέλο την κοινωνικο/οικονομική κατάσταση; Για να το ελέγξουμε αυτό πρέπει να πραγματοποιήσουμε το μερικό <span class="math inline">\(F\)</span>-test. Στην πράξη, το μερικό <span class="math inline">\(F\)</span>-test συγκρίνει δύο μοντέλα, ένα με όλες τις μεταβλητές με αυτό που δεν συμπεριλαμβάνει τις τρεις μεταβλητές, δηλαδή κάνοντας την υπόθεση ότι οι συντελεστές αυτών των τριών μεταβλητών (τα <span class="math inline">\(\beta\)</span>) είναι 0.</p>
+<p>Στο Jamovi, για να πραγματοποιήσουμε το συγκεκριμένο έλεγχο πρέπει να διαλέξουμε το μενού <code>Model Builder</code> και να ορίσουμε εκεί τα δύο μοντέλα που είπαμε προηγουμένως, βάζοντας το καθένα σε ένα ξεχωριστό <code>Block</code>. Στο <code>Block 1</code> βάζουμε τις μεταβλητές του απλούστερου μοντέλου, δηλαδή την ηλικία, την κοινωνικο/οικονομική κατάσταση, το φύλο του παιδιού και τη συχνότητα ανάγνωσης από τους γονείς (<code>child_age</code>, <code>socioeconomic_status</code>, <code>child_gender</code>, <code>parent_read_to_child</code>). Στο <code>Block 2</code> βάζουμε τις επιπλέον μεταβλητές που θέλουμε να ελέγξουμε αν έχει νόημα να συμπεριληφθούν στον μοντέλο, δηλαδή το μορφωτικό επίπεδο των γονέων και το είδος του σχολείου (<code>mother_education</code>, <code>father_education</code>, <code>school_type</code>).</p>
+<p>Συνήθως, είναι πιο εύκολο πρώτα να καθαρίσουμε τα <code>Block</code> που υπάρχουν ήδη συμπληρωμένα. Όταν το κάνετε αυτό, τα αποτελέσματα στη δεξιά μεριά της οθόνης θα χαθούν (<a href="#fig-linear-regression-clear-blocks" class="quarto-xref">Σχήμα&nbsp;14</a>). Στο επόμενο βήμα θα συμπληρωθούν ξανά με τη δημιουργία των δύο μοντέλων παλινδρόμησης που έχουμε περιγράψει παραπάνω.</p>
+<div id="fig-linear-regression-clear-blocks" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-clear-blocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-regression-clear-blocks" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-linear-regression-clear-blocks-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-linear-regression-clear-blocks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_clear_blocks_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-linear-regression-clear-blocks">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-linear-regression-clear-blocks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Διαγραφή Block 1.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-regression-clear-blocks" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-linear-regression-clear-blocks-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-linear-regression-clear-blocks-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_clear_blocks_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-linear-regression-clear-blocks">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-linear-regression-clear-blocks-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Δημιουργία κενού Block 1
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-clear-blocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;14: Διαδικασία καθαρισμού υφιστάμενων Block.
+</figcaption>
+</figure>
+</div>
+<p>Στη συνέχεια, δημιουργούμε ξανά τα Block όπως φαίνεται στο <a href="#fig-linear-regression-create-blocks" class="quarto-xref">Σχήμα&nbsp;15</a>.</p>
+<div id="fig-linear-regression-create-blocks" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-create-blocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-regression-create-blocks" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-linear-regression-create-blocks-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-linear-regression-create-blocks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_create_block_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-linear-regression-create-blocks">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-linear-regression-create-blocks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Δημιουργία Block 1.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-regression-create-blocks" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-linear-regression-create-blocks-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-linear-regression-create-blocks-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_create_block_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-ref-parent="fig-linear-regression-create-blocks">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-linear-regression-create-blocks-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Δημιουργία Block 2
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-create-blocks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;15: Διαδικασία δημιουργίας των νέων Block για τη διενέργεια του μερικού <span class="math inline">\(F\)</span>-test.
+</figcaption>
+</figure>
+</div>
+<p>Τα αποτελέσματα του μερικού <span class="math inline">\(F\)</span>-test εμφανίζονται στη δεξιά μεριά της οθόνης (<a href="#fig-linear-regression-partial-f-test" class="quarto-xref">Σχήμα&nbsp;16</a>). Στη συγκεκριμένη περίπτωση, ελέγχουμε την υπόθεση (<span class="math inline">\(H_0\)</span>) ότι οι συντελεστές των <code>mother_education</code>, <code>father_education</code> και <code>school_type</code> είναι 0. Στα αποτελέσματα βλέπουμε ότι η τιμή της <span class="math inline">\(F\)</span> είναι 1.18 και το <span class="math inline">\(p\)</span> είναι 0.318 (πολύ μεγαλύτερο από το 0.05 που χρησιμοποιούμε συνήθως για να συμπεράνουμε στατιστική σημαντικότητα). Άρα δεν μπορούμε να απορρίψουμε την <span class="math inline">\(H_0\)</span> και επομένως δεχόμαστε ότι οι συντελεστές των τριών αυτών μεταβλητών είναι <span class="math inline">\(0\)</span>. Άρα ένα απλούστερο μοντέλο, χωρίς τις τρεις αυτές μεταβλητές κάνει σχεδόν το ίδιο καλή δουλειά με το πλήρες μοντέλο.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-linear-regression-partial-f-test" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-regression-partial-f-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/chapter_02/linear_regression_partial_f_test.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-regression-partial-f-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Σχήμα&nbsp;16: Τα αποτελέσματα του μερικού <span class="math inline">\(F\)</span>-test.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Αντιγράφηκε!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Αντιγράφηκε!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
