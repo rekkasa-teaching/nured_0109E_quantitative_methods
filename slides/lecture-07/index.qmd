@@ -1,0 +1,181 @@
+---
+title: "Λογιστική παλινδρόμηση"
+subtitle: ""
+author: "Αλέξανδρος Ρέκκας"
+date: "2025-11-13"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: logo.jpg
+    footer: "Ποσοτικές Μέθοδοι | Παιδαγωγικό Τμήμα Νηπιαγωγών - ΠΔΜ"
+    slide-number: c/t
+    incremental: false
+    transition: slide
+    background-transition: fade
+    highlight-style: monokai
+    code-line-numbers: false
+    preview-links: auto
+    width: 1280
+    height: 720
+    include-in-header:
+      - text: |
+          <style>
+          .reveal mjx-mtext {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+            font-style: normal !important;
+          }
+          </style>
+knitr:
+  opts_chunk:
+    fig.width: 10
+    fig.height: 6
+    dev: "svglite"
+execute:
+  echo: false
+lang: el
+---
+
+
+# Ανακεφαλαίωση
+
+## Το μοντέλο
+
+Το μοντέλο της λογιστικής παλινδρόμησης έχει τη μορφή:
+$$
+P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1+\beta_2X_2+\dots+\beta_kX_k)}}
+$$
+
+\
+
+Ένας άλλος τρόπος γραφής του μοντέλου είναι:
+$$
+\log\Big(\frac{P(Y = 1)}{1 - P(Y = 1)}\Big) = \beta_0 + \beta_1X_1+\beta_2X_2+\dots+\beta_kX_k
+$$
+
+## Απόκλιση
+
+Για να αξιολογήσουμε ένα μοντέλο λογιστικής παλινδρόμησης χρησιμοποιούμε την απόκλιση (deviance):
+
+$$
+\text{Deviance} = -2\times\text{log-likelihood}
+$$
+
+Την ποσότητα αυτή τη συμβολίζουμε με **-2LL**.
+
+## Δοκιμασία λόγου πιθανοφανειών
+
+Για να αξιολογήσουμε αν είχε νόημα το μοντέλο που χρησιμοποιήσαμε χρησιμοποιούμε
+τον έλεγχο $X^2$ .
+
+\
+
+Υπολογίζουμε το στατιστικό
+$$
+\begin{aligned}
+\chi^2 &= (-2LL(\text{basic})) - (-2LL(\text{full})) \\
+       &= \operatorname{deviance}(\text{basic}) - \operatorname{deviance}(\text{full})
+\end{aligned}
+$$
+
+Οι βαθμοί ελευθερίας του ελέγχου είναι:
+
+$$
+\text{df} = k_{full} - k_{basic}
+$$
+
+## $R^2$ στη λογιστική παλινδρόμηση
+
+Δεν υπάρχει ακριβώς αντίστοιχο μέτρο με το $R^2$ της γραμμικής παλινδρόμησης.
+
+$$
+R^2_{HL} = \frac{(\operatorname{-2LL}(\text{baseline})) - (\operatorname{-2LL}(\text{full}))}{\operatorname{-2LL}(\text{baseline})}
+$$
+
+# Συμπληρωματικές παρατηρήσεις
+
+## Ερμηνεία συντελεστών $\beta$
+
+Έστω ότι έχουμε μία μεταβλητή $X$ για το φύλο ενός παιδιού:
+
+$$
+X = \begin{cases} 
+1 & \textrm{αν το παιδί είναι κορίτσι} \\
+0 & \textrm{αν το παιδί είναι αγόρι}
+\end{cases}
+$$
+
+\
+
+Έστω ότι έχουμε μία μεταβλητή $Y$ για το αν ένα παιδί έπαιξε με άλλα παιδιά σε
+μια δραστηριότητα:
+
+$$
+Y = \begin{cases} 
+1 & \text{αν το παιδί έπαιξε με άλλα παιδιά} \\
+0 & \text{αν το παιδί δεν έπαιξε με άλλα παιδιά}
+\end{cases}
+$$
+
+## Ερμηνεία συντελεστών $\beta$
+
+Εκτιμούμε το μοντέλο 
+
+$$
+\log\Big(\frac{P(Y = 1)}{1 - P(Y = 1)}\Big) = 1 + 2X_1
+$$
+
+Τι μας λέει το $\beta_1 = 2$;
+
+
+## Ερμηνεία συντελεστών $\beta$
+
+Για τα αγόρια:
+
+$$
+\log\Big(\frac{P(Y = 1| X = \textrm{αγόρι})}{1 - P(Y = 1|X = \textrm{αγόρι})}\Big) = 1
+$$
+
+Για τα κορίτσια:
+
+$$
+\log\Big(\frac{P(Y = 1) | X = \text{κορίτσι}}{1 - P(Y = 1 | X = \text{κορίτσι})}\Big) = 1 + 2 = 3
+$$
+
+## Ερμηνεία συντελεστών $\beta$
+
+$$
+e^{\beta_1} = e^2 = \frac{\frac{P(Y = 1 | X = \text{κορίτσι})}{1 - P(Y = 1 | X = \text{κορίτσι})}}{\frac{P(Y = 1 | X = \text{αγόρι})}{1 - P(Y = 1 | X = \text{αγόρι})}}
+$$
+
+
+## Υπολογισμός πιθανοτήτων
+
+Ο τύπος της λογιστικής παλινδρόμησης είναι:
+
+$$
+\log\Big(\frac{P(Y=1)}{1 - P(Y = 1)}\Big)  = \beta_0+\beta_1X_1+\dots+\beta_kX_k
+$$
+
+\
+
+
+Αν λύσουμε τον τύπο ως προς $P(Y = 1)$:
+
+$$
+P(Y = 1) = \frac{1}{1 + e^{-(\beta_0+\beta_1X_1+\dots+\beta_kX_k)}} = \frac{e^{(\beta_0+\beta_1X_1+\dots+\beta_kX_k)}}{1 + e^{(\beta_0+\beta_1X_1+\dots+\beta_kX_k)}}
+$$
+
+# Πολυωνυμική παλινδρόμηση <br> (ordinal regression)
+
+## Παραπάνω από δύο κατηγορίες
+
+\
+
+Τι κάνουμε όταν η εξαρτημένη μεταβλητή έχει παραπάνω από δύο πιθανές τιμές (κατηγορίες);
+
+## Ορισμός
+
+\
+
+Στην πολυωνυμική παλινδρόμηση εφαρμόζουμε ξεχωριστές λογιστικές παλινδρομήσεις
+για κάθε κατηγορία.
