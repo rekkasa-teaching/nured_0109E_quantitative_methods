@@ -2,7 +2,7 @@
 title: "Λογιστική παλινδρόμηση"
 subtitle: ""
 author: "Αλέξανδρος Ρέκκας"
-date: "2025-11-13"
+date: "2025-11-20"
 format:
   revealjs:
     theme: [default, custom.scss]
