@@ -18,7 +18,8 @@ dplyr::tibble(
   parent_read_to_child = eclsk$p1readbo,
   mother_education_raw = eclsk$wkmomed,
   father_education_raw = eclsk$wkdaded,
-  school_type = eclsk$s2kpupri
+  school_type = eclsk$s2kpupri,
+  primary_non_parental = eclsk$p1primpk
 ) |>
   dplyr::filter(school_id %in% schools) |>
   tidyr::drop_na() |>
@@ -39,7 +40,19 @@ dplyr::tibble(
       father_education_raw %in% c("8TH GRADE OR BELOW", "9TH - 12TH GRADE") ~ "LOW",
       father_education_raw %in% c("HIGH SCHOOL DIPLOMA/EQUIVALENT", "VOC/TECH PROGRAM", "SOME COLLEGE") ~ "MEDIUM",
       father_education_raw %in% c("BACHELOR'S DEGREE", "GRADUATE/PROFESSIONAL SCHOOL-NO DEGREE", "MASTER'S DEGREE (MA, MS)", "DOCTORATE OR PROFESSIONAL DEGREE (PHD, MD, ETC.)") ~ "HIGH",
-      TRUE ~ NA_character_
+      TRUE ~ NA_character_,
+    ),
+    parent_read_to_child = dplyr::case_when(
+      parent_read_to_child %in% c("NOT AT ALL", "ONCE OR TWICE A WEEK") ~ "LESS THAN TWICE A WEEK",
+      parent_read_to_child == "3 TO 6 TIMES A WEEK" ~ "3 TO 6 TIMES A WEEK",
+      parent_read_to_child == "EVERYDAY" ~ "EVERYDAY"
+    ),
+    primary_non_parental = dplyr::case_when(
+      primary_non_parental == "NO NON-PARENTAL CARE" ~ "NO NON-PARENTAL CARE",
+      primary_non_parental %in% c("RELATIVE CARE, CHILD'S HOME", "RELATIVE CARE, OTHER'S HOME" ) ~ "RELATIVE CARE",
+      primary_non_parental %in% c("NON-REL CARE, CHILD'S HOME", "NON-REL CARE, OTHER'S HOME" ) ~ "NON-RELATIVE CARE",
+      primary_non_parental == "CENTER-BASED PROGRAM" ~ "CENTER-BASED PROGRAM",
+      TRUE ~ NA
     )
   ) |>
   dplyr::mutate(
