@@ -1,0 +1,146 @@
+---
+title: "Εργαστήριο -- Γραμμική παλινδρόμηση"
+subtitle: ""
+author: "Αλέξανδρος Ρέκκας"
+date: "2025-11-27"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: logo.jpg
+    footer: "Ποσοτικές Μέθοδοι | Παιδαγωγικό Τμήμα Νηπιαγωγών - ΠΔΜ"
+    slide-number: c/t
+    incremental: false
+    transition: slide
+    background-transition: fade
+    highlight-style: monokai
+    code-line-numbers: false
+    preview-links: auto
+    width: 1280
+    height: 720
+    include-in-header:
+      - text: |
+          <style>
+          .reveal mjx-mtext {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+            font-style: normal !important;
+          }
+          </style>
+knitr:
+  opts_chunk:
+    fig.width: 10
+    fig.height: 6
+    dev: "svglite"
+execute:
+  echo: false
+lang: el
+---
+
+
+# Ανακεφαλαίωση
+
+## Το πρόβλημα
+
+**Ερευνητικό Ερώτημα:**  
+Ποιοι παράγοντες προβλέπουν την αναγνωστική ικανότητα (child_reading_irt) των παιδιών στο νηπιαγωγείο;
+
+## Το πρόβλημα
+
+Τα δεδομένα μας (`sample_child.csv`):
+
+- `child_reading_irt`: Αναγνωστική ικανότητα (Εξαρτημένη).
+- `child_age`: Ηλικία σε μήνες.
+- `child_gender`: Φύλο.
+- `socioeconomic_status`: Κοινωνικο-οικονομικό επίπεδο.
+- `parent_read_to_child`: Πόσο συχνά διαβάζουν οι γονείς στο παιδί.
+
+## Βήμα 1: Εισαγωγή δεδομένων
+
+Ανοίξτε το αρχείο sample_child.csv στο Jamovi.
+
+\
+
+
+**ΠΡΟΣΟΧΗ**  
+στους τύπους μεταβλητών! (Διπλό κλικ στην επικεφαλίδα της στήλης):
+
+- `school_id` -> ID (αναγνωριστικό).
+- `child_age`, `reading_irt`, `SES` -> Continuous (χάρακας).
+- `child_gender`, `school_type` -> Nominal (διάγραμμα Venn).
+- `parent_read_to_child` -> Ordinal (μπάρες).
+
+## Βήμα 2: Απλή γραμμική παλινδρόμηση
+
+**Ερώτημα:**  
+Προβλέπει η ηλικία την αναγνωστική ικανότητα;
+
+\
+
+1. Tab: Analyses -> Regression -> Linear Regression.
+2. Dependent Variable: `child_reading_irt`.
+3. Covariates (συνεχείς): `child_age`.
+
+## Βήμα 2: Απλή γραμμική παλινδρόμηση
+
+Τι κοιτάμε:
+
+- Ποια είναι η τιμή της σταθεράς και της παραμέτρου της ηλικίας;
+- P-value: Είναι στατιστικά σημαντική η σχέση;
+- $R^2$: Πόσο % της διακύμανσης εξηγεί η ηλικία;
+
+## Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση
+
+**Ερώτημα:**  
+Αν λάβουμε υπόψη το Κοινωνικο-οικονομικό Επίπεδο (SES) και το φύλο, αλλάζει η πρόβλεψη;
+
+Στο ίδιο παράθυρο ανάλυσης:
+
+1. Προσθέστε το `socioeconomic_status` στα Covariates.
+2. Προσθέστε το `child_gender` στα Factors (Κατηγορικές).
+
+## Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση
+
+Τι κοιτάμε:
+
+- Πώς ερμηνεύουμε τον συντελεστή του SES, κρατώντας την ηλικία και το φύλο σταθερά;
+- Adjusted $R^2$: Αυξήθηκε η εξηγητική ικανότητα του μοντέλου;
+- Overall F-test: Είναι όλο το μοντέλο σημαντικό;
+
+## Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)
+
+**Ερώτημα:**  
+Προσφέρει κάτι παραπάνω η "ανάγωνησ από τους γονείς" αν ήδη ξέρουμε την ηλικία, το φύλο και το SES;
+
+\
+
+Διαδικασία (Model Builder):
+
+1. Ανοίξτε το μενού Model Builder.
+1. Block 1: Κρατήστε τα `child_age`, `child_gender`, `socioeconomic_status`.
+1. Πατήστε + Add New Block.
+1. Block 2: Βάλτε το `parent_read_to_child`.
+
+
+## Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)
+
+Αξιολόγηση της Σύγκρισης
+
+- Στο μενού Model Fit επιλέξτε $R$, $R^2$, $\Delta R^2$, και Model comparison (F-test)
+
+\
+
+Τι κοιτάμε:
+
+- Την στήλη $p$ (partial F-test) στη σύγκριση Model 1 και Model 2.
+- Αν $p < 0.05$: Η προσθήκη της μεταβλητής βελτίωσε σημαντικά το μοντέλο.
+- Πόσο αυξήθηκε το $R^2$ ($\Delta R^2$)
+
+## Βήμα 5: Έλεγχος Συντελεστών (Single Coefficients)
+
+Τι κοιτάμε στον πίνακα Model coefficients:
+
+- Τη στήλη $p$ για κάθε επίπεδο του `parent_read_to_child`.
+- Ποια είναι η διαφορά ανάμεσα στο "Everyday" και το "Less than twice a week"
+  (σημείο αναφοράς);
+- Είναι όλες οι μεταβλητές στατιστικά σημαντικές;
+
+
