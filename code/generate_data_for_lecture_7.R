@@ -57,8 +57,8 @@ dplyr::tibble(
   ) |>
   dplyr::mutate(
     child_knows_letter_names = dplyr::case_when(
-      child_knows_letter_names %in% c("NOT YET", "BEGINNING") ~ 0,
-      TRUE ~ 1
+      child_knows_letter_names == "PROFICIENT" ~ 1,
+      TRUE ~ 0
     )
   ) |>
   dplyr::select(-mother_education_raw, -father_education_raw) |>

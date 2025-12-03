@@ -1,0 +1,126 @@
+---
+title: "Εργαστήριο -- Λογιστική παλινδρόμηση"
+subtitle: ""
+author: "Αλέξανδρος Ρέκκας"
+date: "2025-12-04"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    logo: logo.jpg
+    footer: "Ποσοτικές Μέθοδοι | Παιδαγωγικό Τμήμα Νηπιαγωγών - ΠΔΜ"
+    slide-number: c/t
+    incremental: false
+    transition: slide
+    background-transition: fade
+    highlight-style: monokai
+    code-line-numbers: false
+    preview-links: auto
+    width: 1280
+    height: 720
+    include-in-header:
+      - text: |
+          <style>
+          .reveal mjx-mtext {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+            font-style: normal !important;
+          }
+          </style>
+knitr:
+  opts_chunk:
+    fig.width: 10
+    fig.height: 6
+    dev: "svglite"
+execute:
+  echo: false
+lang: el
+---
+
+
+# Ανακεφαλαίωση
+
+## Το πρόβλημα
+
+**Ερευνητικό Ερώτημα:**  
+Ποιοι παράγοντες επηρεάζουν την πιθανότητα γνώσης των γραμμάτων
+(`child_knows_letter_names`) από τα παιδιά στο νηπιαγωγείο;
+
+## Το πρόβλημα
+
+Τα δεδομένα μας (`sample_child.csv`):
+
+- `child_knows_letter_names`: Αναγνωστική ικανότητα (Εξαρτημένη).
+- `school_type`: Ο τύπος του σχολείου (δημόσιο/ιδιωτικό).
+- `child_age`: Ηλικία σε μήνες.
+- `child_gender`: Φύλο.
+- `socioeconomic_status`: Κοινωνικο-οικονομικό επίπεδο.
+- `parent_read_to_child`: Πόσο συχνά διαβάζουν οι γονείς στο παιδί.
+- `mother_education`: Το μορφωτικό επίπεδο της μητέρας.
+- `father_education`: Το μορφωτικό επίπεδο του πατέρα.
+
+## Βήμα 1: Εισαγωγή δεδομένων
+
+Ανοίξτε το αρχείο sample_child.csv στο Jamovi.
+
+\
+
+
+**ΠΡΟΣΟΧΗ**  
+στους τύπους μεταβλητών! (Διπλό κλικ στην επικεφαλίδα της στήλης):
+
+- `school_id` -> ID (αναγνωριστικό).
+- `child_age`, `reading_irt`, `SES` -> Continuous (χάρακας).
+- `child_gender`, `school_type` -> Nominal (διάγραμμα Venn).
+- `parent_read_to_child` -> Ordinal (μπάρες).
+
+## Βήμα 2: Απλή λογιστική παλινδρόμηση
+
+**Ερώτημα:**  
+Επηρεάζει το φύλο την πιθανότητα γνώσης τνω 
+
+\
+
+1. Tab: Analyses -> Logistic Regression -> 2 Outcomes.
+2. Dependent Variable: `child_knows_letter_names`.
+3. Covariates (συνεχείς): `child_gender`.
+
+## Βήμα 2: Απλή λογιστική παλινδρόμηση
+
+Τι κοιτάμε:
+
+- Ποια είναι η τιμή της παραμέτρου του φύλου;
+- Ποιο είναι το odds ratio για το φύλο;
+- P-value: Είναι στατιστικά σημαντική η σχέση;
+- Οι πιθανότητες ανά φύλο.
+
+## Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση
+
+**Ερώτημα:** Αν λάβουμε υπόψη:
+
+- Την ηλικία
+- Την κοινωνικο-οικονομική κατάσταση
+- Τον τύπο του σχολείου
+- Τη συχνότητα ανάγνωσης από τους γονείς στο παιδί
+- Το μορφωτικό επίπεδο της μητέρας
+- Το μορφωτικό επίπεδο του πατέρα
+
+## Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση
+
+Τι κοιτάμε:
+
+- Πώς ερμηνεύουμε τον συντελεστή του `socioeconomic_status`, κρατώντας τις
+  υπόλοιπες μεταβλητές σταθερές;
+
+## Βήμα 4: Σύγκριση Μοντέλων
+
+**Ερώτημα:**  
+Προσφέρει κάτι παραπάνω ο τύπος του σχολείου, η συχνότητα ανάγνωσης και τα
+μορφωτικά επίπεδα του πατέρα και της μητέρας, αν ήδη ξέρουμε την ηλικία, το
+φύλο, την κοινωνικο-οικονομική κατάσταση;
+
+## Βήμα 5: Αξιολόγηση της πρόβλεψης
+
+Τι κοιτάμε:
+
+- Την καμπύλη ROC
+- Την τιμή της AUC
+
