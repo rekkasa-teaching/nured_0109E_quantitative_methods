@@ -18,5 +18,6 @@ Click on any lecture below to view the slides:
 - [Lecture 9: Topic Title](slides/lecture-09/index.qmd)
 - [Lecture 10: Topic Title](slides/lecture-10/index.qmd)
 - [Lecture 11: Topic Title](slides/lecture-11/index.qmd)
+- [Lecture 12: Topic Title](slides/lecture-12/index.qmd)
 
 *More lectures will be added throughout the semester.*
