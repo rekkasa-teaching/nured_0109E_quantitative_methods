@@ -280,6 +280,39 @@ SS_{\text{ΜΕΤΑΞΥ}} = SS_{\text{ΣΥΝΟΛΙΚΗ}} - SS_{\text{ΕΝΤΟΣ}}
 <li><span class="math inline">\(df_{\text{ΕΝΤΟΣ}} = \text{πληθος ατομων} - \text{πληθος ομαδων}\)</span></li>
 </ul>
 <p>Γράφουμε <span class="math inline">\(F_{df_\text{ΜΕΤΑΞΥ};df_\text{ΕΝΤΟΣ}}\)</span></p>
+</section>
+<section id="έλεγχοι-εκ-των-υστέρων-post-hoc" class="slide level2">
+<h2>Έλεγχοι εκ των υστέρων (post-hoc)</h2>
+<p>Ακόμα και αν απορρίψουμε την <span class="math inline">\(H_0\)</span> δεν μπρούμε να ξέρουμε ποια επίπεδα (levels) του παράγοντα (factor) διαφέρουν.</p>
+<p><br>
+</p>
+<p>Αν είχαμε 3 ομάδες συνολικά, θα θέλαμε να συγκρίνουμε:</p>
+<ul>
+<li>το <span class="math inline">\(\mu_1\)</span> με το <span class="math inline">\(\mu_2\)</span></li>
+<li>το <span class="math inline">\(\mu_1\)</span> με το <span class="math inline">\(\mu_3\)</span></li>
+<li>το <span class="math inline">\(\mu_2\)</span> με το <span class="math inline">\(\mu_3\)</span></li>
+</ul>
+</section>
+<section id="έλεγχοι-εκ-των-υστέρων-post-hoc-1" class="slide level2">
+<h2>Έλεγχοι εκ των υστέρων (post-hoc)</h2>
+<blockquote>
+<p><strong>ΠΡΟΣΟΧΗ</strong></p>
+<p>Όσο αυξάνουμε τα τεστ που πραγαμτοποιούμε, τόσο αυξάνουμε και την πιθανότητα για σφάλμα Τύπου I.</p>
+</blockquote>
+<p><br>
+</p>
+<p>Χρειαζόμαστε μία μέθοδο η οποία θα ελέγχει το συνολικό σφάλμα Τύπου I.</p>
+</section>
+<section id="έλεγχος-εκ-των-υστέρων-tukey" class="slide level2">
+<h2>Έλεγχος εκ των υστέρων: Tukey</h2>
+<p><span class="math display">\[
+t_r = q \sqrt{\frac{MS_{\text{ΕΝΤΟΣ}}}{n}}
+\]</span></p>
+<p>οπου <span class="math inline">\(n\)</span> είναι το πλήθος των ατόμων σε κάθε ομάδα και</p>
+<p><span class="math display">\[
+MS_\text{ΕΝΤΟΣ} = \frac{SS_\text{ΕΝΤΟΣ}}{df_\text{ΕΝΤΟΣ}}
+\]</span></p>
+<p>Το <span class="math inline">\(q\)</span> είναι μία ποσότητα που θα μας δίνεται και ονομάζεται Studentized range.</p>
 
 
 </section></section>
