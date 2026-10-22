@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "notes-index.html",
-    "href": "notes-index.html",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Εδώ θα βρείτε μία λίστα με όλες τις σημειώσεις που θα χρησιμοποιηθούν για την διδασκαλία του μαθήματος το χειμερινό εξάμνηνο 2025-2026.\nΕπιλογές:\n\n📖 Διαβάστε online (βρίσκεστε εδώ!)\n📄 Κατεβάστε το pdf\n\n\n\nΟι σημειώσεις του μαθήματος οργανώνονται στα ακόλουθα κεφάλαια:\n\nΚεφάλαιο 1: Εισαγωγή\n\n\n\n\nΣυγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: Ποσοτικές Μέθοδοι"
-  },
-  {
-    "objectID": "notes-index.html#περιεχόμενα",
-    "href": "notes-index.html#περιεχόμενα",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Οι σημειώσεις του μαθήματος οργανώνονται στα ακόλουθα κεφάλαια:\n\nΚεφάλαιο 1: Εισαγωγή"
-  },
-  {
-    "objectID": "notes-index.html#σχετικά",
-    "href": "notes-index.html#σχετικά",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Συγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: Ποσοτικές Μέθοδοι"
-  },
-  {
     "objectID": "notes/print.html",
     "href": "notes/print.html",
     "title": "Ποσοτικές Μέθοδοι",
@@ -49,34 +28,6 @@
     "text": "Απλή γραμμική παλινδρόμηση\n\nΓενικά\nΜία γραμμική σχέση μεταξύ δύο μεταβλητών \\(Y\\) και \\(X\\) μπορεί να περιγραφεί από την εξίσωση:\n\\[ Y = \\beta_0 + \\beta_1 X \\]\nΓια παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος \\(Y\\) για \\(X\\) μήνες εγγραφής θα δίνεται από τη σχέση:\n\\[ Y = 50 + 30X \\]\nΚαθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η απλή γραμμική παλινδρόμηση έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;\n\n\nΥπολογισμός της ευθείας\nΑς υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή \\(Y\\) (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής \\(X\\) (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από \\(n = 100\\) μαθητές και έχουμε μετρήσει τα ύψη (\\(X\\)) και τα βάρη τους (\\(Y\\)). Θα συμβολίζουμε με κεφαλαία \\(X\\) και \\(Y\\) τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά \\(x\\) και \\(y\\) τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους \\(n=100\\) συμβολίζουμε τις 100 μετρήσεις του ύψους \\(X\\) με \\(x_1,x_2,\\dots,x_100\\) και τις 100 μετρήσεις του βάρους \\(Y\\) με \\(y_1,y_2,\\dots,y_100\\).\nΗ λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα \\(\\beta_0\\) και \\(\\beta_1\\)), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των \\(X\\) και \\(Y\\) από αυτή να είναι η ελάχιστη (Σχήμα 1). Αν, λοιπόν, συμβολίσουμε με \\(\\hat{y}\\) τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής \\(\\hat{\\beta}_0 + \\hat{\\beta}_1x\\), γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (\\(y - \\hat{y}\\)). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε σφάλματα, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (\\(y\\)) από την πρόβλεψή μας με βάση τη γραμμή (\\(\\hat{y}\\)). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων \\((y_1 - \\hat{y}), (y_2 -\n\\hat{y}), \\dots, y_{100} - \\hat{y}\\). Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε \\((y_i - \\hat{y}), \\\ni=1,\\dots,100\\).\n\n\n\n\n\n\n\n\nΣχήμα 1\n\n\n\n\n\nΚαθώς τα σφάλματα \\(y_i-\\hat{y}\\) μπορούν να είναι είτε θετικά είτε αρνητικά, αναλόγως αν η γραμμή περνά πάνω ή κάτω από το πραγματικό σημείο \\((x_i,y_i)\\), το άθροισμα αυτό δε θα μας δώσει το σύνολο των αποστάσεων. Οι αποστάσεις ως μήκος χρειάζεται να είναι πάντα θετικές. Για το λόγο αυτό, είναι σύνηθες να υψώνουμε στο τετράγωνο τα σφάλματα ώστε να διασφαλίσουμε ότι θα δουλεύουμε με θετικούς αριθμούς. Επομένως, αναζητούμε εκείνα τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των τετραγώνων των σφαλμάτων \\((y-\\hat{y})^2\\). Επειδή το άθροισμα αυτό θα το συναντάμε συχνά, θα το συμβολίζουμε για συντομία με \\(SS_{RES}\\), από την αγγλική ορολογία sum of squares residuals (residual: υπόλοιπο – σφάλμα) \\[\nSS_{RES} = (y_1-\\hat{y})^2 + (y_2-\\hat{y})^2 + \\dots + (y_n - \\hat{y})^2 = \\sum_{i = 1}^n(y_i-\\hat{y})^2\n\\]\nΜε βάση τα παραπάνω μπορεί να αποδειχθεί ότι τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) που ζητάμε μπορούν να υπολογιστούν από τους τύπους:\n\\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}}\n\\]\nκαι\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}\n\\]\nΣτις παραπάνω εξισώσεις, τα \\(\\bar{x}\\) και \\(\\bar{y}\\) συμβολίζουν τη μέση τιμή (μέσος όρος) των μετρήσεων της \\(X\\) (ύψος) και της \\(Y\\) (βάρος) στο δείγμα των 100 μαθητών, αντίστοιχα.\nΓια παράδειγμα, έστω ότι είχαμε συλλέξει ένα δείγμα 5 μαθητών με τις μετρήσεις του ύψους και του βάρους να δίνονται παρακάτω:\n\n\n\n\nΠίνακας 1: Μετρήσεις ύψους και βάρους πέντε μαθητών ενός νηπιαγωγείου.\n\n\n\n\n\n\nΎψος (εκατοστά)\nΒάρος (κιλά)\n\n\n\n\n92\n16\n\n\n98\n18\n\n\n100\n17\n\n\n98\n20\n\n\n94\n19\n\n\n\n\n\n\n\n\nΓια να υπολογίσουμε την εξίσωση της γραμμής παλινδρόμησης στο συγκεκριμένο παράδειγμα, πρέπει πρώτα από όλα να υπολογίσουμε τα \\(\\bar{x}\\) και \\(\\bar{y}\\). Αν γυρίσετε πίσω στις προηγούμενες εξισώσεις θα δείτε ότι οι ποσότητες αυτές χρησιμοποιούνται αρκετές φορές. Το \\(\\bar{x}\\) είναι ο μέσος όρος του ύψους των 5 μαθητών και υπολογίζεται ως \\[\n\\bar{x} = \\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = \\frac{92 + 98 + 100 + 98 +94}{5} = 96.4\n\\]\nΑντίστοιχα, ο μέσος όρος του βάρους των μαθητών είναι: \\[\n\\bar{y} = \\frac{y_1+y_2+y_3+y_4+y_5}{5} = \\frac{16+18+17+20+19}{5} = 18\n\\]\nΤώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:\nΤώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: \\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}} = \\frac{5.8}{43.2} \\approx 0.13\n\\]\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x} = 18 - 0.13\\times 96.4\\approx 5.47\n\\]\nΕπομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: \\[\n\\text{βάρος} = 5.47 + 0.13 \\times \\text{ύψος}\n\\]\n\n\nΑνάλυση διασποράς"
   },
   {
-    "objectID": "vignettes/chapter-01.html",
-    "href": "vignettes/chapter-01.html",
-    "title": "Εισαγωγή και επεξεργασία δεδομένων",
-    "section": "",
-    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nFigure 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nFigure 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Figure 3.\n\n\n\n\n\n\n\n\nFigure 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία.\n\n\n\n\n\n\n\n\nΌταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Figure 4).\n\n\n\n\n\n\n\n\nFigure 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Figure 5).\n\n\n\n\n\n\n\n\nFigure 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nFigure 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Figure 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Figure 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nFigure 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Figure 8.\n\n\n\n\n\n\n\n\nFigure 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
-  },
-  {
-    "objectID": "vignettes/chapter-01.html#εισαγωγή-δεδομένων",
-    "href": "vignettes/chapter-01.html#εισαγωγή-δεδομένων",
-    "title": "Εισαγωγή και επεξεργασία δεδομένων",
-    "section": "",
-    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nFigure 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nFigure 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Figure 3.\n\n\n\n\n\n\n\n\nFigure 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία."
-  },
-  {
-    "objectID": "vignettes/chapter-01.html#αρχική-επεξεργασία",
-    "href": "vignettes/chapter-01.html#αρχική-επεξεργασία",
-    "title": "Εισαγωγή και επεξεργασία δεδομένων",
-    "section": "",
-    "text": "Όταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Figure 4).\n\n\n\n\n\n\n\n\nFigure 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Figure 5).\n\n\n\n\n\n\n\n\nFigure 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nFigure 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Figure 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Figure 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nFigure 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Figure 8.\n\n\n\n\n\n\n\n\nFigure 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Στατιστική στην εκπαιδευτική έρευνα",
-    "section": "",
-    "text": "Attribution 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public: \nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\nIf You Share Adapted Material You produce, the Adapter’s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Καλώς ήρθατε στο μάθημα\nΣτατιστική στην εκπαιδευτική έρευνα",
@@ -98,249 +49,130 @@
     "text": "Διδάσκων: Αλέξανδρος Ρέκκας"
   },
   {
-    "objectID": "slides/lecture-02/index.html#περιεχόμενα",
-    "href": "slides/lecture-02/index.html#περιεχόμενα",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Περιεχόμενα",
-    "text": "Περιεχόμενα\n\nΟρισμός συντελεστή συσχέτισης \\(r\\)\nΕισαγωγή στα αθροίσματα τετραγώνων και γινομένων\nΜοντέλο απλής γραμμικής παλινδρόμησης\nΠρόβλεψη με την ευθεία\nΣφάλμα πρόβλεψης (υπόλοιπα)\nΈλεγχος υποθέσεων (μόνο απλή παλινδρόμηση)"
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Στατιστική στην εκπαιδευτική έρευνα",
+    "section": "",
+    "text": "Attribution 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public: \nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\nIf You Share Adapted Material You produce, the Adapter’s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
   },
   {
-    "objectID": "slides/lecture-02/index.html#συσχέτιση-ορισμός",
-    "href": "slides/lecture-02/index.html#συσχέτιση-ορισμός",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Συσχέτιση (ορισμός)",
-    "text": "Συσχέτιση (ορισμός)\n\n\n\\[ r = \\frac{\\sum (x_i-\\bar x)(y_i-\\bar y)}{\\sqrt{\\sum (x_i-\\bar x)^2\\,\\sum (y_i-\\bar y)^2}} \\]"
+    "objectID": "exercises-index.html",
+    "href": "exercises-index.html",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Εδώ θα βρείτε μία λίστα με όλες τις ασκήσεις που θα ανατεθούν κατά τη διδασκαλία του μαθήματος το χειμερινό εξάμνηνο 2025-2026.\n\n\nΜπορείτε να κατεβάσετε τις ασκήσεις από:\n\nΆσκηση 1\n\n\n\n\nΣυγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: (0109E) Ποσοτικές Μέθοδοι"
   },
   {
-    "objectID": "slides/lecture-02/index.html#άθροισμα-γινομένων",
-    "href": "slides/lecture-02/index.html#άθροισμα-γινομένων",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Άθροισμα γινομένων",
-    "text": "Άθροισμα γινομένων\n\n\\(S_{xy} = \\sum (x_i - \\mu_x)(y_i-\\mu_y)\\)\n\\(S_{xx} = \\sum (x_i - \\mu_x)^2\\)\n\\(S_{yy}= \\sum (y_i - \\mu_y)^2\\)"
+    "objectID": "exercises-index.html#περιεχόμενα",
+    "href": "exercises-index.html#περιεχόμενα",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Μπορείτε να κατεβάσετε τις ασκήσεις από:\n\nΆσκηση 1"
   },
   {
-    "objectID": "slides/lecture-02/index.html#συσχέτιση",
-    "href": "slides/lecture-02/index.html#συσχέτιση",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Συσχέτιση",
-    "text": "Συσχέτιση\n\n\n\\[\nr = \\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}\n\\]"
+    "objectID": "exercises-index.html#σχετικά",
+    "href": "exercises-index.html#σχετικά",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Συγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: (0109E) Ποσοτικές Μέθοδοι"
   },
   {
-    "objectID": "slides/lecture-02/index.html#απλή-γραμμική-παλινδρόμηση-ιδέα",
-    "href": "slides/lecture-02/index.html#απλή-γραμμική-παλινδρόμηση-ιδέα",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Απλή Γραμμική Παλινδρόμηση: ιδέα",
-    "text": "Απλή Γραμμική Παλινδρόμηση: ιδέα\n\nΣτόχος: εύρεση ευθείας που ελαχιστοποιεί τα τετράγωνα των σφαλμάτων\nΜοντέλο: \\(\\hat{y} = \\beta_0 + \\beta_1 x\\)\nΠροβλέπουμε τη αναμενόμενη τιμή του \\(Y\\) για δοσμένο \\(X\\)"
+    "objectID": "vignettes/chapter-02.html",
+    "href": "vignettes/chapter-02.html",
+    "title": "Γραμμική παλινδρόμηση",
+    "section": "",
+    "text": "Γραμμική παλινδρόμηση\nΈστω τώρα ότι θέλουμε να διαμορφώσουμε ένα μοντέλο γραμμικής παλινδρόμησης για τη συνεχή μεταβλητή child_reading_irt που μετρά την αναγνωστική ικανότητα των παιδιών στο νηπιαγωγείο. Για την πρόβλεψη της τιμής της child_reading_irt θα χρησιμοποιήσουμε τις εξής μεταβλητές του δείγματος:\n\nchild_gender: το φύλο του παιδιού.\nchild_age: η ηλικία του παιδιού μετρημένη σε μήνες.\nparent_read_to_child: η συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί.\nsocioeconomic_status: η κοινωνικο/οικονομική κατάσταση της οικογένειας.\nschool_type: το είδος του σχολείου που πηγαίνει το παιδί (ιδιωτικό / δημόσιο).\nmother_education: το μορφωτικό επίπεδο της μητέρας.\nfather_education: το μορφωτικό επίπεδο του πατέρα.\n\nΓια να τρέξουμε την παραπάνω γραμμική παλινδρόμηση (και αφού έχουμε εφαρμόσει την αρχική επεξεργασία) από την καρτέλα των Αναλύσεων (Analyses), διαλέγουμε την παλινδρόμηση (Regression) και στο μενού που ανοίγει διαλέγουμε την γραμμική παλινδρόμηση (Linear regression), όπως φαίνεται και στο Figure 1. Εν συντομία στο Jamovi, ακολουθούμε Analyses &gt; Regression &gt; Linear Regression.\n\n\n\n\n\n\n\n\nFigure 1: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΤο Jamovi διαχωρίζει τις μεταβλητές που χρησιμοποιούνται σε μία γραμμική παλινδρόμηση σε τρεις κατηγορίες:\n\nΤην εξαρτημένη μεταβλητή, δηλαδή τη μεταβλητή που θέλουμε να προβλέψουμε με το μοντέλο, την οποία το πακέτο ονομάζει Dependent Variable.\nΤις συνεχείς μεταβλητές, δηλαδή τις μεταβλητές των οποίων οι τιμές είναι αριθμοί, τις οποίες το πακέτο ονομάζει Covariates.\nΤις κατηγορικές μεταβλητές, δηλαδή τις μεταβλητές των οποίων οι τιμές είναι κατηγορίες (ονομαστικές, διατάξιμες), τις οποίες το πακέτο ονομάζει Factors.\n\nΓια να ορίσουμε το μοντέλο της γραμμικής παλινδρόμησης πρέπει σύρουμε και να αφήσουμε τις μεταβλητές που θα χρησιμοποιήσουμε στα σωστά σημεία (Figure 2):\n\nΗ μεταβλητή child_reading_irt είναι η εξαρτημένη μεταβλητή (dependent variable), η μεταβλητή δηλαδή που θέλουμε να προβλέψουμε και άρα θα πάει στο κουτί Dependent Variable.\nΠροσοχή: Μόνο μία εξαρτημένη μεταβλητή μπορεί να υπάρχει στη γραμμική παλινδρόμηση.\nΟι μεταβλητές child_age και socioeconomic_status είναι συνεχείς (αριθμητικές), άρα θα πάνε στο κουτί Covariates.\nΟι μεταβλητές child_gender, parent_read_to_child, school_type, mother_education και father_education είναι όλες κατηγορικές (ορίζουν κατηγορίες) και άρα θα πάνε στο κουτί Factors.\n\n\n\n\n\n\n\n\n\nFigure 2: Ορισμός του μοντέλου γραμμικής παλινδρόμησης.\n\n\n\n\n\nΣτο δεξί παράθυρο του Jamovi εμφανίζονται τα αποτελέσματα της γραμμικής παλινδρόμησης. Αν κάνουμε αλλαγές στον ορισμό του μοντέλου, τα αποτελέσματα ενημερώνονται αυτόματα. Στον πρώτο πίνακα των αποτελεσμάτων έχουμε τα μέτρα επίδοσης του μοντέλου παλινδρόμησης που διαλέξαμε (Figure 3). Βλέπουμε ότι η προεπιλογή είναι να παρουσιάζονται μόνο το \\(R^2\\) και η τετραγωνική του ρίζα. Στη συγκεκριμένη περίπτωση, το \\(R^2\\) είναι αρκετά χαμηλό (0.186). Δηλαδή, μόνο περίπου το 18.6% της συνολικής διασποράς της εξαρτημένης μεταβλητής (child_reading_irt) εξηγείται από το μοντέλο της γραμμικής παλινδρόμησης που υπολογίσαμε.\n\n\n\n\n\n\n\n\nFigure 3: Ορισμός του μοντέλου γραμμικής παλινδρόμησης.\n\n\n\n\n\nΑν θέλουμε να δούμε και τα αποτελέσματα και άλλων μετρικών που εξετάζουν την ποιότητα του μοντέλου που υπολογίσαμε μπορούμε να τα προσθέσουμε πατώντας στο μενού Model Fit. Από εκεί έχει μία σειρά από επιλογές που μπορούμε να διαλέξουμε. Για παράδειγμα, μπορούμε να υπολογίσουμε το προσαρμοσμένο \\(R^2\\) διαλέγοντας και την επιλογή \\(\\text{Adjusted} R^2\\) (Figure 4). Το προσαρμοσμένο \\(R^2\\) προσθέτει ένα κόστος στη συμπερίληψη μεταβλητών στο μοντέλο με στόχο να διασφαλιστεί ότι οι επιπλέον μεταβλητές εξηγούν σημαντικό μέρος της ανεξήγητης διασποράς του μοντέλου χωρίς αυτές.\nΕίδαμε ότι το \\(R^2\\) του μοντέλου είναι αρκετά χαμηλό. Άρα έχουμε λόγο να ανησυχούμε αν όντως έχει νόημα να κάνουμε όλη αυτή την άσκηση υπολογισμού το μοντέλου γραμμικής παλινδρόμησης. Με άλλα λόγια, αν το μοντέλο το οποίο υπολογίσαμε μας δίνει καλύτερες προβλέψεις για την αναγνωστική ικανότητα των μαθητών (child_reading_irt) από ό,τι αν χρησιμοποιούσαμε μόνο την μέση τιμή της χωρίς καμία άλλη πληροφορία. Έχουμε δει ότι τον έλεγχο αυτό τον πραγματοποιούμε με τη χρήση του συνολικού \\(F\\)-test. Αυτός ο έλεγχος μπορεί να συμπεριληφθεί στα αποτελέσματα χρησιμοποιώντας το ίδιο μενού (Model Fit) (Figure 4).\nΣτη συγκεκριμένη περίπτωση, βλέπουμε ότι το συνολικό \\(F\\)-test έχει τιμή \\(F=8.78\\) με \\(\\text{p}&lt;0.001\\). Άρα μπορούμε να απορρίψουμε την \\(H_0\\) ότι όλα τα \\(\\beta\\) του μοντέλου είναι \\(0\\) και να δεχτούμε ότι έστω και ένα από τα \\(\\beta\\) είναι διάφορο του μηδενός. Άρα, παρά τη χαμηλή επίδοση του μοντέλου παλινδρόμησης ως προς το \\(R^2\\), αυτό έχει μία αξία, δηλαδή μας επιτρέπει να κάνουμε καλύτερες προβλέψεις από το να χρησιμοποιούσαμε μόνο τον μέσο όρο της child_reading_rt.\n\n\n\n\n\n\n\n\nFigure 4: Πρόσθεση του προσαρμοσμένου \\(R^2\\) και συνολικού \\(F\\)-test στα αποτελέσματα της αξιολόγησης του μοντέλου.\n\n\n\n\n\nΤο βασικό κομμάτι, όμως, των αποτελεσμάτων της γραμμικής παλινδρόμησης παρουσιάζεται στον παρακάτω πίνακα των αποτελεσμάτων και έχει τίτλο Model Coefficients. Το μοντέλο που θέλαμε να υπολογίσουμε είχε τη μορφή: \\[\n\\begin{aligned}\n\\text{child\\_reading\\_rt} = \\beta_0 &+ \\beta_1\\times\\text{child\\_age} + \\beta_2\\times\\text{socioeconomic\\_status} \\\\\n&+ \\beta_3\\times\\text{child\\_gender} + \\beta_4\\times\\text{mother\\_education} \\\\\n&+ \\beta_5\\times\\text{father\\_education} + \\beta_6\\times\\text{school\\_type} \\\\\n&+ \\beta_7\\times\\text{parent\\_read\\_to\\_child}\n\\end{aligned}\n\\]\nΣτο Figure 5, όμως, βλέπουμε πολύ περισσότερα αποτελέσματα από τα 8 που φαίνονται στην παραπάνω εξίσωση. Αυτό συμβαίνει γιατί το Jamovi χωρίζει τις κατηγορικές μεταβλητές σε βοηθητικές μεταβλητές. Για τον χωρισμό σε βοηθητικές μεταβλητές χρησιμοποιείται ένα επίπεδο της κατηγορικής μεταβλητής ως σημείο αναφοράς. Στο Jamovi αυτό είναι το πρώτο επίπεδο. Για παράδειγμα, στην περίπτωση του φύλου δημιουργείται η βοηθητική μεταβλητή \\(X_\\text{child_gender = MALE}\\), η οποία παίρνει την τιμή \\(1\\) όταν το φύλο είναι αγόρι (MALE) και \\(0\\) στην αντίθετη περίπτωση.\nΟμοίως, στην περίπτωση του μορφωτικού επιπέδου της μητέρας (LOW, MEDIUM, HIGH) δημιουργούνται 2 βοηθητικές μεταβλητές:\n\n\\(X_\\text{mother_education = MEDIUM}\\), η οποία παίρνει την τιμή \\(1\\) όταν το μορφωτικό επίπεδο της μητέρας είναι MEDIUM και \\(0\\) σε αντίθετη περίπτωση.\n\\(X_\\text{mother_education = HIGH}\\), η οποία παίρνει την τιμή \\(1\\) όταν το μορφωτικό επίπεδο της μητέρας είναι HIGH και \\(0\\) σε αντίθετη περίπτωση.\n\nΤι γίνεται όταν το μοφωτικό επίπεδο της μητέρας είναι χαμηλό (LOW), δηλαδή το επίπεδο αναφοράς; Τότε και οι δύο βοηθητικές μεταβλητές είναι \\(0\\) και η επίδραση μορφωτικού επιπέδου της μητέρας απορροφάται από το \\(\\beta_0\\). Γενικά, όταν έχουμε να κάνουμε με κατηγορικές μεταβλητές, το Jamovi θα δημιουργεί για κάθε μία από αυτές ένα πλήθος βοηθητικών μεταβλητών που παίρνουν τις τιμές 0 και 1. Το πλήθος αυτό θα είναι όσο είναι το πλήθος των επιπέδων της κατηγορικής μεταβλητής μείον 1.\n\n\n\n\n\n\n\n\nFigure 5: Οι συντελεστές του μοντέλου της γραμμικής παλινδρόμησης που εκτιμήθηκαν χρησιμοποιώντας το δείγμα των 435 μαθητών των δεδομένων μας.\n\n\n\n\n\nΣτο αρχικό μοντέλο συμπεριλάβαμε, μεταξύ άλλων, τις μεταβλητές που περιγράφουν την κοινωνικο/οικονομική κατάσταση της οικογένειας (socioeconomic_status) και μεταβλητές για το μορφωτικό επίπεδο των γονέων καθώς και το είδος του σχολείου που πηγαίνουν τα παιδιά (mother_education, father_education, school_type). Έχει νόημα να συμπεριλάβουμε τις τελευταίες τρεις μεταβλητές ή κάνουμε πάνων-κάτω την ίδια δουλειά απλώς βάζοντας στο μοντέλο την κοινωνικο/οικονομική κατάσταση; Για να το ελέγξουμε αυτό πρέπει να πραγματοποιήσουμε το μερικό \\(F\\)-test. Στην πράξη, το μερικό \\(F\\)-test συγκρίνει δύο μοντέλα, ένα με όλες τις μεταβλητές με αυτό που δεν συμπεριλαμβάνει τις τρεις μεταβλητές, δηλαδή κάνοντας την υπόθεση ότι οι συντελεστές αυτών των τριών μεταβλητών (τα \\(\\beta\\)) είναι 0.\nΣτο Jamovi, για να πραγματοποιήσουμε το συγκεκριμένο έλεγχο πρέπει να διαλέξουμε το μενού Model Builder και να ορίσουμε εκεί τα δύο μοντέλα που είπαμε προηγουμένως, βάζοντας το καθένα σε ένα ξεχωριστό Block. Στο Block 1 βάζουμε τις μεταβλητές του απλούστερου μοντέλου, δηλαδή την ηλικία, την κοινωνικο/οικονομική κατάσταση, το φύλο του παιδιού και τη συχνότητα ανάγνωσης από τους γονείς (child_age, socioeconomic_status, child_gender, parent_read_to_child). Στο Block 2 βάζουμε τις επιπλέον μεταβλητές που θέλουμε να ελέγξουμε αν έχει νόημα να συμπεριληφθούν στον μοντέλο, δηλαδή το μορφωτικό επίπεδο των γονέων και το είδος του σχολείου (mother_education, father_education, school_type).\nΣυνήθως, είναι πιο εύκολο πρώτα να καθαρίσουμε τα Block που υπάρχουν ήδη συμπληρωμένα. Όταν το κάνετε αυτό, τα αποτελέσματα στη δεξιά μεριά της οθόνης θα χαθούν (Figure 6). Στο επόμενο βήμα θα συμπληρωθούν ξανά με τη δημιουργία των δύο μοντέλων παλινδρόμησης που έχουμε περιγράψει παραπάνω.\n\n\n\n\n\n\n\n\n\n\n\n(a) Διαγραφή Block 1.\n\n\n\n\n\n\n\n\n\n\n\n(b) Δημιουργία κενού Block 1\n\n\n\n\n\n\n\nFigure 6: Διαδικασία καθαρισμού υφιστάμενων Block.\n\n\n\nΣτη συνέχεια, δημιουργούμε ξανά τα Block όπως φαίνεται στο Figure 7.\n\n\n\n\n\n\n\n\n\n\n\n(a) Δημιουργία Block 1.\n\n\n\n\n\n\n\n\n\n\n\n(b) Δημιουργία Block 2\n\n\n\n\n\n\n\nFigure 7: Διαδικασία δημιουργίας των νέων Block για τη διενέργεια του μερικού \\(F\\)-test.\n\n\n\nΤα αποτελέσματα του μερικού \\(F\\)-test εμφανίζονται στη δεξιά μεριά της οθόνης (Figure 8). Στη συγκεκριμένη περίπτωση, ελέγχουμε την υπόθεση (\\(H_0\\)) ότι οι συντελεστές των mother_education, father_education και school_type είναι 0. Στα αποτελέσματα βλέπουμε ότι η τιμή της \\(F\\) είναι 1.18 και το \\(p\\) είναι 0.318 (πολύ μεγαλύτερο από το 0.05 που χρησιμοποιούμε συνήθως για να συμπεράνουμε στατιστική σημαντικότητα). Άρα δεν μπορούμε να απορρίψουμε την \\(H_0\\) και επομένως δεχόμαστε ότι οι συντελεστές των τριών αυτών μεταβλητών είναι \\(0\\). Άρα ένα απλούστερο μοντέλο, χωρίς τις τρεις αυτές μεταβλητές κάνει σχεδόν το ίδιο καλή δουλειά με το πλήρες μοντέλο.\n\n\n\n\n\n\n\n\nFigure 8: Τα αποτελέσματα του μερικού \\(F\\)-test."
   },
   {
-    "objectID": "slides/lecture-02/index.html#η-ευθεία-παλινδρόμησης",
-    "href": "slides/lecture-02/index.html#η-ευθεία-παλινδρόμησης",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Η ευθεία παλινδρόμησης",
-    "text": "Η ευθεία παλινδρόμησης\n\n\\(\\hat{y}_i = \\beta_0 + \\beta_1 x_i\\)\n\\(\\beta_1\\): κλίση (μεταβολή στο \\(Y\\) ανά 1 μονάδα \\(X\\))\n\\(\\beta_0\\): τομή με τον άξονα \\(Y\\) (αναμενόμενη τιμή του \\(Y\\) όταν \\(x=0\\))\nΗ ευθεία περνά από \\((\\bar{x}, \\bar{y})\\)"
+    "objectID": "vignettes/print.html",
+    "href": "vignettes/print.html",
+    "title": "Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi",
+    "section": "",
+    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nΣχήμα 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nΣχήμα 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Σχήμα 3.\n\n\n\n\n\n\n\n\nΣχήμα 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία.\n\n\n\n\n\n\n\n\nΌταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Σχήμα 4).\n\n\n\n\n\n\n\n\nΣχήμα 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Σχήμα 5).\n\n\n\n\n\n\n\n\nΣχήμα 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nΣχήμα 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Σχήμα 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Σχήμα 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nΣχήμα 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Σχήμα 8.\n\n\n\n\n\n\n\n\nΣχήμα 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
   },
   {
-    "objectID": "slides/lecture-02/index.html#υπολογισμός-κλίσης-beta_1",
-    "href": "slides/lecture-02/index.html#υπολογισμός-κλίσης-beta_1",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Υπολογισμός κλίσης \\(\\beta_1\\)",
-    "text": "Υπολογισμός κλίσης \\(\\beta_1\\)\n\n\n\n\\(\\beta_1 = \\frac{S_{xy}}{S_{xx}}\\)\n\\(\\beta_0 = \\bar{y} - \\beta_1 \\bar{x}\\)"
+    "objectID": "vignettes/print.html#εισαγωγή-δεδομένων",
+    "href": "vignettes/print.html#εισαγωγή-δεδομένων",
+    "title": "Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi",
+    "section": "",
+    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nΣχήμα 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nΣχήμα 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Σχήμα 3.\n\n\n\n\n\n\n\n\nΣχήμα 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία."
   },
   {
-    "objectID": "slides/lecture-02/index.html#παράδειγμα",
-    "href": "slides/lecture-02/index.html#παράδειγμα",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Παράδειγμα",
-    "text": "Παράδειγμα\n\n\n\nX\nY\n\n\n\n\n5\n10\n\n\n1\n4\n\n\n4\n5\n\n\n7\n11\n\n\n6\n15\n\n\n4\n6\n\n\n3\n5\n\n\n2\n0"
+    "objectID": "vignettes/print.html#αρχική-επεξεργασία",
+    "href": "vignettes/print.html#αρχική-επεξεργασία",
+    "title": "Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi",
+    "section": "",
+    "text": "Όταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Σχήμα 4).\n\n\n\n\n\n\n\n\nΣχήμα 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Σχήμα 5).\n\n\n\n\n\n\n\n\nΣχήμα 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nΣχήμα 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Σχήμα 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Σχήμα 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nΣχήμα 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Σχήμα 8.\n\n\n\n\n\n\n\n\nΣχήμα 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
   },
   {
-    "objectID": "slides/lecture-02/index.html#ερμηνεία-beta_1-και-beta_0",
-    "href": "slides/lecture-02/index.html#ερμηνεία-beta_1-και-beta_0",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Ερμηνεία \\(\\beta_1\\) και \\(\\beta_0\\)",
-    "text": "Ερμηνεία \\(\\beta_1\\) και \\(\\beta_0\\)\n\n\\(\\beta_1\\): μέση αλλαγή στο \\(Y\\) ανά 1 μονάδα \\(X\\)\n\\(\\beta_0\\): σημείο αναφοράς"
-  },
-  {
-    "objectID": "slides/lecture-02/index.html#πρόβλεψη-με-τη-γραμμή",
-    "href": "slides/lecture-02/index.html#πρόβλεψη-με-τη-γραμμή",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Πρόβλεψη με τη γραμμή",
-    "text": "Πρόβλεψη με τη γραμμή\n\nΓια \\(x_0\\): \\(\\hat{y}(x_0) = \\beta_0 + \\beta_1 x_0\\)\nΕσωπαρεμβολή (εντός εύρους \\(X\\)): ασφαλέστερη\nΠροβολή (εκτός εύρους): ριψοκίνδυνη και ανεπιβεβαίωτη"
-  },
-  {
-    "objectID": "slides/lecture-02/index.html#τυπικό-σφάλμα-εκτίμησης-s_e",
-    "href": "slides/lecture-02/index.html#τυπικό-σφάλμα-εκτίμησης-s_e",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Τυπικό σφάλμα εκτίμησης (s_e)",
-    "text": "Τυπικό σφάλμα εκτίμησης (s_e)\n\n\\(s_e = \\sqrt{\\frac{S_{υπόλοιπο}}{n-2}}\\) (\\(\\text{df}= n-2\\))\n\\(r^2\\) μας δίνει το ποσοστό της διακύμανσης της \\(Y\\) που εξηγείται από τη \\(X\\)\n\\(SS_{παλινδρόμηση} = r^2 S_{yy}\\)\n\\(SS_{υπόλοιπο} = (1 - r^2) S_{yy}\\)"
-  },
-  {
-    "objectID": "slides/lecture-02/index.html#έλεγχος-υπόθεσης",
-    "href": "slides/lecture-02/index.html#έλεγχος-υπόθεσης",
-    "title": "Απλή γραμμική παλινδρόμηση",
-    "section": "Έλεγχος υπόθεσης",
-    "text": "Έλεγχος υπόθεσης\n\n\\(H_0: \\beta_1 = 0\\) (καμία γραμμική σχέση)\n\n\n\n\n\\(MS_{παλινδρομηση} = \\frac{SS_{παλινδρομηση}}{df}\\) (\\(\\text{df} = 1\\))\n\\(MS_{υπολοιπο} = \\frac{SS_{υπολοιπο}}{df}\\) (\\(\\text{df} = n - 2\\))\n\n\n\n\n\\(F = \\frac{MS_{παλινδρομηση}}{MS_{υπολοιπο}}\\) με \\(\\text{df} = 1, n-2\\)"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#ορισμός",
-    "href": "slides/lecture-11/index.html#ορισμός",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Ορισμός",
-    "text": "Ορισμός\nΗ ανάλυση διακύμανσης είναι μία μέθοδος ελέγχου υποθέσεων για την αξιολόγηση διαφορών στις μέσες τιμές μεταξύ δύο ή περισσότερων ομάδων."
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#ορολογίες",
-    "href": "slides/lecture-11/index.html#ορολογίες",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Ορολογίες",
-    "text": "Ορολογίες\nΗ ανεξάρτητες μεταβλητές ονομάζονται παράγοντες (factors).\n\n\nΟι διαφορετικές τιμές που μπορεί να πάρει ένας παράγοντας ονομάζονται επίπεδα (levels)."
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#το-πρόβλημα",
-    "href": "slides/lecture-11/index.html#το-πρόβλημα",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "objectID": "slides/lecture-08/index.html#το-πρόβλημα",
+    "href": "slides/lecture-08/index.html#το-πρόβλημα",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
     "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΈρευνες έχουν δείξει ότι τα παιδιά μαθαίνουν καλύτερα όταν ο ενήλικας συμμετέχει ενεργά αλλά διακριτικά στο παιχνίδι τους. Θέλετε να το επιβεβαιώσετε πειραματικά."
+    "text": "Το πρόβλημα\nΕρευνητικό Ερώτημα:\nΠοιοι παράγοντες προβλέπουν την αναγνωστική ικανότητα (child_reading_irt) των παιδιών στο νηπιαγωγείο;"
   },
   {
-    "objectID": "slides/lecture-11/index.html#το-πρόβλημα-1",
-    "href": "slides/lecture-11/index.html#το-πρόβλημα-1",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "objectID": "slides/lecture-08/index.html#το-πρόβλημα-1",
+    "href": "slides/lecture-08/index.html#το-πρόβλημα-1",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
     "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΧωρίζετε τα παιδιά σε 3 ομάδες που παίζουν με τουβλάκια για 15 λεπτά, αλλά με διαφορετικό ρόλο του/της νηπιαγωγού:\n\nΟμάδα 1: Ο/Η νηπιαγωγός είναι παρών/ούσα για ασφάλεια αλλά δεν μιλάει ούτε παρεμβαίνει.\nΟμάδα 2: Ο/Η νηπιαγωγός δίνει συνεχώς εντολές.\nΟμάδα 3: Ο/Η νηπιαγωγός ακολουθεί το ενδιαφέρον του παιδιού και κάνει ανοιχτές ερωτήσεις."
+    "text": "Το πρόβλημα\nΤα δεδομένα μας (sample_child.csv):\n\nchild_reading_irt: Αναγνωστική ικανότητα (Εξαρτημένη).\nchild_age: Ηλικία σε μήνες.\nchild_gender: Φύλο.\nsocioeconomic_status: Κοινωνικο-οικονομικό επίπεδο.\nparent_read_to_child: Πόσο συχνά διαβάζουν οι γονείς στο παιδί."
   },
   {
-    "objectID": "slides/lecture-11/index.html#το-πρόβλημα-2",
-    "href": "slides/lecture-11/index.html#το-πρόβλημα-2",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΜετράτε πόσες φορές το παιδί μίλησε ή απάντησε ολοκληρωμένα κατά τη διάρκεια του παιχνιδιού.\n\n\n\nΟμάδα 1\nΟμάδα 2\nΟμάδα 3\n\n\n\n\n6\n8\n10\n\n\n7\n9\n11\n\n\n8\n10\n12\n\n\n9\n11\n13\n\n\n10\n12\n14"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#υποθέσεις",
-    "href": "slides/lecture-11/index.html#υποθέσεις",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Υποθέσεις",
-    "text": "Υποθέσεις\n\\[H_0: \\mu_1 = \\mu_2 = \\mu_3\\]\nΗ εναλλακτική υπόθεση λέει ότι ένα από τα \\(\\mu_1\\), \\(\\mu_2\\) και \\(\\mu_3\\) διαφέρει."
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#το-στατιστικό",
-    "href": "slides/lecture-11/index.html#το-στατιστικό",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Το στατιστικό",
-    "text": "Το στατιστικό\n\\[\nF = \\frac{\\text{Διασπορα μεταξυ των ομαδων}}{\\text{Διασπορα εντος των ομαδων}}\n\\]"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#διασπορά-εντός-των-ομάδων",
-    "href": "slides/lecture-11/index.html#διασπορά-εντός-των-ομάδων",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Διασπορά εντός των ομάδων",
-    "text": "Διασπορά εντός των ομάδων\nΗ διασπορά εντός των ομάδων υπολογίζεται από τον τύπο:\n\\[\nSS_{\\text{ΕΝΤΟΣ}} = \\sum SS_{\\text{ΕΝΤΟΣ ΟΜΑΔΩΝ}}\n\\]"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων",
-    "href": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Διασπορά μεταξύ των ομάδων",
-    "text": "Διασπορά μεταξύ των ομάδων\nΜπορούμε να “σπάσουμε” τη συνολική διασπορά \\(SS_{\\text{ΣΥΝΟΛΙΚΗ}}\\) στο παρακάτω άθροισμα:\n\\[\nSS_{\\text{ΣΥΝΟΛΙΚΗ}} = SS_{\\text{ΕΝΤΟΣ}} + SS_{\\text{ΜΕΤΑΞΥ}}\n\\]\nΕίναι πιο εύκολο να υπολογίσουμε τη συνολική διασπορά και να λύσουμε ως προς \\(SS_{\\text{ΜΕΤΑΞΥ}}\\).\n\\[\nSS_{\\text{ΣΥΝΟΛΙΚΗ}} = \\sum{X^2} - \\frac{(\\sum X)^2}{n_1+n_2+n_3}\n\\]"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων-1",
-    "href": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων-1",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Διασπορά μεταξύ των ομάδων",
-    "text": "Διασπορά μεταξύ των ομάδων\nΤότε η διασπορά μεταξύ των ομάδων θα είναι\n\\[\nSS_{\\text{ΜΕΤΑΞΥ}} = SS_{\\text{ΣΥΝΟΛΙΚΗ}} - SS_{\\text{ΕΝΤΟΣ}}\n\\]\nΜπορούμε πλέον να υπολογίσουμε το στατιστικό \\(F\\)."
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#κατανομή-του-στατιστικού-f",
-    "href": "slides/lecture-11/index.html#κατανομή-του-στατιστικού-f",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Κατανομή του στατιστικού \\(F\\)",
-    "text": "Κατανομή του στατιστικού \\(F\\)\nΤο στατιστικό \\(F\\) ακολουθεί την \\(F\\) κατανομή με βαθμούς ελευθερίας:\n\n\\(df_{\\text{ΜΕΤΑΞΥ}} = \\text{πληθος ομαδων} - 1\\)\n\\(df_{\\text{ΕΝΤΟΣ}} = \\text{πληθος ατομων} - \\text{πληθος ομαδων}\\)\n\nΓράφουμε \\(F_{df_\\text{ΜΕΤΑΞΥ};df_\\text{ΕΝΤΟΣ}}\\)"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc",
-    "href": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Έλεγχοι εκ των υστέρων (post-hoc)",
-    "text": "Έλεγχοι εκ των υστέρων (post-hoc)\nΑκόμα και αν απορρίψουμε την \\(H_0\\) δεν μπρούμε να ξέρουμε ποια επίπεδα (levels) του παράγοντα (factor) διαφέρουν.\n\n\nΑν είχαμε 3 ομάδες συνολικά, θα θέλαμε να συγκρίνουμε:\n\nτο \\(\\mu_1\\) με το \\(\\mu_2\\)\nτο \\(\\mu_1\\) με το \\(\\mu_3\\)\nτο \\(\\mu_2\\) με το \\(\\mu_3\\)"
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc-1",
-    "href": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc-1",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Έλεγχοι εκ των υστέρων (post-hoc)",
-    "text": "Έλεγχοι εκ των υστέρων (post-hoc)\n\nΠΡΟΣΟΧΗ\nΌσο αυξάνουμε τα τεστ που πραγαμτοποιούμε, τόσο αυξάνουμε και την πιθανότητα για σφάλμα Τύπου I.\n\n\n\nΧρειαζόμαστε μία μέθοδο η οποία θα ελέγχει το συνολικό σφάλμα Τύπου I."
-  },
-  {
-    "objectID": "slides/lecture-11/index.html#έλεγχος-εκ-των-υστέρων-tukey",
-    "href": "slides/lecture-11/index.html#έλεγχος-εκ-των-υστέρων-tukey",
-    "title": "Ανάλυση διακύμανσης (ANOVA)",
-    "section": "Έλεγχος εκ των υστέρων: Tukey",
-    "text": "Έλεγχος εκ των υστέρων: Tukey\n\\[\nt_r = q \\sqrt{\\frac{MS_{\\text{ΕΝΤΟΣ}}}{n}}\n\\]\nοπου \\(n\\) είναι το πλήθος των ατόμων σε κάθε ομάδα και\n\\[\nMS_\\text{ΕΝΤΟΣ} = \\frac{SS_\\text{ΕΝΤΟΣ}}{df_\\text{ΕΝΤΟΣ}}\n\\]\nΤο \\(q\\) είναι μία ποσότητα που θα μας δίνεται και ονομάζεται Studentized range."
-  },
-  {
-    "objectID": "slides/lecture-10/index.html#το-πρόβλημα",
-    "href": "slides/lecture-10/index.html#το-πρόβλημα",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΕρευνητικό Ερώτημα:\nΠοιοι παράγοντες επηρεάζουν το είδος της φροντίδας που δεν προέρχεται από τους γονείς (primary_non_parental);"
-  },
-  {
-    "objectID": "slides/lecture-10/index.html#το-πρόβλημα-1",
-    "href": "slides/lecture-10/index.html#το-πρόβλημα-1",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΤα δεδομένα μας (sample_child.csv):\n\nchild_gender: Φύλο.\nsocioeconomic_status: Κοινωνικο-οικονομικό επίπεδο.\nmother_education: Το μορφωτικό επίπεδο της μητέρας.\nfather_education: Το μορφωτικό επίπεδο του πατέρα."
-  },
-  {
-    "objectID": "slides/lecture-10/index.html#βήμα-1-εισαγωγή-δεδομένων",
-    "href": "slides/lecture-10/index.html#βήμα-1-εισαγωγή-δεδομένων",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "objectID": "slides/lecture-08/index.html#βήμα-1-εισαγωγή-δεδομένων",
+    "href": "slides/lecture-08/index.html#βήμα-1-εισαγωγή-δεδομένων",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
     "section": "Βήμα 1: Εισαγωγή δεδομένων",
-    "text": "Βήμα 1: Εισαγωγή δεδομένων\nΑνοίξτε το αρχείο sample_child.csv στο Jamovi.\n\n\nΠΡΟΣΟΧΗ\nστους τύπους μεταβλητών!"
+    "text": "Βήμα 1: Εισαγωγή δεδομένων\nΑνοίξτε το αρχείο sample_child.csv στο Jamovi.\n\n\nΠΡΟΣΟΧΗ\nστους τύπους μεταβλητών! (Διπλό κλικ στην επικεφαλίδα της στήλης):\n\nschool_id -&gt; ID (αναγνωριστικό).\nchild_age, reading_irt, SES -&gt; Continuous (χάρακας).\nchild_gender, school_type -&gt; Nominal (διάγραμμα Venn).\nparent_read_to_child -&gt; Ordinal (μπάρες)."
   },
   {
-    "objectID": "slides/lecture-10/index.html#βήμα-2-απλή-πολυωνυμική-παλινδρόμηση",
-    "href": "slides/lecture-10/index.html#βήμα-2-απλή-πολυωνυμική-παλινδρόμηση",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Βήμα 2: Απλή πολυωνυμική παλινδρόμηση",
-    "text": "Βήμα 2: Απλή πολυωνυμική παλινδρόμηση\nΕρώτημα:\nΕπηρεάζει η κοινωνικο-οικονομική κατάσταση το είδος της φροντίδας που λαμβάνει το παιδί και δεν προέρχεται από τους γονείς;\n\n\n\nTab: Analyses -&gt; Regression -&gt; N-Outcomes\nDependent Variable: primary_non_parental.\nCovariates (συνεχείς): socioeconomic_status."
+    "objectID": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση",
+    "href": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 2: Απλή γραμμική παλινδρόμηση",
+    "text": "Βήμα 2: Απλή γραμμική παλινδρόμηση\nΕρώτημα:\nΠροβλέπει η ηλικία την αναγνωστική ικανότητα;\n\n\n\nTab: Analyses -&gt; Regression -&gt; Linear Regression.\nDependent Variable: child_reading_irt.\nCovariates (συνεχείς): child_age."
   },
   {
-    "objectID": "slides/lecture-10/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
-    "href": "slides/lecture-10/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Βήμα 2: Απλή λογιστική παλινδρόμηση",
-    "text": "Βήμα 2: Απλή λογιστική παλινδρόμηση\nΤι κοιτάμε:\n\nΠοια είναι η τιμή της παραμέτρου της κοινωνικο-οικονομικής κατάστασης;\nΠοιο είναι το odds ratio για την κοινωνικο-οικονομική κατάσταση;\nP-value: Είναι στατιστικά σημαντική η σχέση;\nΠοιες είναι οι πιθανότητες για μία τιμή της κοινωνικο-οικονομικής κατάστασης;"
+    "objectID": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση-1",
+    "href": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση-1",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 2: Απλή γραμμική παλινδρόμηση",
+    "text": "Βήμα 2: Απλή γραμμική παλινδρόμηση\nΤι κοιτάμε:\n\nΠοια είναι η τιμή της σταθεράς και της παραμέτρου της ηλικίας;\nP-value: Είναι στατιστικά σημαντική η σχέση;\n\\(R^2\\): Πόσο % της διακύμανσης εξηγεί η ηλικία;"
   },
   {
-    "objectID": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση",
-    "href": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση",
-    "text": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση\nΕρώτημα: Ποιο είναι το μοντέλο της πολυωνυμικής παλινδρόμησης, αν λάβουμε υπόψη:\n\nΤο φύλο\nΤην κοινωνικο-οικονομική κατάσταση\nΤο μορφωτικό επίπεδο της μητέρας\nΤο μορφωτικό επίπεδο του πατέρα"
+    "objectID": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση",
+    "href": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση",
+    "text": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση\nΕρώτημα:\nΑν λάβουμε υπόψη το Κοινωνικο-οικονομικό Επίπεδο (SES) και το φύλο, αλλάζει η πρόβλεψη;\nΣτο ίδιο παράθυρο ανάλυσης:\n\nΠροσθέστε το socioeconomic_status στα Covariates.\nΠροσθέστε το child_gender στα Factors (Κατηγορικές)."
   },
   {
-    "objectID": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση-1",
-    "href": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση-1",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση",
-    "text": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση\nΤι κοιτάμε:\n\nΠώς ερμηνεύουμε τον συντελεστή του mother_education, κρατώντας τις υπόλοιπες μεταβλητές σταθερές;"
+    "objectID": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση-1",
+    "href": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση-1",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση",
+    "text": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση\nΤι κοιτάμε:\n\nΠώς ερμηνεύουμε τον συντελεστή του SES, κρατώντας την ηλικία και το φύλο σταθερά;\nAdjusted \\(R^2\\): Αυξήθηκε η εξηγητική ικανότητα του μοντέλου;\nOverall F-test: Είναι όλο το μοντέλο σημαντικό;"
   },
   {
-    "objectID": "slides/lecture-10/index.html#βήμα-4-έλεγχος-υποθέσεων",
-    "href": "slides/lecture-10/index.html#βήμα-4-έλεγχος-υποθέσεων",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Βήμα 4: Έλεγχος υποθέσεων",
-    "text": "Βήμα 4: Έλεγχος υποθέσεων\nΕρώτημα: Χρειάζεται να συμπεριλάβουμε το φύλο στο μοντέλο πολυωνυμικής παλινδρόμησης, αν έχουμε ήδη συμπεριλάβει όλες τις υπόλοιπες μεταβλητές;\n\n\nΕξακριβώστε την ισοδυναμία του πίνακα Omnibus Likelihood Ratio Tests και της γνωστής διαδικασίας για την αξιολόγηση μοντέλων (Model Builder)."
+    "objectID": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test",
+    "href": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)",
+    "text": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)\nΕρώτημα:\nΠροσφέρει κάτι παραπάνω η “ανάγωνησ από τους γονείς” αν ήδη ξέρουμε την ηλικία, το φύλο και το SES;\n\n\nΔιαδικασία (Model Builder):\n\nΑνοίξτε το μενού Model Builder.\nBlock 1: Κρατήστε τα child_age, child_gender, socioeconomic_status.\nΠατήστε + Add New Block.\nBlock 2: Βάλτε το parent_read_to_child."
   },
   {
-    "objectID": "slides/lecture-10/index.html#βήμα-4-σύγκριση-μοντέλων",
-    "href": "slides/lecture-10/index.html#βήμα-4-σύγκριση-μοντέλων",
-    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
-    "section": "Βήμα 4: Σύγκριση Μοντέλων",
-    "text": "Βήμα 4: Σύγκριση Μοντέλων\nΕρώτημα:\nΠροσφέρουν κάτι παραπάνω τα μορφωτικά επίπεδα του πατέρα και της μητέρας, αν ήδη ξέρουμε το φύλο και την κοινωνικο-οικονομική κατάσταση;"
+    "objectID": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test-1",
+    "href": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test-1",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)",
+    "text": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)\nΑξιολόγηση της Σύγκρισης\n\nΣτο μενού Model Fit επιλέξτε \\(R\\), \\(R^2\\), \\(\\Delta R^2\\), και Model comparison (F-test)\n\n\n\nΤι κοιτάμε:\n\nΤην στήλη \\(p\\) (partial F-test) στη σύγκριση Model 1 και Model 2.\nΑν \\(p &lt; 0.05\\): Η προσθήκη της μεταβλητής βελτίωσε σημαντικά το μοντέλο.\nΠόσο αυξήθηκε το \\(R^2\\) (\\(\\Delta R^2\\))"
+  },
+  {
+    "objectID": "slides/lecture-08/index.html#βήμα-5-έλεγχος-συντελεστών-single-coefficients",
+    "href": "slides/lecture-08/index.html#βήμα-5-έλεγχος-συντελεστών-single-coefficients",
+    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
+    "section": "Βήμα 5: Έλεγχος Συντελεστών (Single Coefficients)",
+    "text": "Βήμα 5: Έλεγχος Συντελεστών (Single Coefficients)\nΤι κοιτάμε στον πίνακα Model coefficients:\n\nΤη στήλη \\(p\\) για κάθε επίπεδο του parent_read_to_child.\nΠοια είναι η διαφορά ανάμεσα στο “Everyday” και το “Less than twice a week” (σημείο αναφοράς);\nΕίναι όλες οι μεταβλητές στατιστικά σημαντικές;"
   },
   {
     "objectID": "slides/lecture-05/index.html#ορισμός",
@@ -474,76 +306,6 @@
     "title": "Γραμμική παλινδρόμηση",
     "section": "Παράδειγμα",
     "text": "Παράδειγμα\n\n\nΕλέγξτε κατά πόσο το μοντέλο ικανοποιεί τις προϋποθέσεις της παλινδρόμησης."
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#το-πρόβλημα",
-    "href": "slides/lecture-08/index.html#το-πρόβλημα",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΕρευνητικό Ερώτημα:\nΠοιοι παράγοντες προβλέπουν την αναγνωστική ικανότητα (child_reading_irt) των παιδιών στο νηπιαγωγείο;"
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#το-πρόβλημα-1",
-    "href": "slides/lecture-08/index.html#το-πρόβλημα-1",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΤα δεδομένα μας (sample_child.csv):\n\nchild_reading_irt: Αναγνωστική ικανότητα (Εξαρτημένη).\nchild_age: Ηλικία σε μήνες.\nchild_gender: Φύλο.\nsocioeconomic_status: Κοινωνικο-οικονομικό επίπεδο.\nparent_read_to_child: Πόσο συχνά διαβάζουν οι γονείς στο παιδί."
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-1-εισαγωγή-δεδομένων",
-    "href": "slides/lecture-08/index.html#βήμα-1-εισαγωγή-δεδομένων",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 1: Εισαγωγή δεδομένων",
-    "text": "Βήμα 1: Εισαγωγή δεδομένων\nΑνοίξτε το αρχείο sample_child.csv στο Jamovi.\n\n\nΠΡΟΣΟΧΗ\nστους τύπους μεταβλητών! (Διπλό κλικ στην επικεφαλίδα της στήλης):\n\nschool_id -&gt; ID (αναγνωριστικό).\nchild_age, reading_irt, SES -&gt; Continuous (χάρακας).\nchild_gender, school_type -&gt; Nominal (διάγραμμα Venn).\nparent_read_to_child -&gt; Ordinal (μπάρες)."
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση",
-    "href": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 2: Απλή γραμμική παλινδρόμηση",
-    "text": "Βήμα 2: Απλή γραμμική παλινδρόμηση\nΕρώτημα:\nΠροβλέπει η ηλικία την αναγνωστική ικανότητα;\n\n\n\nTab: Analyses -&gt; Regression -&gt; Linear Regression.\nDependent Variable: child_reading_irt.\nCovariates (συνεχείς): child_age."
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση-1",
-    "href": "slides/lecture-08/index.html#βήμα-2-απλή-γραμμική-παλινδρόμηση-1",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 2: Απλή γραμμική παλινδρόμηση",
-    "text": "Βήμα 2: Απλή γραμμική παλινδρόμηση\nΤι κοιτάμε:\n\nΠοια είναι η τιμή της σταθεράς και της παραμέτρου της ηλικίας;\nP-value: Είναι στατιστικά σημαντική η σχέση;\n\\(R^2\\): Πόσο % της διακύμανσης εξηγεί η ηλικία;"
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση",
-    "href": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση",
-    "text": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση\nΕρώτημα:\nΑν λάβουμε υπόψη το Κοινωνικο-οικονομικό Επίπεδο (SES) και το φύλο, αλλάζει η πρόβλεψη;\nΣτο ίδιο παράθυρο ανάλυσης:\n\nΠροσθέστε το socioeconomic_status στα Covariates.\nΠροσθέστε το child_gender στα Factors (Κατηγορικές)."
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση-1",
-    "href": "slides/lecture-08/index.html#βήμα-3-πολλαπλή-γραμμική-παλινδρόμηση-1",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση",
-    "text": "Βήμα 3: Πολλαπλή γραμμική παλινδρόμηση\nΤι κοιτάμε:\n\nΠώς ερμηνεύουμε τον συντελεστή του SES, κρατώντας την ηλικία και το φύλο σταθερά;\nAdjusted \\(R^2\\): Αυξήθηκε η εξηγητική ικανότητα του μοντέλου;\nOverall F-test: Είναι όλο το μοντέλο σημαντικό;"
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test",
-    "href": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)",
-    "text": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)\nΕρώτημα:\nΠροσφέρει κάτι παραπάνω η “ανάγωνησ από τους γονείς” αν ήδη ξέρουμε την ηλικία, το φύλο και το SES;\n\n\nΔιαδικασία (Model Builder):\n\nΑνοίξτε το μενού Model Builder.\nBlock 1: Κρατήστε τα child_age, child_gender, socioeconomic_status.\nΠατήστε + Add New Block.\nBlock 2: Βάλτε το parent_read_to_child."
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test-1",
-    "href": "slides/lecture-08/index.html#βήμα-4-σύγκριση-μοντέλων-μερικό-f-test-1",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)",
-    "text": "Βήμα 4: Σύγκριση Μοντέλων (Μερικό F-test)\nΑξιολόγηση της Σύγκρισης\n\nΣτο μενού Model Fit επιλέξτε \\(R\\), \\(R^2\\), \\(\\Delta R^2\\), και Model comparison (F-test)\n\n\n\nΤι κοιτάμε:\n\nΤην στήλη \\(p\\) (partial F-test) στη σύγκριση Model 1 και Model 2.\nΑν \\(p &lt; 0.05\\): Η προσθήκη της μεταβλητής βελτίωσε σημαντικά το μοντέλο.\nΠόσο αυξήθηκε το \\(R^2\\) (\\(\\Delta R^2\\))"
-  },
-  {
-    "objectID": "slides/lecture-08/index.html#βήμα-5-έλεγχος-συντελεστών-single-coefficients",
-    "href": "slides/lecture-08/index.html#βήμα-5-έλεγχος-συντελεστών-single-coefficients",
-    "title": "Εργαστήριο – Γραμμική παλινδρόμηση",
-    "section": "Βήμα 5: Έλεγχος Συντελεστών (Single Coefficients)",
-    "text": "Βήμα 5: Έλεγχος Συντελεστών (Single Coefficients)\nΤι κοιτάμε στον πίνακα Model coefficients:\n\nΤη στήλη \\(p\\) για κάθε επίπεδο του parent_read_to_child.\nΠοια είναι η διαφορά ανάμεσα στο “Everyday” και το “Less than twice a week” (σημείο αναφοράς);\nΕίναι όλες οι μεταβλητές στατιστικά σημαντικές;"
   },
   {
     "objectID": "slides/lecture-01/index.html#στόχοι-ροή-μαθήματος",
@@ -931,67 +693,249 @@
     "text": "Πρόβλεψη για δύο νηπιαγωγούς\nΗ νηπιαγωγός Β έχει:\n\nΠροϋπηρεσία: 20 έτη\nΜέγεθος τάξης: Πολυμελής\nΥποστήριξη διεύθυνσης: 3\n\nΠοια νηπιαγωγός είναι πιθανότερο να δηλώσει Ικανοποιημένη;"
   },
   {
-    "objectID": "slides/lecture-09/index.html#το-πρόβλημα",
-    "href": "slides/lecture-09/index.html#το-πρόβλημα",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΕρευνητικό Ερώτημα:\nΠοιοι παράγοντες επηρεάζουν την πιθανότητα γνώσης των γραμμάτων (child_knows_letter_names) από τα παιδιά στο νηπιαγωγείο;"
+    "objectID": "slides/lecture-11/index.html#ορισμός",
+    "href": "slides/lecture-11/index.html#ορισμός",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Ορισμός",
+    "text": "Ορισμός\nΗ ανάλυση διακύμανσης είναι μία μέθοδος ελέγχου υποθέσεων για την αξιολόγηση διαφορών στις μέσες τιμές μεταξύ δύο ή περισσότερων ομάδων."
   },
   {
-    "objectID": "slides/lecture-09/index.html#το-πρόβλημα-1",
-    "href": "slides/lecture-09/index.html#το-πρόβλημα-1",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
-    "section": "Το πρόβλημα",
-    "text": "Το πρόβλημα\nΤα δεδομένα μας (sample_child.csv):\n\nchild_knows_letter_names: Αναγνωστική ικανότητα (Εξαρτημένη).\nschool_type: Ο τύπος του σχολείου (δημόσιο/ιδιωτικό).\nchild_age: Ηλικία σε μήνες.\nchild_gender: Φύλο.\nsocioeconomic_status: Κοινωνικο-οικονομικό επίπεδο.\nparent_read_to_child: Πόσο συχνά διαβάζουν οι γονείς στο παιδί.\nmother_education: Το μορφωτικό επίπεδο της μητέρας.\nfather_education: Το μορφωτικό επίπεδο του πατέρα."
+    "objectID": "slides/lecture-11/index.html#ορολογίες",
+    "href": "slides/lecture-11/index.html#ορολογίες",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Ορολογίες",
+    "text": "Ορολογίες\nΗ ανεξάρτητες μεταβλητές ονομάζονται παράγοντες (factors).\n\n\nΟι διαφορετικές τιμές που μπορεί να πάρει ένας παράγοντας ονομάζονται επίπεδα (levels)."
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-1-εισαγωγή-δεδομένων",
-    "href": "slides/lecture-09/index.html#βήμα-1-εισαγωγή-δεδομένων",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "objectID": "slides/lecture-11/index.html#το-πρόβλημα",
+    "href": "slides/lecture-11/index.html#το-πρόβλημα",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΈρευνες έχουν δείξει ότι τα παιδιά μαθαίνουν καλύτερα όταν ο ενήλικας συμμετέχει ενεργά αλλά διακριτικά στο παιχνίδι τους. Θέλετε να το επιβεβαιώσετε πειραματικά."
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#το-πρόβλημα-1",
+    "href": "slides/lecture-11/index.html#το-πρόβλημα-1",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΧωρίζετε τα παιδιά σε 3 ομάδες που παίζουν με τουβλάκια για 15 λεπτά, αλλά με διαφορετικό ρόλο του/της νηπιαγωγού:\n\nΟμάδα 1: Ο/Η νηπιαγωγός είναι παρών/ούσα για ασφάλεια αλλά δεν μιλάει ούτε παρεμβαίνει.\nΟμάδα 2: Ο/Η νηπιαγωγός δίνει συνεχώς εντολές.\nΟμάδα 3: Ο/Η νηπιαγωγός ακολουθεί το ενδιαφέρον του παιδιού και κάνει ανοιχτές ερωτήσεις."
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#το-πρόβλημα-2",
+    "href": "slides/lecture-11/index.html#το-πρόβλημα-2",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΜετράτε πόσες φορές το παιδί μίλησε ή απάντησε ολοκληρωμένα κατά τη διάρκεια του παιχνιδιού.\n\n\n\nΟμάδα 1\nΟμάδα 2\nΟμάδα 3\n\n\n\n\n6\n8\n10\n\n\n7\n9\n11\n\n\n8\n10\n12\n\n\n9\n11\n13\n\n\n10\n12\n14"
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#υποθέσεις",
+    "href": "slides/lecture-11/index.html#υποθέσεις",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Υποθέσεις",
+    "text": "Υποθέσεις\n\\[H_0: \\mu_1 = \\mu_2 = \\mu_3\\]\nΗ εναλλακτική υπόθεση λέει ότι ένα από τα \\(\\mu_1\\), \\(\\mu_2\\) και \\(\\mu_3\\) διαφέρει."
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#το-στατιστικό",
+    "href": "slides/lecture-11/index.html#το-στατιστικό",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Το στατιστικό",
+    "text": "Το στατιστικό\n\\[\nF = \\frac{\\text{Διασπορα μεταξυ των ομαδων}}{\\text{Διασπορα εντος των ομαδων}}\n\\]"
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#διασπορά-εντός-των-ομάδων",
+    "href": "slides/lecture-11/index.html#διασπορά-εντός-των-ομάδων",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Διασπορά εντός των ομάδων",
+    "text": "Διασπορά εντός των ομάδων\nΗ διασπορά εντός των ομάδων υπολογίζεται από τον τύπο:\n\\[\nSS_{\\text{ΕΝΤΟΣ}} = \\sum SS_{\\text{ΕΝΤΟΣ ΟΜΑΔΩΝ}}\n\\]"
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων",
+    "href": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Διασπορά μεταξύ των ομάδων",
+    "text": "Διασπορά μεταξύ των ομάδων\nΜπορούμε να “σπάσουμε” τη συνολική διασπορά \\(SS_{\\text{ΣΥΝΟΛΙΚΗ}}\\) στο παρακάτω άθροισμα:\n\\[\nSS_{\\text{ΣΥΝΟΛΙΚΗ}} = SS_{\\text{ΕΝΤΟΣ}} + SS_{\\text{ΜΕΤΑΞΥ}}\n\\]\nΕίναι πιο εύκολο να υπολογίσουμε τη συνολική διασπορά και να λύσουμε ως προς \\(SS_{\\text{ΜΕΤΑΞΥ}}\\).\n\\[\nSS_{\\text{ΣΥΝΟΛΙΚΗ}} = \\sum{X^2} - \\frac{(\\sum X)^2}{n_1+n_2+n_3}\n\\]"
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων-1",
+    "href": "slides/lecture-11/index.html#διασπορά-μεταξύ-των-ομάδων-1",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Διασπορά μεταξύ των ομάδων",
+    "text": "Διασπορά μεταξύ των ομάδων\nΤότε η διασπορά μεταξύ των ομάδων θα είναι\n\\[\nSS_{\\text{ΜΕΤΑΞΥ}} = SS_{\\text{ΣΥΝΟΛΙΚΗ}} - SS_{\\text{ΕΝΤΟΣ}}\n\\]\nΜπορούμε πλέον να υπολογίσουμε το στατιστικό \\(F\\)."
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#κατανομή-του-στατιστικού-f",
+    "href": "slides/lecture-11/index.html#κατανομή-του-στατιστικού-f",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Κατανομή του στατιστικού \\(F\\)",
+    "text": "Κατανομή του στατιστικού \\(F\\)\nΤο στατιστικό \\(F\\) ακολουθεί την \\(F\\) κατανομή με βαθμούς ελευθερίας:\n\n\\(df_{\\text{ΜΕΤΑΞΥ}} = \\text{πληθος ομαδων} - 1\\)\n\\(df_{\\text{ΕΝΤΟΣ}} = \\text{πληθος ατομων} - \\text{πληθος ομαδων}\\)\n\nΓράφουμε \\(F_{df_\\text{ΜΕΤΑΞΥ};df_\\text{ΕΝΤΟΣ}}\\)"
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc",
+    "href": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Έλεγχοι εκ των υστέρων (post-hoc)",
+    "text": "Έλεγχοι εκ των υστέρων (post-hoc)\nΑκόμα και αν απορρίψουμε την \\(H_0\\) δεν μπρούμε να ξέρουμε ποια επίπεδα (levels) του παράγοντα (factor) διαφέρουν.\n\n\nΑν είχαμε 3 ομάδες συνολικά, θα θέλαμε να συγκρίνουμε:\n\nτο \\(\\mu_1\\) με το \\(\\mu_2\\)\nτο \\(\\mu_1\\) με το \\(\\mu_3\\)\nτο \\(\\mu_2\\) με το \\(\\mu_3\\)"
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc-1",
+    "href": "slides/lecture-11/index.html#έλεγχοι-εκ-των-υστέρων-post-hoc-1",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Έλεγχοι εκ των υστέρων (post-hoc)",
+    "text": "Έλεγχοι εκ των υστέρων (post-hoc)\n\nΠΡΟΣΟΧΗ\nΌσο αυξάνουμε τα τεστ που πραγαμτοποιούμε, τόσο αυξάνουμε και την πιθανότητα για σφάλμα Τύπου I.\n\n\n\nΧρειαζόμαστε μία μέθοδο η οποία θα ελέγχει το συνολικό σφάλμα Τύπου I."
+  },
+  {
+    "objectID": "slides/lecture-11/index.html#έλεγχος-εκ-των-υστέρων-tukey",
+    "href": "slides/lecture-11/index.html#έλεγχος-εκ-των-υστέρων-tukey",
+    "title": "Ανάλυση διακύμανσης (ANOVA)",
+    "section": "Έλεγχος εκ των υστέρων: Tukey",
+    "text": "Έλεγχος εκ των υστέρων: Tukey\n\\[\nt_r = q \\sqrt{\\frac{MS_{\\text{ΕΝΤΟΣ}}}{n}}\n\\]\nοπου \\(n\\) είναι το πλήθος των ατόμων σε κάθε ομάδα και\n\\[\nMS_\\text{ΕΝΤΟΣ} = \\frac{SS_\\text{ΕΝΤΟΣ}}{df_\\text{ΕΝΤΟΣ}}\n\\]\nΤο \\(q\\) είναι μία ποσότητα που θα μας δίνεται και ονομάζεται Studentized range."
+  },
+  {
+    "objectID": "slides/lecture-10/index.html#το-πρόβλημα",
+    "href": "slides/lecture-10/index.html#το-πρόβλημα",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΕρευνητικό Ερώτημα:\nΠοιοι παράγοντες επηρεάζουν το είδος της φροντίδας που δεν προέρχεται από τους γονείς (primary_non_parental);"
+  },
+  {
+    "objectID": "slides/lecture-10/index.html#το-πρόβλημα-1",
+    "href": "slides/lecture-10/index.html#το-πρόβλημα-1",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΤα δεδομένα μας (sample_child.csv):\n\nchild_gender: Φύλο.\nsocioeconomic_status: Κοινωνικο-οικονομικό επίπεδο.\nmother_education: Το μορφωτικό επίπεδο της μητέρας.\nfather_education: Το μορφωτικό επίπεδο του πατέρα."
+  },
+  {
+    "objectID": "slides/lecture-10/index.html#βήμα-1-εισαγωγή-δεδομένων",
+    "href": "slides/lecture-10/index.html#βήμα-1-εισαγωγή-δεδομένων",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
     "section": "Βήμα 1: Εισαγωγή δεδομένων",
-    "text": "Βήμα 1: Εισαγωγή δεδομένων\nΑνοίξτε το αρχείο sample_child.csv στο Jamovi.\n\n\nΠΡΟΣΟΧΗ\nστους τύπους μεταβλητών! (Διπλό κλικ στην επικεφαλίδα της στήλης):\n\nschool_id -&gt; ID (αναγνωριστικό).\nchild_age, reading_irt, SES -&gt; Continuous (χάρακας).\nchild_gender, school_type -&gt; Nominal (διάγραμμα Venn).\nparent_read_to_child -&gt; Ordinal (μπάρες)."
+    "text": "Βήμα 1: Εισαγωγή δεδομένων\nΑνοίξτε το αρχείο sample_child.csv στο Jamovi.\n\n\nΠΡΟΣΟΧΗ\nστους τύπους μεταβλητών!"
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
-    "href": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "objectID": "slides/lecture-10/index.html#βήμα-2-απλή-πολυωνυμική-παλινδρόμηση",
+    "href": "slides/lecture-10/index.html#βήμα-2-απλή-πολυωνυμική-παλινδρόμηση",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "section": "Βήμα 2: Απλή πολυωνυμική παλινδρόμηση",
+    "text": "Βήμα 2: Απλή πολυωνυμική παλινδρόμηση\nΕρώτημα:\nΕπηρεάζει η κοινωνικο-οικονομική κατάσταση το είδος της φροντίδας που λαμβάνει το παιδί και δεν προέρχεται από τους γονείς;\n\n\n\nTab: Analyses -&gt; Regression -&gt; N-Outcomes\nDependent Variable: primary_non_parental.\nCovariates (συνεχείς): socioeconomic_status."
+  },
+  {
+    "objectID": "slides/lecture-10/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
+    "href": "slides/lecture-10/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
     "section": "Βήμα 2: Απλή λογιστική παλινδρόμηση",
-    "text": "Βήμα 2: Απλή λογιστική παλινδρόμηση\nΕρώτημα:\nΕπηρεάζει το φύλο την πιθανότητα γνώσης τνω\n\n\n\nTab: Analyses -&gt; Logistic Regression -&gt; 2 Outcomes.\nDependent Variable: child_knows_letter_names.\nCovariates (συνεχείς): child_gender."
+    "text": "Βήμα 2: Απλή λογιστική παλινδρόμηση\nΤι κοιτάμε:\n\nΠοια είναι η τιμή της παραμέτρου της κοινωνικο-οικονομικής κατάστασης;\nΠοιο είναι το odds ratio για την κοινωνικο-οικονομική κατάσταση;\nP-value: Είναι στατιστικά σημαντική η σχέση;\nΠοιες είναι οι πιθανότητες για μία τιμή της κοινωνικο-οικονομικής κατάστασης;"
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση-1",
-    "href": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση-1",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
-    "section": "Βήμα 2: Απλή λογιστική παλινδρόμηση",
-    "text": "Βήμα 2: Απλή λογιστική παλινδρόμηση\nΤι κοιτάμε:\n\nΠοια είναι η τιμή της παραμέτρου του φύλου;\nΠοιο είναι το odds ratio για το φύλο;\nP-value: Είναι στατιστικά σημαντική η σχέση;\nΟι πιθανότητες ανά φύλο."
+    "objectID": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση",
+    "href": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "section": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση",
+    "text": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση\nΕρώτημα: Ποιο είναι το μοντέλο της πολυωνυμικής παλινδρόμησης, αν λάβουμε υπόψη:\n\nΤο φύλο\nΤην κοινωνικο-οικονομική κατάσταση\nΤο μορφωτικό επίπεδο της μητέρας\nΤο μορφωτικό επίπεδο του πατέρα"
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση",
-    "href": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
-    "section": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση",
-    "text": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση\nΕρώτημα: Αν λάβουμε υπόψη:\n\nΤην ηλικία\nΤην κοινωνικο-οικονομική κατάσταση\nΤον τύπο του σχολείου\nΤη συχνότητα ανάγνωσης από τους γονείς στο παιδί\nΤο μορφωτικό επίπεδο της μητέρας\nΤο μορφωτικό επίπεδο του πατέρα"
+    "objectID": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση-1",
+    "href": "slides/lecture-10/index.html#βήμα-3-πολλαπλή-πολυωνυμική-παλινδρόμηση-1",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "section": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση",
+    "text": "Βήμα 3: Πολλαπλή πολυωνυμική παλινδρόμηση\nΤι κοιτάμε:\n\nΠώς ερμηνεύουμε τον συντελεστή του mother_education, κρατώντας τις υπόλοιπες μεταβλητές σταθερές;"
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση-1",
-    "href": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση-1",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
-    "section": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση",
-    "text": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση\nΤι κοιτάμε:\n\nΠώς ερμηνεύουμε τον συντελεστή του socioeconomic_status, κρατώντας τις υπόλοιπες μεταβλητές σταθερές;"
+    "objectID": "slides/lecture-10/index.html#βήμα-4-έλεγχος-υποθέσεων",
+    "href": "slides/lecture-10/index.html#βήμα-4-έλεγχος-υποθέσεων",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
+    "section": "Βήμα 4: Έλεγχος υποθέσεων",
+    "text": "Βήμα 4: Έλεγχος υποθέσεων\nΕρώτημα: Χρειάζεται να συμπεριλάβουμε το φύλο στο μοντέλο πολυωνυμικής παλινδρόμησης, αν έχουμε ήδη συμπεριλάβει όλες τις υπόλοιπες μεταβλητές;\n\n\nΕξακριβώστε την ισοδυναμία του πίνακα Omnibus Likelihood Ratio Tests και της γνωστής διαδικασίας για την αξιολόγηση μοντέλων (Model Builder)."
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-4-σύγκριση-μοντέλων",
-    "href": "slides/lecture-09/index.html#βήμα-4-σύγκριση-μοντέλων",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "objectID": "slides/lecture-10/index.html#βήμα-4-σύγκριση-μοντέλων",
+    "href": "slides/lecture-10/index.html#βήμα-4-σύγκριση-μοντέλων",
+    "title": "Εργαστήριο – Πολυωνυμική παλινδρόμηση",
     "section": "Βήμα 4: Σύγκριση Μοντέλων",
-    "text": "Βήμα 4: Σύγκριση Μοντέλων\nΕρώτημα:\nΠροσφέρει κάτι παραπάνω ο τύπος του σχολείου, η συχνότητα ανάγνωσης και τα μορφωτικά επίπεδα του πατέρα και της μητέρας, αν ήδη ξέρουμε την ηλικία, το φύλο, την κοινωνικο-οικονομική κατάσταση;"
+    "text": "Βήμα 4: Σύγκριση Μοντέλων\nΕρώτημα:\nΠροσφέρουν κάτι παραπάνω τα μορφωτικά επίπεδα του πατέρα και της μητέρας, αν ήδη ξέρουμε το φύλο και την κοινωνικο-οικονομική κατάσταση;"
   },
   {
-    "objectID": "slides/lecture-09/index.html#βήμα-5-αξιολόγηση-της-πρόβλεψης",
-    "href": "slides/lecture-09/index.html#βήμα-5-αξιολόγηση-της-πρόβλεψης",
-    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
-    "section": "Βήμα 5: Αξιολόγηση της πρόβλεψης",
-    "text": "Βήμα 5: Αξιολόγηση της πρόβλεψης\nΤι κοιτάμε:\n\nΤην καμπύλη ROC\nΤην τιμή της AUC"
+    "objectID": "slides/lecture-02/index.html#περιεχόμενα",
+    "href": "slides/lecture-02/index.html#περιεχόμενα",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Περιεχόμενα",
+    "text": "Περιεχόμενα\n\nΟρισμός συντελεστή συσχέτισης \\(r\\)\nΕισαγωγή στα αθροίσματα τετραγώνων και γινομένων\nΜοντέλο απλής γραμμικής παλινδρόμησης\nΠρόβλεψη με την ευθεία\nΣφάλμα πρόβλεψης (υπόλοιπα)\nΈλεγχος υποθέσεων (μόνο απλή παλινδρόμηση)"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#συσχέτιση-ορισμός",
+    "href": "slides/lecture-02/index.html#συσχέτιση-ορισμός",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Συσχέτιση (ορισμός)",
+    "text": "Συσχέτιση (ορισμός)\n\n\n\\[ r = \\frac{\\sum (x_i-\\bar x)(y_i-\\bar y)}{\\sqrt{\\sum (x_i-\\bar x)^2\\,\\sum (y_i-\\bar y)^2}} \\]"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#άθροισμα-γινομένων",
+    "href": "slides/lecture-02/index.html#άθροισμα-γινομένων",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Άθροισμα γινομένων",
+    "text": "Άθροισμα γινομένων\n\n\\(S_{xy} = \\sum (x_i - \\mu_x)(y_i-\\mu_y)\\)\n\\(S_{xx} = \\sum (x_i - \\mu_x)^2\\)\n\\(S_{yy}= \\sum (y_i - \\mu_y)^2\\)"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#συσχέτιση",
+    "href": "slides/lecture-02/index.html#συσχέτιση",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Συσχέτιση",
+    "text": "Συσχέτιση\n\n\n\\[\nr = \\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}\n\\]"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#απλή-γραμμική-παλινδρόμηση-ιδέα",
+    "href": "slides/lecture-02/index.html#απλή-γραμμική-παλινδρόμηση-ιδέα",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Απλή Γραμμική Παλινδρόμηση: ιδέα",
+    "text": "Απλή Γραμμική Παλινδρόμηση: ιδέα\n\nΣτόχος: εύρεση ευθείας που ελαχιστοποιεί τα τετράγωνα των σφαλμάτων\nΜοντέλο: \\(\\hat{y} = \\beta_0 + \\beta_1 x\\)\nΠροβλέπουμε τη αναμενόμενη τιμή του \\(Y\\) για δοσμένο \\(X\\)"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#η-ευθεία-παλινδρόμησης",
+    "href": "slides/lecture-02/index.html#η-ευθεία-παλινδρόμησης",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Η ευθεία παλινδρόμησης",
+    "text": "Η ευθεία παλινδρόμησης\n\n\\(\\hat{y}_i = \\beta_0 + \\beta_1 x_i\\)\n\\(\\beta_1\\): κλίση (μεταβολή στο \\(Y\\) ανά 1 μονάδα \\(X\\))\n\\(\\beta_0\\): τομή με τον άξονα \\(Y\\) (αναμενόμενη τιμή του \\(Y\\) όταν \\(x=0\\))\nΗ ευθεία περνά από \\((\\bar{x}, \\bar{y})\\)"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#υπολογισμός-κλίσης-beta_1",
+    "href": "slides/lecture-02/index.html#υπολογισμός-κλίσης-beta_1",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Υπολογισμός κλίσης \\(\\beta_1\\)",
+    "text": "Υπολογισμός κλίσης \\(\\beta_1\\)\n\n\n\n\\(\\beta_1 = \\frac{S_{xy}}{S_{xx}}\\)\n\\(\\beta_0 = \\bar{y} - \\beta_1 \\bar{x}\\)"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#παράδειγμα",
+    "href": "slides/lecture-02/index.html#παράδειγμα",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Παράδειγμα",
+    "text": "Παράδειγμα\n\n\n\nX\nY\n\n\n\n\n5\n10\n\n\n1\n4\n\n\n4\n5\n\n\n7\n11\n\n\n6\n15\n\n\n4\n6\n\n\n3\n5\n\n\n2\n0"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#ερμηνεία-beta_1-και-beta_0",
+    "href": "slides/lecture-02/index.html#ερμηνεία-beta_1-και-beta_0",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Ερμηνεία \\(\\beta_1\\) και \\(\\beta_0\\)",
+    "text": "Ερμηνεία \\(\\beta_1\\) και \\(\\beta_0\\)\n\n\\(\\beta_1\\): μέση αλλαγή στο \\(Y\\) ανά 1 μονάδα \\(X\\)\n\\(\\beta_0\\): σημείο αναφοράς"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#πρόβλεψη-με-τη-γραμμή",
+    "href": "slides/lecture-02/index.html#πρόβλεψη-με-τη-γραμμή",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Πρόβλεψη με τη γραμμή",
+    "text": "Πρόβλεψη με τη γραμμή\n\nΓια \\(x_0\\): \\(\\hat{y}(x_0) = \\beta_0 + \\beta_1 x_0\\)\nΕσωπαρεμβολή (εντός εύρους \\(X\\)): ασφαλέστερη\nΠροβολή (εκτός εύρους): ριψοκίνδυνη και ανεπιβεβαίωτη"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#τυπικό-σφάλμα-εκτίμησης-s_e",
+    "href": "slides/lecture-02/index.html#τυπικό-σφάλμα-εκτίμησης-s_e",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Τυπικό σφάλμα εκτίμησης (s_e)",
+    "text": "Τυπικό σφάλμα εκτίμησης (s_e)\n\n\\(s_e = \\sqrt{\\frac{S_{υπόλοιπο}}{n-2}}\\) (\\(\\text{df}= n-2\\))\n\\(r^2\\) μας δίνει το ποσοστό της διακύμανσης της \\(Y\\) που εξηγείται από τη \\(X\\)\n\\(SS_{παλινδρόμηση} = r^2 S_{yy}\\)\n\\(SS_{υπόλοιπο} = (1 - r^2) S_{yy}\\)"
+  },
+  {
+    "objectID": "slides/lecture-02/index.html#έλεγχος-υπόθεσης",
+    "href": "slides/lecture-02/index.html#έλεγχος-υπόθεσης",
+    "title": "Απλή γραμμική παλινδρόμηση",
+    "section": "Έλεγχος υπόθεσης",
+    "text": "Έλεγχος υπόθεσης\n\n\\(H_0: \\beta_1 = 0\\) (καμία γραμμική σχέση)\n\n\n\n\n\\(MS_{παλινδρομηση} = \\frac{SS_{παλινδρομηση}}{df}\\) (\\(\\text{df} = 1\\))\n\\(MS_{υπολοιπο} = \\frac{SS_{υπολοιπο}}{df}\\) (\\(\\text{df} = n - 2\\))\n\n\n\n\n\\(F = \\frac{MS_{παλινδρομηση}}{MS_{υπολοιπο}}\\) με \\(\\text{df} = 1, n-2\\)"
   },
   {
     "objectID": "slides/lecture-07/index.html#το-μοντέλο",
@@ -1232,60 +1176,88 @@
     "text": "Ερώτηση 10\nΣενάριο: $\\(log(\\frac{p}{1-p}) = \\beta_0 + \\beta_1 \\cdot X\\). Έστω ότι για ένα παιδί, ο υπολογισμός της εξίσωσης δίνει ακριβώς 0.\nΕρώτηση: Τι σημαίνει αυτό για την πιθανότητα (P) ετοιμότητας του παιδιού;\n\nα) Η πιθανότητα είναι 0%.\nβ) Οι συμπληρωματικές πιθανότητες (odds) είναι 0.\nγ) Η πιθανότητα είναι 50%.\nδ) Η πιθανότητα είναι 100%\n\n\n\n\n\n\n\n\nΗ σωστή απάντηση είναι το (γ)\n\n\nΓια τα odds ισχύει \\(odds = e^0 = 1\\).\nΆρα \\(odds = \\frac{p}{1-p}=1\\)\nΗ πιθανότητα είναι \\(p = \\frac{1}{1 + 1} = 0.50\\)."
   },
   {
-    "objectID": "vignettes-index.html",
-    "href": "vignettes-index.html",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Οδηγίες χρήσης του στατιστικού πακέτου Jamovi\nΕδώ θα βρείτε τις αναλυτικές οδηγίες για τον υπολογισμό στατιστικών μοντέλων με τη χρήση του στατιστικού πακέτου Jamovi εξάμνηνο 2025-2026.\nΕπιλογές:\n\n📖 Διαβάστε online (βρίσκεστε εδώ!)\n📄 Κατεβάστε το pdf\n\nΣυγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: Ποσοτικές Μέθοδοι"
+    "objectID": "slides/lecture-09/index.html#το-πρόβλημα",
+    "href": "slides/lecture-09/index.html#το-πρόβλημα",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΕρευνητικό Ερώτημα:\nΠοιοι παράγοντες επηρεάζουν την πιθανότητα γνώσης των γραμμάτων (child_knows_letter_names) από τα παιδιά στο νηπιαγωγείο;"
   },
   {
-    "objectID": "exercises-index.html",
-    "href": "exercises-index.html",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Εδώ θα βρείτε μία λίστα με όλες τις ασκήσεις που θα ανατεθούν κατά τη διδασκαλία του μαθήματος το χειμερινό εξάμνηνο 2025-2026.\n\n\nΜπορείτε να κατεβάσετε τις ασκήσεις από:\n\nΆσκηση 1\n\n\n\n\nΣυγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: (0109E) Ποσοτικές Μέθοδοι"
+    "objectID": "slides/lecture-09/index.html#το-πρόβλημα-1",
+    "href": "slides/lecture-09/index.html#το-πρόβλημα-1",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Το πρόβλημα",
+    "text": "Το πρόβλημα\nΤα δεδομένα μας (sample_child.csv):\n\nchild_knows_letter_names: Αναγνωστική ικανότητα (Εξαρτημένη).\nschool_type: Ο τύπος του σχολείου (δημόσιο/ιδιωτικό).\nchild_age: Ηλικία σε μήνες.\nchild_gender: Φύλο.\nsocioeconomic_status: Κοινωνικο-οικονομικό επίπεδο.\nparent_read_to_child: Πόσο συχνά διαβάζουν οι γονείς στο παιδί.\nmother_education: Το μορφωτικό επίπεδο της μητέρας.\nfather_education: Το μορφωτικό επίπεδο του πατέρα."
   },
   {
-    "objectID": "exercises-index.html#περιεχόμενα",
-    "href": "exercises-index.html#περιεχόμενα",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Μπορείτε να κατεβάσετε τις ασκήσεις από:\n\nΆσκηση 1"
+    "objectID": "slides/lecture-09/index.html#βήμα-1-εισαγωγή-δεδομένων",
+    "href": "slides/lecture-09/index.html#βήμα-1-εισαγωγή-δεδομένων",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 1: Εισαγωγή δεδομένων",
+    "text": "Βήμα 1: Εισαγωγή δεδομένων\nΑνοίξτε το αρχείο sample_child.csv στο Jamovi.\n\n\nΠΡΟΣΟΧΗ\nστους τύπους μεταβλητών! (Διπλό κλικ στην επικεφαλίδα της στήλης):\n\nschool_id -&gt; ID (αναγνωριστικό).\nchild_age, reading_irt, SES -&gt; Continuous (χάρακας).\nchild_gender, school_type -&gt; Nominal (διάγραμμα Venn).\nparent_read_to_child -&gt; Ordinal (μπάρες)."
   },
   {
-    "objectID": "exercises-index.html#σχετικά",
-    "href": "exercises-index.html#σχετικά",
-    "title": "Ποσοτικές Μέθοδοι",
-    "section": "",
-    "text": "Συγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: (0109E) Ποσοτικές Μέθοδοι"
+    "objectID": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
+    "href": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 2: Απλή λογιστική παλινδρόμηση",
+    "text": "Βήμα 2: Απλή λογιστική παλινδρόμηση\nΕρώτημα:\nΕπηρεάζει το φύλο την πιθανότητα γνώσης τνω\n\n\n\nTab: Analyses -&gt; Logistic Regression -&gt; 2 Outcomes.\nDependent Variable: child_knows_letter_names.\nCovariates (συνεχείς): child_gender."
   },
   {
-    "objectID": "vignettes/print.html",
-    "href": "vignettes/print.html",
-    "title": "Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi",
-    "section": "",
-    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nΣχήμα 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nΣχήμα 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Σχήμα 3.\n\n\n\n\n\n\n\n\nΣχήμα 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία.\n\n\n\n\n\n\n\n\nΌταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Σχήμα 4).\n\n\n\n\n\n\n\n\nΣχήμα 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Σχήμα 5).\n\n\n\n\n\n\n\n\nΣχήμα 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nΣχήμα 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Σχήμα 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Σχήμα 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nΣχήμα 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Σχήμα 8.\n\n\n\n\n\n\n\n\nΣχήμα 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
+    "objectID": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση-1",
+    "href": "slides/lecture-09/index.html#βήμα-2-απλή-λογιστική-παλινδρόμηση-1",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 2: Απλή λογιστική παλινδρόμηση",
+    "text": "Βήμα 2: Απλή λογιστική παλινδρόμηση\nΤι κοιτάμε:\n\nΠοια είναι η τιμή της παραμέτρου του φύλου;\nΠοιο είναι το odds ratio για το φύλο;\nP-value: Είναι στατιστικά σημαντική η σχέση;\nΟι πιθανότητες ανά φύλο."
   },
   {
-    "objectID": "vignettes/print.html#εισαγωγή-δεδομένων",
-    "href": "vignettes/print.html#εισαγωγή-δεδομένων",
-    "title": "Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi",
-    "section": "",
-    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nΣχήμα 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nΣχήμα 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Σχήμα 3.\n\n\n\n\n\n\n\n\nΣχήμα 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία."
+    "objectID": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση",
+    "href": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση",
+    "text": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση\nΕρώτημα: Αν λάβουμε υπόψη:\n\nΤην ηλικία\nΤην κοινωνικο-οικονομική κατάσταση\nΤον τύπο του σχολείου\nΤη συχνότητα ανάγνωσης από τους γονείς στο παιδί\nΤο μορφωτικό επίπεδο της μητέρας\nΤο μορφωτικό επίπεδο του πατέρα"
   },
   {
-    "objectID": "vignettes/print.html#αρχική-επεξεργασία",
-    "href": "vignettes/print.html#αρχική-επεξεργασία",
-    "title": "Οδηγίες Χρήσης του Στατιστικού Πακέτου Jamovi",
-    "section": "",
-    "text": "Όταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Σχήμα 4).\n\n\n\n\n\n\n\n\nΣχήμα 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Σχήμα 5).\n\n\n\n\n\n\n\n\nΣχήμα 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nΣχήμα 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Σχήμα 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Σχήμα 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nΣχήμα 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Σχήμα 8.\n\n\n\n\n\n\n\n\nΣχήμα 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
+    "objectID": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση-1",
+    "href": "slides/lecture-09/index.html#βήμα-3-πολλαπλή-λογιστική-παλινδρόμηση-1",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση",
+    "text": "Βήμα 3: Πολλαπλή λογιστική παλινδρόμηση\nΤι κοιτάμε:\n\nΠώς ερμηνεύουμε τον συντελεστή του socioeconomic_status, κρατώντας τις υπόλοιπες μεταβλητές σταθερές;"
   },
   {
-    "objectID": "vignettes/chapter-02.html",
-    "href": "vignettes/chapter-02.html",
-    "title": "Γραμμική παλινδρόμηση",
+    "objectID": "slides/lecture-09/index.html#βήμα-4-σύγκριση-μοντέλων",
+    "href": "slides/lecture-09/index.html#βήμα-4-σύγκριση-μοντέλων",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 4: Σύγκριση Μοντέλων",
+    "text": "Βήμα 4: Σύγκριση Μοντέλων\nΕρώτημα:\nΠροσφέρει κάτι παραπάνω ο τύπος του σχολείου, η συχνότητα ανάγνωσης και τα μορφωτικά επίπεδα του πατέρα και της μητέρας, αν ήδη ξέρουμε την ηλικία, το φύλο, την κοινωνικο-οικονομική κατάσταση;"
+  },
+  {
+    "objectID": "slides/lecture-09/index.html#βήμα-5-αξιολόγηση-της-πρόβλεψης",
+    "href": "slides/lecture-09/index.html#βήμα-5-αξιολόγηση-της-πρόβλεψης",
+    "title": "Εργαστήριο – Λογιστική παλινδρόμηση",
+    "section": "Βήμα 5: Αξιολόγηση της πρόβλεψης",
+    "text": "Βήμα 5: Αξιολόγηση της πρόβλεψης\nΤι κοιτάμε:\n\nΤην καμπύλη ROC\nΤην τιμή της AUC"
+  },
+  {
+    "objectID": "vignettes/chapter-01.html",
+    "href": "vignettes/chapter-01.html",
+    "title": "Εισαγωγή και επεξεργασία δεδομένων",
     "section": "",
-    "text": "Γραμμική παλινδρόμηση\nΈστω τώρα ότι θέλουμε να διαμορφώσουμε ένα μοντέλο γραμμικής παλινδρόμησης για τη συνεχή μεταβλητή child_reading_irt που μετρά την αναγνωστική ικανότητα των παιδιών στο νηπιαγωγείο. Για την πρόβλεψη της τιμής της child_reading_irt θα χρησιμοποιήσουμε τις εξής μεταβλητές του δείγματος:\n\nchild_gender: το φύλο του παιδιού.\nchild_age: η ηλικία του παιδιού μετρημένη σε μήνες.\nparent_read_to_child: η συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί.\nsocioeconomic_status: η κοινωνικο/οικονομική κατάσταση της οικογένειας.\nschool_type: το είδος του σχολείου που πηγαίνει το παιδί (ιδιωτικό / δημόσιο).\nmother_education: το μορφωτικό επίπεδο της μητέρας.\nfather_education: το μορφωτικό επίπεδο του πατέρα.\n\nΓια να τρέξουμε την παραπάνω γραμμική παλινδρόμηση (και αφού έχουμε εφαρμόσει την αρχική επεξεργασία) από την καρτέλα των Αναλύσεων (Analyses), διαλέγουμε την παλινδρόμηση (Regression) και στο μενού που ανοίγει διαλέγουμε την γραμμική παλινδρόμηση (Linear regression), όπως φαίνεται και στο Figure 1. Εν συντομία στο Jamovi, ακολουθούμε Analyses &gt; Regression &gt; Linear Regression.\n\n\n\n\n\n\n\n\nFigure 1: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΤο Jamovi διαχωρίζει τις μεταβλητές που χρησιμοποιούνται σε μία γραμμική παλινδρόμηση σε τρεις κατηγορίες:\n\nΤην εξαρτημένη μεταβλητή, δηλαδή τη μεταβλητή που θέλουμε να προβλέψουμε με το μοντέλο, την οποία το πακέτο ονομάζει Dependent Variable.\nΤις συνεχείς μεταβλητές, δηλαδή τις μεταβλητές των οποίων οι τιμές είναι αριθμοί, τις οποίες το πακέτο ονομάζει Covariates.\nΤις κατηγορικές μεταβλητές, δηλαδή τις μεταβλητές των οποίων οι τιμές είναι κατηγορίες (ονομαστικές, διατάξιμες), τις οποίες το πακέτο ονομάζει Factors.\n\nΓια να ορίσουμε το μοντέλο της γραμμικής παλινδρόμησης πρέπει σύρουμε και να αφήσουμε τις μεταβλητές που θα χρησιμοποιήσουμε στα σωστά σημεία (Figure 2):\n\nΗ μεταβλητή child_reading_irt είναι η εξαρτημένη μεταβλητή (dependent variable), η μεταβλητή δηλαδή που θέλουμε να προβλέψουμε και άρα θα πάει στο κουτί Dependent Variable.\nΠροσοχή: Μόνο μία εξαρτημένη μεταβλητή μπορεί να υπάρχει στη γραμμική παλινδρόμηση.\nΟι μεταβλητές child_age και socioeconomic_status είναι συνεχείς (αριθμητικές), άρα θα πάνε στο κουτί Covariates.\nΟι μεταβλητές child_gender, parent_read_to_child, school_type, mother_education και father_education είναι όλες κατηγορικές (ορίζουν κατηγορίες) και άρα θα πάνε στο κουτί Factors.\n\n\n\n\n\n\n\n\n\nFigure 2: Ορισμός του μοντέλου γραμμικής παλινδρόμησης.\n\n\n\n\n\nΣτο δεξί παράθυρο του Jamovi εμφανίζονται τα αποτελέσματα της γραμμικής παλινδρόμησης. Αν κάνουμε αλλαγές στον ορισμό του μοντέλου, τα αποτελέσματα ενημερώνονται αυτόματα. Στον πρώτο πίνακα των αποτελεσμάτων έχουμε τα μέτρα επίδοσης του μοντέλου παλινδρόμησης που διαλέξαμε (Figure 3). Βλέπουμε ότι η προεπιλογή είναι να παρουσιάζονται μόνο το \\(R^2\\) και η τετραγωνική του ρίζα. Στη συγκεκριμένη περίπτωση, το \\(R^2\\) είναι αρκετά χαμηλό (0.186). Δηλαδή, μόνο περίπου το 18.6% της συνολικής διασποράς της εξαρτημένης μεταβλητής (child_reading_irt) εξηγείται από το μοντέλο της γραμμικής παλινδρόμησης που υπολογίσαμε.\n\n\n\n\n\n\n\n\nFigure 3: Ορισμός του μοντέλου γραμμικής παλινδρόμησης.\n\n\n\n\n\nΑν θέλουμε να δούμε και τα αποτελέσματα και άλλων μετρικών που εξετάζουν την ποιότητα του μοντέλου που υπολογίσαμε μπορούμε να τα προσθέσουμε πατώντας στο μενού Model Fit. Από εκεί έχει μία σειρά από επιλογές που μπορούμε να διαλέξουμε. Για παράδειγμα, μπορούμε να υπολογίσουμε το προσαρμοσμένο \\(R^2\\) διαλέγοντας και την επιλογή \\(\\text{Adjusted} R^2\\) (Figure 4). Το προσαρμοσμένο \\(R^2\\) προσθέτει ένα κόστος στη συμπερίληψη μεταβλητών στο μοντέλο με στόχο να διασφαλιστεί ότι οι επιπλέον μεταβλητές εξηγούν σημαντικό μέρος της ανεξήγητης διασποράς του μοντέλου χωρίς αυτές.\nΕίδαμε ότι το \\(R^2\\) του μοντέλου είναι αρκετά χαμηλό. Άρα έχουμε λόγο να ανησυχούμε αν όντως έχει νόημα να κάνουμε όλη αυτή την άσκηση υπολογισμού το μοντέλου γραμμικής παλινδρόμησης. Με άλλα λόγια, αν το μοντέλο το οποίο υπολογίσαμε μας δίνει καλύτερες προβλέψεις για την αναγνωστική ικανότητα των μαθητών (child_reading_irt) από ό,τι αν χρησιμοποιούσαμε μόνο την μέση τιμή της χωρίς καμία άλλη πληροφορία. Έχουμε δει ότι τον έλεγχο αυτό τον πραγματοποιούμε με τη χρήση του συνολικού \\(F\\)-test. Αυτός ο έλεγχος μπορεί να συμπεριληφθεί στα αποτελέσματα χρησιμοποιώντας το ίδιο μενού (Model Fit) (Figure 4).\nΣτη συγκεκριμένη περίπτωση, βλέπουμε ότι το συνολικό \\(F\\)-test έχει τιμή \\(F=8.78\\) με \\(\\text{p}&lt;0.001\\). Άρα μπορούμε να απορρίψουμε την \\(H_0\\) ότι όλα τα \\(\\beta\\) του μοντέλου είναι \\(0\\) και να δεχτούμε ότι έστω και ένα από τα \\(\\beta\\) είναι διάφορο του μηδενός. Άρα, παρά τη χαμηλή επίδοση του μοντέλου παλινδρόμησης ως προς το \\(R^2\\), αυτό έχει μία αξία, δηλαδή μας επιτρέπει να κάνουμε καλύτερες προβλέψεις από το να χρησιμοποιούσαμε μόνο τον μέσο όρο της child_reading_rt.\n\n\n\n\n\n\n\n\nFigure 4: Πρόσθεση του προσαρμοσμένου \\(R^2\\) και συνολικού \\(F\\)-test στα αποτελέσματα της αξιολόγησης του μοντέλου.\n\n\n\n\n\nΤο βασικό κομμάτι, όμως, των αποτελεσμάτων της γραμμικής παλινδρόμησης παρουσιάζεται στον παρακάτω πίνακα των αποτελεσμάτων και έχει τίτλο Model Coefficients. Το μοντέλο που θέλαμε να υπολογίσουμε είχε τη μορφή: \\[\n\\begin{aligned}\n\\text{child\\_reading\\_rt} = \\beta_0 &+ \\beta_1\\times\\text{child\\_age} + \\beta_2\\times\\text{socioeconomic\\_status} \\\\\n&+ \\beta_3\\times\\text{child\\_gender} + \\beta_4\\times\\text{mother\\_education} \\\\\n&+ \\beta_5\\times\\text{father\\_education} + \\beta_6\\times\\text{school\\_type} \\\\\n&+ \\beta_7\\times\\text{parent\\_read\\_to\\_child}\n\\end{aligned}\n\\]\nΣτο Figure 5, όμως, βλέπουμε πολύ περισσότερα αποτελέσματα από τα 8 που φαίνονται στην παραπάνω εξίσωση. Αυτό συμβαίνει γιατί το Jamovi χωρίζει τις κατηγορικές μεταβλητές σε βοηθητικές μεταβλητές. Για τον χωρισμό σε βοηθητικές μεταβλητές χρησιμοποιείται ένα επίπεδο της κατηγορικής μεταβλητής ως σημείο αναφοράς. Στο Jamovi αυτό είναι το πρώτο επίπεδο. Για παράδειγμα, στην περίπτωση του φύλου δημιουργείται η βοηθητική μεταβλητή \\(X_\\text{child_gender = MALE}\\), η οποία παίρνει την τιμή \\(1\\) όταν το φύλο είναι αγόρι (MALE) και \\(0\\) στην αντίθετη περίπτωση.\nΟμοίως, στην περίπτωση του μορφωτικού επιπέδου της μητέρας (LOW, MEDIUM, HIGH) δημιουργούνται 2 βοηθητικές μεταβλητές:\n\n\\(X_\\text{mother_education = MEDIUM}\\), η οποία παίρνει την τιμή \\(1\\) όταν το μορφωτικό επίπεδο της μητέρας είναι MEDIUM και \\(0\\) σε αντίθετη περίπτωση.\n\\(X_\\text{mother_education = HIGH}\\), η οποία παίρνει την τιμή \\(1\\) όταν το μορφωτικό επίπεδο της μητέρας είναι HIGH και \\(0\\) σε αντίθετη περίπτωση.\n\nΤι γίνεται όταν το μοφωτικό επίπεδο της μητέρας είναι χαμηλό (LOW), δηλαδή το επίπεδο αναφοράς; Τότε και οι δύο βοηθητικές μεταβλητές είναι \\(0\\) και η επίδραση μορφωτικού επιπέδου της μητέρας απορροφάται από το \\(\\beta_0\\). Γενικά, όταν έχουμε να κάνουμε με κατηγορικές μεταβλητές, το Jamovi θα δημιουργεί για κάθε μία από αυτές ένα πλήθος βοηθητικών μεταβλητών που παίρνουν τις τιμές 0 και 1. Το πλήθος αυτό θα είναι όσο είναι το πλήθος των επιπέδων της κατηγορικής μεταβλητής μείον 1.\n\n\n\n\n\n\n\n\nFigure 5: Οι συντελεστές του μοντέλου της γραμμικής παλινδρόμησης που εκτιμήθηκαν χρησιμοποιώντας το δείγμα των 435 μαθητών των δεδομένων μας.\n\n\n\n\n\nΣτο αρχικό μοντέλο συμπεριλάβαμε, μεταξύ άλλων, τις μεταβλητές που περιγράφουν την κοινωνικο/οικονομική κατάσταση της οικογένειας (socioeconomic_status) και μεταβλητές για το μορφωτικό επίπεδο των γονέων καθώς και το είδος του σχολείου που πηγαίνουν τα παιδιά (mother_education, father_education, school_type). Έχει νόημα να συμπεριλάβουμε τις τελευταίες τρεις μεταβλητές ή κάνουμε πάνων-κάτω την ίδια δουλειά απλώς βάζοντας στο μοντέλο την κοινωνικο/οικονομική κατάσταση; Για να το ελέγξουμε αυτό πρέπει να πραγματοποιήσουμε το μερικό \\(F\\)-test. Στην πράξη, το μερικό \\(F\\)-test συγκρίνει δύο μοντέλα, ένα με όλες τις μεταβλητές με αυτό που δεν συμπεριλαμβάνει τις τρεις μεταβλητές, δηλαδή κάνοντας την υπόθεση ότι οι συντελεστές αυτών των τριών μεταβλητών (τα \\(\\beta\\)) είναι 0.\nΣτο Jamovi, για να πραγματοποιήσουμε το συγκεκριμένο έλεγχο πρέπει να διαλέξουμε το μενού Model Builder και να ορίσουμε εκεί τα δύο μοντέλα που είπαμε προηγουμένως, βάζοντας το καθένα σε ένα ξεχωριστό Block. Στο Block 1 βάζουμε τις μεταβλητές του απλούστερου μοντέλου, δηλαδή την ηλικία, την κοινωνικο/οικονομική κατάσταση, το φύλο του παιδιού και τη συχνότητα ανάγνωσης από τους γονείς (child_age, socioeconomic_status, child_gender, parent_read_to_child). Στο Block 2 βάζουμε τις επιπλέον μεταβλητές που θέλουμε να ελέγξουμε αν έχει νόημα να συμπεριληφθούν στον μοντέλο, δηλαδή το μορφωτικό επίπεδο των γονέων και το είδος του σχολείου (mother_education, father_education, school_type).\nΣυνήθως, είναι πιο εύκολο πρώτα να καθαρίσουμε τα Block που υπάρχουν ήδη συμπληρωμένα. Όταν το κάνετε αυτό, τα αποτελέσματα στη δεξιά μεριά της οθόνης θα χαθούν (Figure 6). Στο επόμενο βήμα θα συμπληρωθούν ξανά με τη δημιουργία των δύο μοντέλων παλινδρόμησης που έχουμε περιγράψει παραπάνω.\n\n\n\n\n\n\n\n\n\n\n\n(a) Διαγραφή Block 1.\n\n\n\n\n\n\n\n\n\n\n\n(b) Δημιουργία κενού Block 1\n\n\n\n\n\n\n\nFigure 6: Διαδικασία καθαρισμού υφιστάμενων Block.\n\n\n\nΣτη συνέχεια, δημιουργούμε ξανά τα Block όπως φαίνεται στο Figure 7.\n\n\n\n\n\n\n\n\n\n\n\n(a) Δημιουργία Block 1.\n\n\n\n\n\n\n\n\n\n\n\n(b) Δημιουργία Block 2\n\n\n\n\n\n\n\nFigure 7: Διαδικασία δημιουργίας των νέων Block για τη διενέργεια του μερικού \\(F\\)-test.\n\n\n\nΤα αποτελέσματα του μερικού \\(F\\)-test εμφανίζονται στη δεξιά μεριά της οθόνης (Figure 8). Στη συγκεκριμένη περίπτωση, ελέγχουμε την υπόθεση (\\(H_0\\)) ότι οι συντελεστές των mother_education, father_education και school_type είναι 0. Στα αποτελέσματα βλέπουμε ότι η τιμή της \\(F\\) είναι 1.18 και το \\(p\\) είναι 0.318 (πολύ μεγαλύτερο από το 0.05 που χρησιμοποιούμε συνήθως για να συμπεράνουμε στατιστική σημαντικότητα). Άρα δεν μπορούμε να απορρίψουμε την \\(H_0\\) και επομένως δεχόμαστε ότι οι συντελεστές των τριών αυτών μεταβλητών είναι \\(0\\). Άρα ένα απλούστερο μοντέλο, χωρίς τις τρεις αυτές μεταβλητές κάνει σχεδόν το ίδιο καλή δουλειά με το πλήρες μοντέλο.\n\n\n\n\n\n\n\n\nFigure 8: Τα αποτελέσματα του μερικού \\(F\\)-test."
+    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nFigure 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nFigure 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Figure 3.\n\n\n\n\n\n\n\n\nFigure 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία.\n\n\n\n\n\n\n\n\nΌταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Figure 4).\n\n\n\n\n\n\n\n\nFigure 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Figure 5).\n\n\n\n\n\n\n\n\nFigure 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nFigure 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Figure 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Figure 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nFigure 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Figure 8.\n\n\n\n\n\n\n\n\nFigure 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
+  },
+  {
+    "objectID": "vignettes/chapter-01.html#εισαγωγή-δεδομένων",
+    "href": "vignettes/chapter-01.html#εισαγωγή-δεδομένων",
+    "title": "Εισαγωγή και επεξεργασία δεδομένων",
+    "section": "",
+    "text": "Για τις ανάγκες της ανάλυσης θα χρησιμοποιήσουμε τα δεδομένα που βρίσκονται εδώ. Για να τα κατεβάσετε απλά πατάτε το κουμπί download στο πάνω δεξιά μέρος της σελίδας.\n\n\n\n\n\n\n\n\nFigure 1: Κουμπί download\n\n\n\n\n\nΤο αρχείο που θα κατέβει ονομάζεται sample_child.csv. Αρχεία αυτού του τύπου (csv) μπορείτε να τα ανοίξετε με το excel ή ακόμα και με ένα πρόγραμμα όπως το σημειωματάριο. Τα αρχεία αυτά χρησιμοποιούν κόμματα για να ορίσουν μέτρηση για μια νέα μεταβλητή.\nΑν έχετε ανοιχτό το πρόγραμμα Jamovi, μπορείτε να εισάγετε τα δεδομένα στο που κατεβάσατε ακολυθώντας τις εικόνες παρακάτω:\n\n\n\n\n\n\n\n\n\n\n\n(a) Βήμα 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Βήμα 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Βήμα 3\n\n\n\n\n\n\n\nFigure 2: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΑν όλα πάνε καλά θα έχετε τα δεδομένα σας μέσα στο Jamovi, όπως φαίνεται στο Figure 3.\n\n\n\n\n\n\n\n\nFigure 3: Τα δεδομένα έχουν φορτωθεί στο Jamovi με επιτυχία."
+  },
+  {
+    "objectID": "vignettes/chapter-01.html#αρχική-επεξεργασία",
+    "href": "vignettes/chapter-01.html#αρχική-επεξεργασία",
+    "title": "Εισαγωγή και επεξεργασία δεδομένων",
+    "section": "",
+    "text": "Όταν εισάγουμε τα δεδομένα μας, το Jamovi κάνει ό,τι μπορεί για να προβλέψει τον τύπο των μεταβλητών. Δυστυχώς, δεν κάνει πάντα την καλύτερη δουλειά. Γι’αυτό είναι σημαντικό, μετά από την εισαγωγή των δεδομένων, πάντα να κάνετε έναν έλεγχο στον τύπο των μεταβλητών που φορτώθηκαν. Το Jamovi χρησιμοποιεί 4 είδη μεταβλητών:\n\nΑναγνωριστικές μεταβλητές (ID). Αυτές χρησιμοποιούνται για να δώσουν έναν αναγνωριστικό (συνήθως) αριθμό σε κάθε π.χ. άτομο, σχολείο κτλ. Τις περισσότερες φορές, τέτοιες μεταβλητές δεν παίζουν και μεγάλο ρόλο στις αναλύσεις μας. Στο Jamovi αυτές συμβολίζονται με ένα μικρό ταμπελάκι.\nΟνομαστικές μεταβλητές (Nominal variables). Αυτές οι μεταβλητές μας δίνουν κατηγορίες οι οποίες δεν μπορούν να διαταχθούν. Για παράδειγμα το φύλο ή το χρώμα της τσάντας των μαθητών. Το μπλε δεν μπορούμε να πούμε ότι είναι “μεγαλύτερο” ή “μικρότερο” από το κόκκινο. Στο Jamovi αυτές συμβολίζονται με τρεις τεμνόμενους κύκλους.\nΔιατάξιμες μεταβλητές (Ordinal variables). Αυτές οι μεταβλητές μετριούνται σε κατηγορίες που μπορούν με κάποιον τρόπο να διαταχθούν. Για παράδειγμα, σε ένα ερωτηματολόγιο το επίπεδο συμφωνίας με μία δήλωση μπορεί να δηλώνεται ως “Καθόλου”, “Λίγο”, “Πολύ”, “Απολύτως”. Σε αυτήν την περίπτωση, το “Λίγο” ξέρουμε ότι είναι μικρότερο από το “Απολύτως”, αν και δεν έχουμε εικόνα πόσο “απέχει” το “Λίγο” από το “Απολύτως”. Στο Jamovi αυτές συμβολίζονται με μία σκάλα.\nΣυνεχείς μεταβλητές (Continuous variables). Αυτές οι μεταβλητές μετριούνται σε μία συνεχή αριθμητική κλίμακα. Για παράδειγμα, το ύψος και το βάρος των μαθητών σε μία τάξη είναι συνεχείς μεταβλητές. Ένα ύψος 110 εκατοστών είναι μεγαλύτερο από ένα ύψος 100 εκατοστών. Συγχρόνως, ξέρουμε και πόσο μεγαλύτερο είναι το πρώτο ύψος από το δεύτερο (10 εκατοστά). Στο Jamovi αυτές συμβολίζονται με έαν χάρακα.\n\nΑν δούμε τα στο συγκεκριμένο αρχείο, έχουμε μία μεταβλητή που ονομάζεται school_id την οποία το Jamovi θεώρησε ονομαστική (Figure 4).\n\n\n\n\n\n\n\n\nFigure 4: Η μεταβλητή school_id δεν θα έπρεπε να είναι ονομαστική καθώς μας δίνει έναν αναγωριστικό αριθμό για κάθε σχολείο.\n\n\n\n\n\nΓια να αλλάξουμε τον τύπο της μεταβλητής κάνουμε διπλό κλικ επάνω της και οδηγούμαστε στο μενού αλλαγής της μεταβλητής. Από εκεί διαλέγουμε την επιλογή ID και μετατρέπουμε τη school_id από ονομαστική σε αναγνωριστική (Figure 5).\n\n\n\n\n\n\n\n\nFigure 5: Αλλαγή τύπου της μεταβλητής school_id σε αναγνωριστική.\n\n\n\n\n\nΑν κοιτάξουμε και τις υπόλοιπες μεταβλητές, θα δούμε και άλλες περιπτώσεις που το Jamovi δεν έκανε καλή ερμηνεία του τύπου των μεταβλητών. Για παράδειγμα, η μεταβλητή parent_read_to_child που μας περιγράφει τη συχνότητα μέσα στην εβδομάδα που οι γονείς διαβάζουν στο παιδί είναι ονομαστική ενώ κανονικά θα έπρεπε να είναι διατάξιμη. Οι τιμές της πηγαίνουν από το καθόλου έως κάθε μέρα.\n\n\n\n\n\n\n\n\nFigure 6: Η μεταβλητή parent_read_to_child δεν θα έπρεπε να είναι ονομαστική αλλά διατάξιμη.\n\n\n\n\n\nΗ αλλαγή αυτή γίνεται σε δύο βήματα. Το πρώτο βήμα είναι το ίδιο με το Figure 5, και περιλαμβάνει την αλλαγή του τύπου της μεταβλητής. Στο δεύτερο βήμα πρέπει να αναδιατάξουμε τις τιμές της μεταβλητής, ώστε να αντικατοπτρίζουν τη διάταξη. Συνήθως, βάζομε τις αλλαγές σε αύξουσα σειρά, από τη μικρότερη τιμή στη μεγαλύτερη (Figure 7).\n\n\n\n\n\n\n\n\n\n\n\n(a) Αλλαγή τύπου της μεταβλητής.\n\n\n\n\n\n\n\n\n\n\n\n(b) Αναδιάταξη σε αύξουσα σειρά.\n\n\n\n\n\n\n\nFigure 7: Διαδικασία φόρτωσης δεδομένων στο Jamovi.\n\n\n\nΣτο τέλος, η μεταβλητή parent_read_to_child θα πρέπει να έχει τη μορφή που φαίνεται στο Figure 8.\n\n\n\n\n\n\n\n\nFigure 8: Η σωστή μορφή που παίρνει η μεταβλητή parent_read_to_child μετά τις αλλαγές.\n\n\n\n\n\nΜε τον ίδιο τρόπο αλλάζουμε και τον τύπο των μεταβλητών mother_education και father_education, οι οποίες πάλι θα έπρεπε να είναι διατάξιμες αλλά έχουν εισαχθεί ως ονομαστικές."
   },
   {
     "objectID": "slides-index.html",
@@ -1293,6 +1265,48 @@
     "title": "Lecture Slides",
     "section": "",
     "text": "Available Lectures\nClick on any lecture below to view the slides:\n\nLecture 1: Topic Title\nLecture 2: Topic Title\nLecture 3: Topic Title\nLecture 4: Topic Title\nLecture 5: Topic Title\nLecture 6: Topic Title\nLecture 7: Topic Title\nLecture 8: Topic Title\nLecture 9: Topic Title\nLecture 10: Topic Title\nLecture 11: Topic Title\nLecture 12: Topic Title\nLecture 13: Topic Title\n\nMore lectures will be added throughout the semester."
+  },
+  {
+    "objectID": "notes-index.html",
+    "href": "notes-index.html",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Εδώ θα βρείτε μία λίστα με όλες τις σημειώσεις που θα χρησιμοποιηθούν για την διδασκαλία του μαθήματος το χειμερινό εξάμνηνο 2025-2026.\nΕπιλογές:\n\n📖 Διαβάστε online (βρίσκεστε εδώ!)\n📄 Κατεβάστε το pdf\n\n\n\nΟι σημειώσεις του μαθήματος οργανώνονται στα ακόλουθα κεφάλαια:\n\nΚεφάλαιο 1: Εισαγωγή\n\n\n\n\nΣυγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: Ποσοτικές Μέθοδοι"
+  },
+  {
+    "objectID": "notes-index.html#περιεχόμενα",
+    "href": "notes-index.html#περιεχόμενα",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Οι σημειώσεις του μαθήματος οργανώνονται στα ακόλουθα κεφάλαια:\n\nΚεφάλαιο 1: Εισαγωγή"
+  },
+  {
+    "objectID": "notes-index.html#σχετικά",
+    "href": "notes-index.html#σχετικά",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Συγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: Ποσοτικές Μέθοδοι"
+  },
+  {
+    "objectID": "vignettes-index.html",
+    "href": "vignettes-index.html",
+    "title": "Ποσοτικές Μέθοδοι",
+    "section": "",
+    "text": "Οδηγίες χρήσης του στατιστικού πακέτου Jamovi\nΕδώ θα βρείτε τις αναλυτικές οδηγίες για τον υπολογισμό στατιστικών μοντέλων με τη χρήση του στατιστικού πακέτου Jamovi εξάμνηνο 2025-2026.\nΕπιλογές:\n\n📖 Διαβάστε online (βρίσκεστε εδώ!)\n📄 Κατεβάστε το pdf\n\nΣυγγραφέας: Δρ. Αλέξανδρος Ρέκκας\nΜάθημα: Ποσοτικές Μέθοδοι"
+  },
+  {
+    "objectID": "notes/chapter-01.html",
+    "href": "notes/chapter-01.html",
+    "title": "Γραμμική παλινδρόμηση",
+    "section": "",
+    "text": "Μία γραμμική σχέση μεταξύ δύο μεταβλητών \\(Y\\) και \\(X\\) μπορεί να περιγραφεί από την εξίσωση:\n\\[ Y = \\beta_0 + \\beta_1 X \\]\nΓια παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος \\(Y\\) για \\(X\\) μήνες εγγραφής θα δίνεται από τη σχέση:\n\\[ Y = 50 + 30X \\]\nΚαθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η απλή γραμμική παλινδρόμηση έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;\n\n\n\nΑς υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή \\(Y\\) (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής \\(X\\) (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από \\(n = 100\\) μαθητές και έχουμε μετρήσει τα ύψη (\\(X\\)) και τα βάρη τους (\\(Y\\)). Θα συμβολίζουμε με κεφαλαία \\(X\\) και \\(Y\\) τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά \\(x\\) και \\(y\\) τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους \\(n=100\\) συμβολίζουμε τις 100 μετρήσεις του ύψους \\(X\\) με \\(x_1,x_2,\\dots,x_100\\) και τις 100 μετρήσεις του βάρους \\(Y\\) με \\(y_1,y_2,\\dots,y_100\\).\nΗ λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα \\(\\beta_0\\) και \\(\\beta_1\\)), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των \\(X\\) και \\(Y\\) από αυτή να είναι η ελάχιστη (Figure 1). Αν, λοιπόν, συμβολίσουμε με \\(\\hat{y}\\) τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής \\(\\hat{\\beta}_0 + \\hat{\\beta}_1x\\), γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (\\(y - \\hat{y}\\)). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε σφάλματα, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (\\(y\\)) από την πρόβλεψή μας με βάση τη γραμμή (\\(\\hat{y}\\)). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων \\((y_1 - \\hat{y}), (y_2 -\n\\hat{y}), \\dots, y_{100} - \\hat{y}\\). Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε \\((y_i - \\hat{y}), \\\ni=1,\\dots,100\\).\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nΚαθώς τα σφάλματα \\(y_i-\\hat{y}\\) μπορούν να είναι είτε θετικά είτε αρνητικά, αναλόγως αν η γραμμή περνά πάνω ή κάτω από το πραγματικό σημείο \\((x_i,y_i)\\), το άθροισμα αυτό δε θα μας δώσει το σύνολο των αποστάσεων. Οι αποστάσεις ως μήκος χρειάζεται να είναι πάντα θετικές. Για το λόγο αυτό, είναι σύνηθες να υψώνουμε στο τετράγωνο τα σφάλματα ώστε να διασφαλίσουμε ότι θα δουλεύουμε με θετικούς αριθμούς. Επομένως, αναζητούμε εκείνα τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των τετραγώνων των σφαλμάτων \\((y-\\hat{y})^2\\). Επειδή το άθροισμα αυτό θα το συναντάμε συχνά, θα το συμβολίζουμε για συντομία με \\(SS_{RES}\\), από την αγγλική ορολογία sum of squares residuals (residual: υπόλοιπο – σφάλμα) \\[\nSS_{RES} = (y_1-\\hat{y})^2 + (y_2-\\hat{y})^2 + \\dots + (y_n - \\hat{y})^2 = \\sum_{i = 1}^n(y_i-\\hat{y})^2\n\\]\nΜε βάση τα παραπάνω μπορεί να αποδειχθεί ότι τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) που ζητάμε μπορούν να υπολογιστούν από τους τύπους:\n\\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}}\n\\]\nκαι\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}\n\\]\nΣτις παραπάνω εξισώσεις, τα \\(\\bar{x}\\) και \\(\\bar{y}\\) συμβολίζουν τη μέση τιμή (μέσος όρος) των μετρήσεων της \\(X\\) (ύψος) και της \\(Y\\) (βάρος) στο δείγμα των 100 μαθητών, αντίστοιχα.\nΓια παράδειγμα, έστω ότι είχαμε συλλέξει ένα δείγμα 5 μαθητών με τις μετρήσεις του ύψους και του βάρους να δίνονται παρακάτω:\n\n\n\n\nTable 1: Μετρήσεις ύψους και βάρους πέντε μαθητών ενός νηπιαγωγείου.\n\n\n\n\n\n\nΎψος (εκατοστά)\nΒάρος (κιλά)\n\n\n\n\n92\n16\n\n\n98\n18\n\n\n100\n17\n\n\n98\n20\n\n\n94\n19\n\n\n\n\n\n\n\n\nΓια να υπολογίσουμε την εξίσωση της γραμμής παλινδρόμησης στο συγκεκριμένο παράδειγμα, πρέπει πρώτα από όλα να υπολογίσουμε τα \\(\\bar{x}\\) και \\(\\bar{y}\\). Αν γυρίσετε πίσω στις προηγούμενες εξισώσεις θα δείτε ότι οι ποσότητες αυτές χρησιμοποιούνται αρκετές φορές. Το \\(\\bar{x}\\) είναι ο μέσος όρος του ύψους των 5 μαθητών και υπολογίζεται ως \\[\n\\bar{x} = \\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = \\frac{92 + 98 + 100 + 98 +94}{5} = 96.4\n\\]\nΑντίστοιχα, ο μέσος όρος του βάρους των μαθητών είναι: \\[\n\\bar{y} = \\frac{y_1+y_2+y_3+y_4+y_5}{5} = \\frac{16+18+17+20+19}{5} = 18\n\\]\nΤώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:\nΤώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: \\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}} = \\frac{5.8}{43.2} \\approx 0.13\n\\]\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x} = 18 - 0.13\\times 96.4\\approx 5.47\n\\]\nΕπομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: \\[\n\\text{βάρος} = 5.47 + 0.13 \\times \\text{ύψος}\n\\]"
+  },
+  {
+    "objectID": "notes/chapter-01.html#απλή-γραμμική-παλινδρόμηση",
+    "href": "notes/chapter-01.html#απλή-γραμμική-παλινδρόμηση",
+    "title": "Γραμμική παλινδρόμηση",
+    "section": "",
+    "text": "Μία γραμμική σχέση μεταξύ δύο μεταβλητών \\(Y\\) και \\(X\\) μπορεί να περιγραφεί από την εξίσωση:\n\\[ Y = \\beta_0 + \\beta_1 X \\]\nΓια παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος \\(Y\\) για \\(X\\) μήνες εγγραφής θα δίνεται από τη σχέση:\n\\[ Y = 50 + 30X \\]\nΚαθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η απλή γραμμική παλινδρόμηση έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;\n\n\n\nΑς υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή \\(Y\\) (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής \\(X\\) (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από \\(n = 100\\) μαθητές και έχουμε μετρήσει τα ύψη (\\(X\\)) και τα βάρη τους (\\(Y\\)). Θα συμβολίζουμε με κεφαλαία \\(X\\) και \\(Y\\) τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά \\(x\\) και \\(y\\) τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους \\(n=100\\) συμβολίζουμε τις 100 μετρήσεις του ύψους \\(X\\) με \\(x_1,x_2,\\dots,x_100\\) και τις 100 μετρήσεις του βάρους \\(Y\\) με \\(y_1,y_2,\\dots,y_100\\).\nΗ λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα \\(\\beta_0\\) και \\(\\beta_1\\)), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των \\(X\\) και \\(Y\\) από αυτή να είναι η ελάχιστη (Figure 1). Αν, λοιπόν, συμβολίσουμε με \\(\\hat{y}\\) τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής \\(\\hat{\\beta}_0 + \\hat{\\beta}_1x\\), γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (\\(y - \\hat{y}\\)). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε σφάλματα, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (\\(y\\)) από την πρόβλεψή μας με βάση τη γραμμή (\\(\\hat{y}\\)). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων \\((y_1 - \\hat{y}), (y_2 -\n\\hat{y}), \\dots, y_{100} - \\hat{y}\\). Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε \\((y_i - \\hat{y}), \\\ni=1,\\dots,100\\).\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nΚαθώς τα σφάλματα \\(y_i-\\hat{y}\\) μπορούν να είναι είτε θετικά είτε αρνητικά, αναλόγως αν η γραμμή περνά πάνω ή κάτω από το πραγματικό σημείο \\((x_i,y_i)\\), το άθροισμα αυτό δε θα μας δώσει το σύνολο των αποστάσεων. Οι αποστάσεις ως μήκος χρειάζεται να είναι πάντα θετικές. Για το λόγο αυτό, είναι σύνηθες να υψώνουμε στο τετράγωνο τα σφάλματα ώστε να διασφαλίσουμε ότι θα δουλεύουμε με θετικούς αριθμούς. Επομένως, αναζητούμε εκείνα τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των τετραγώνων των σφαλμάτων \\((y-\\hat{y})^2\\). Επειδή το άθροισμα αυτό θα το συναντάμε συχνά, θα το συμβολίζουμε για συντομία με \\(SS_{RES}\\), από την αγγλική ορολογία sum of squares residuals (residual: υπόλοιπο – σφάλμα) \\[\nSS_{RES} = (y_1-\\hat{y})^2 + (y_2-\\hat{y})^2 + \\dots + (y_n - \\hat{y})^2 = \\sum_{i = 1}^n(y_i-\\hat{y})^2\n\\]\nΜε βάση τα παραπάνω μπορεί να αποδειχθεί ότι τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) που ζητάμε μπορούν να υπολογιστούν από τους τύπους:\n\\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}}\n\\]\nκαι\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}\n\\]\nΣτις παραπάνω εξισώσεις, τα \\(\\bar{x}\\) και \\(\\bar{y}\\) συμβολίζουν τη μέση τιμή (μέσος όρος) των μετρήσεων της \\(X\\) (ύψος) και της \\(Y\\) (βάρος) στο δείγμα των 100 μαθητών, αντίστοιχα.\nΓια παράδειγμα, έστω ότι είχαμε συλλέξει ένα δείγμα 5 μαθητών με τις μετρήσεις του ύψους και του βάρους να δίνονται παρακάτω:\n\n\n\n\nTable 1: Μετρήσεις ύψους και βάρους πέντε μαθητών ενός νηπιαγωγείου.\n\n\n\n\n\n\nΎψος (εκατοστά)\nΒάρος (κιλά)\n\n\n\n\n92\n16\n\n\n98\n18\n\n\n100\n17\n\n\n98\n20\n\n\n94\n19\n\n\n\n\n\n\n\n\nΓια να υπολογίσουμε την εξίσωση της γραμμής παλινδρόμησης στο συγκεκριμένο παράδειγμα, πρέπει πρώτα από όλα να υπολογίσουμε τα \\(\\bar{x}\\) και \\(\\bar{y}\\). Αν γυρίσετε πίσω στις προηγούμενες εξισώσεις θα δείτε ότι οι ποσότητες αυτές χρησιμοποιούνται αρκετές φορές. Το \\(\\bar{x}\\) είναι ο μέσος όρος του ύψους των 5 μαθητών και υπολογίζεται ως \\[\n\\bar{x} = \\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = \\frac{92 + 98 + 100 + 98 +94}{5} = 96.4\n\\]\nΑντίστοιχα, ο μέσος όρος του βάρους των μαθητών είναι: \\[\n\\bar{y} = \\frac{y_1+y_2+y_3+y_4+y_5}{5} = \\frac{16+18+17+20+19}{5} = 18\n\\]\nΤώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:\nΤώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: \\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}} = \\frac{5.8}{43.2} \\approx 0.13\n\\]\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x} = 18 - 0.13\\times 96.4\\approx 5.47\n\\]\nΕπομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: \\[\n\\text{βάρος} = 5.47 + 0.13 \\times \\text{ύψος}\n\\]"
   },
   {
     "objectID": "notes/index.html",
@@ -1314,19 +1328,5 @@
     "title": "Ποσοτικές Μέθοδοι",
     "section": "",
     "text": "Συγγραφέας: Αλέξανδρος Ρέκκας\nΜάθημα: Στατιστική στην εκπαιδευτική έρευνα\nΟι σημειώσεις αυτές έχουν σχεδιαστεί ώστε να συμπληρώνουν τις παρουσιάσεις των διαλέξεων και να αποτελούν μια ολοκληρωμένη αναφορά για το υλικό του μαθήματος."
-  },
-  {
-    "objectID": "notes/chapter-01.html",
-    "href": "notes/chapter-01.html",
-    "title": "Γραμμική παλινδρόμηση",
-    "section": "",
-    "text": "Μία γραμμική σχέση μεταξύ δύο μεταβλητών \\(Y\\) και \\(X\\) μπορεί να περιγραφεί από την εξίσωση:\n\\[ Y = \\beta_0 + \\beta_1 X \\]\nΓια παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος \\(Y\\) για \\(X\\) μήνες εγγραφής θα δίνεται από τη σχέση:\n\\[ Y = 50 + 30X \\]\nΚαθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η απλή γραμμική παλινδρόμηση έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;\n\n\n\nΑς υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή \\(Y\\) (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής \\(X\\) (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από \\(n = 100\\) μαθητές και έχουμε μετρήσει τα ύψη (\\(X\\)) και τα βάρη τους (\\(Y\\)). Θα συμβολίζουμε με κεφαλαία \\(X\\) και \\(Y\\) τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά \\(x\\) και \\(y\\) τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους \\(n=100\\) συμβολίζουμε τις 100 μετρήσεις του ύψους \\(X\\) με \\(x_1,x_2,\\dots,x_100\\) και τις 100 μετρήσεις του βάρους \\(Y\\) με \\(y_1,y_2,\\dots,y_100\\).\nΗ λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα \\(\\beta_0\\) και \\(\\beta_1\\)), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των \\(X\\) και \\(Y\\) από αυτή να είναι η ελάχιστη (Figure 1). Αν, λοιπόν, συμβολίσουμε με \\(\\hat{y}\\) τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής \\(\\hat{\\beta}_0 + \\hat{\\beta}_1x\\), γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (\\(y - \\hat{y}\\)). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε σφάλματα, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (\\(y\\)) από την πρόβλεψή μας με βάση τη γραμμή (\\(\\hat{y}\\)). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων \\((y_1 - \\hat{y}), (y_2 -\n\\hat{y}), \\dots, y_{100} - \\hat{y}\\). Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε \\((y_i - \\hat{y}), \\\ni=1,\\dots,100\\).\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nΚαθώς τα σφάλματα \\(y_i-\\hat{y}\\) μπορούν να είναι είτε θετικά είτε αρνητικά, αναλόγως αν η γραμμή περνά πάνω ή κάτω από το πραγματικό σημείο \\((x_i,y_i)\\), το άθροισμα αυτό δε θα μας δώσει το σύνολο των αποστάσεων. Οι αποστάσεις ως μήκος χρειάζεται να είναι πάντα θετικές. Για το λόγο αυτό, είναι σύνηθες να υψώνουμε στο τετράγωνο τα σφάλματα ώστε να διασφαλίσουμε ότι θα δουλεύουμε με θετικούς αριθμούς. Επομένως, αναζητούμε εκείνα τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των τετραγώνων των σφαλμάτων \\((y-\\hat{y})^2\\). Επειδή το άθροισμα αυτό θα το συναντάμε συχνά, θα το συμβολίζουμε για συντομία με \\(SS_{RES}\\), από την αγγλική ορολογία sum of squares residuals (residual: υπόλοιπο – σφάλμα) \\[\nSS_{RES} = (y_1-\\hat{y})^2 + (y_2-\\hat{y})^2 + \\dots + (y_n - \\hat{y})^2 = \\sum_{i = 1}^n(y_i-\\hat{y})^2\n\\]\nΜε βάση τα παραπάνω μπορεί να αποδειχθεί ότι τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) που ζητάμε μπορούν να υπολογιστούν από τους τύπους:\n\\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}}\n\\]\nκαι\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}\n\\]\nΣτις παραπάνω εξισώσεις, τα \\(\\bar{x}\\) και \\(\\bar{y}\\) συμβολίζουν τη μέση τιμή (μέσος όρος) των μετρήσεων της \\(X\\) (ύψος) και της \\(Y\\) (βάρος) στο δείγμα των 100 μαθητών, αντίστοιχα.\nΓια παράδειγμα, έστω ότι είχαμε συλλέξει ένα δείγμα 5 μαθητών με τις μετρήσεις του ύψους και του βάρους να δίνονται παρακάτω:\n\n\n\n\nTable 1: Μετρήσεις ύψους και βάρους πέντε μαθητών ενός νηπιαγωγείου.\n\n\n\n\n\n\nΎψος (εκατοστά)\nΒάρος (κιλά)\n\n\n\n\n92\n16\n\n\n98\n18\n\n\n100\n17\n\n\n98\n20\n\n\n94\n19\n\n\n\n\n\n\n\n\nΓια να υπολογίσουμε την εξίσωση της γραμμής παλινδρόμησης στο συγκεκριμένο παράδειγμα, πρέπει πρώτα από όλα να υπολογίσουμε τα \\(\\bar{x}\\) και \\(\\bar{y}\\). Αν γυρίσετε πίσω στις προηγούμενες εξισώσεις θα δείτε ότι οι ποσότητες αυτές χρησιμοποιούνται αρκετές φορές. Το \\(\\bar{x}\\) είναι ο μέσος όρος του ύψους των 5 μαθητών και υπολογίζεται ως \\[\n\\bar{x} = \\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = \\frac{92 + 98 + 100 + 98 +94}{5} = 96.4\n\\]\nΑντίστοιχα, ο μέσος όρος του βάρους των μαθητών είναι: \\[\n\\bar{y} = \\frac{y_1+y_2+y_3+y_4+y_5}{5} = \\frac{16+18+17+20+19}{5} = 18\n\\]\nΤώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:\nΤώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: \\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}} = \\frac{5.8}{43.2} \\approx 0.13\n\\]\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x} = 18 - 0.13\\times 96.4\\approx 5.47\n\\]\nΕπομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: \\[\n\\text{βάρος} = 5.47 + 0.13 \\times \\text{ύψος}\n\\]"
-  },
-  {
-    "objectID": "notes/chapter-01.html#απλή-γραμμική-παλινδρόμηση",
-    "href": "notes/chapter-01.html#απλή-γραμμική-παλινδρόμηση",
-    "title": "Γραμμική παλινδρόμηση",
-    "section": "",
-    "text": "Μία γραμμική σχέση μεταξύ δύο μεταβλητών \\(Y\\) και \\(X\\) μπορεί να περιγραφεί από την εξίσωση:\n\\[ Y = \\beta_0 + \\beta_1 X \\]\nΓια παράδειγμα, το κόστος εγγραφής σε ένα πρόγραμμα σταθερής τηλεφωνίας μπορεί να περιλαμβάνει ένα αρχικό κόστος σύνδεσης 50 ευρώ και 30 ευρώ πάγιο κάθε μήνα. Τότε το συνολικό κόστος \\(Y\\) για \\(X\\) μήνες εγγραφής θα δίνεται από τη σχέση:\n\\[ Y = 50 + 30X \\]\nΚαθώς, πολύ συχνά μία ευθεία γραμμή μπορεί να είναι βολική για να περιγράψει τη σχέση δύο μεταβλητών, η απλή γραμμική παλινδρόμηση έχει αναπτυχθεί ως η στατιστική μέθοδος που καθορίζει την καλύτερη δυνατή ευθεία γραμμή που περιγράφει τη σύγχρονη εξέλιξη των δύο μεταβλητών. Τι εννοούμε, όμως, όταν μιλάμε για την “καλύτερη δυνατή γραμμή”;\n\n\n\nΑς υποθέσουμε ότι θέλουμε να μελετήσουμε πώς η μεταβλητή \\(Y\\) (π.χ. το βάρος των μαθητών του νηπιαγωγείου) εξελίσσεται ως συνάρτηση της μεταβλητής \\(X\\) (π.χ. το ύψος των μαθητών του νηπιαγωγείου). Για το σκοπό αυτό έχουμε συλλέξει ένα δείγμα από \\(n = 100\\) μαθητές και έχουμε μετρήσει τα ύψη (\\(X\\)) και τα βάρη τους (\\(Y\\)). Θα συμβολίζουμε με κεφαλαία \\(X\\) και \\(Y\\) τις μεταβλητές ως έννοιες (π.χ. Χ: είναι η έννοια του ύψους, Υ: είναι η έννοια του βάρους) και με πεζά \\(x\\) και \\(y\\) τις μετρήσεις τους στο δείγμα. Άρα για το δείγμα μεγέθους \\(n=100\\) συμβολίζουμε τις 100 μετρήσεις του ύψους \\(X\\) με \\(x_1,x_2,\\dots,x_100\\) και τις 100 μετρήσεις του βάρους \\(Y\\) με \\(y_1,y_2,\\dots,y_100\\).\nΗ λογική λέει ότι θέλουμε να διαλέξουμε τη γραμμή εκείνη (δηλαδή τα κατάλληλα \\(\\beta_0\\) και \\(\\beta_1\\)), ώστε το σύνολο των αποστάσεων των πραγματικών μετρήσεων των \\(X\\) και \\(Y\\) από αυτή να είναι η ελάχιστη (Figure 1). Αν, λοιπόν, συμβολίσουμε με \\(\\hat{y}\\) τις προβλέψεις που θα μας έδινε η εξίσωση μίας γραμμής \\(\\hat{\\beta}_0 + \\hat{\\beta}_1x\\), γραμμική παλινδρόμηση θα ελαχιστοποιήσει τις αποστάσεις (\\(y - \\hat{y}\\)). Τις αποστάσεις αυτές συνήθως τις ονομάζουμε σφάλματα, αφού μας δείχνουν πόσο μακριά βρίσκεται η αλήθεια (\\(y\\)) από την πρόβλεψή μας με βάση τη γραμμή (\\(\\hat{y}\\)). Στο συγκεκριμένο παράδειγμα, θα χρειαστεί να βρούμε τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των 100 δυνατών σφαλμάτων \\((y_1 - \\hat{y}), (y_2 -\n\\hat{y}), \\dots, y_{100} - \\hat{y}\\). Για συντομία, όταν θέλουμε να αναφερθούμε σε όλα τα σφάλματα, όπως κάναμε πριν, χρησιμοποιούμε \\((y_i - \\hat{y}), \\\ni=1,\\dots,100\\).\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nΚαθώς τα σφάλματα \\(y_i-\\hat{y}\\) μπορούν να είναι είτε θετικά είτε αρνητικά, αναλόγως αν η γραμμή περνά πάνω ή κάτω από το πραγματικό σημείο \\((x_i,y_i)\\), το άθροισμα αυτό δε θα μας δώσει το σύνολο των αποστάσεων. Οι αποστάσεις ως μήκος χρειάζεται να είναι πάντα θετικές. Για το λόγο αυτό, είναι σύνηθες να υψώνουμε στο τετράγωνο τα σφάλματα ώστε να διασφαλίσουμε ότι θα δουλεύουμε με θετικούς αριθμούς. Επομένως, αναζητούμε εκείνα τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) τα οποία θα ελαχιστοποιήσουν το άθροισμα των τετραγώνων των σφαλμάτων \\((y-\\hat{y})^2\\). Επειδή το άθροισμα αυτό θα το συναντάμε συχνά, θα το συμβολίζουμε για συντομία με \\(SS_{RES}\\), από την αγγλική ορολογία sum of squares residuals (residual: υπόλοιπο – σφάλμα) \\[\nSS_{RES} = (y_1-\\hat{y})^2 + (y_2-\\hat{y})^2 + \\dots + (y_n - \\hat{y})^2 = \\sum_{i = 1}^n(y_i-\\hat{y})^2\n\\]\nΜε βάση τα παραπάνω μπορεί να αποδειχθεί ότι τα \\(\\hat{\\beta}_0\\) και \\(\\hat{\\beta}_1\\) που ζητάμε μπορούν να υπολογιστούν από τους τύπους:\n\\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}}\n\\]\nκαι\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}\n\\]\nΣτις παραπάνω εξισώσεις, τα \\(\\bar{x}\\) και \\(\\bar{y}\\) συμβολίζουν τη μέση τιμή (μέσος όρος) των μετρήσεων της \\(X\\) (ύψος) και της \\(Y\\) (βάρος) στο δείγμα των 100 μαθητών, αντίστοιχα.\nΓια παράδειγμα, έστω ότι είχαμε συλλέξει ένα δείγμα 5 μαθητών με τις μετρήσεις του ύψους και του βάρους να δίνονται παρακάτω:\n\n\n\n\nTable 1: Μετρήσεις ύψους και βάρους πέντε μαθητών ενός νηπιαγωγείου.\n\n\n\n\n\n\nΎψος (εκατοστά)\nΒάρος (κιλά)\n\n\n\n\n92\n16\n\n\n98\n18\n\n\n100\n17\n\n\n98\n20\n\n\n94\n19\n\n\n\n\n\n\n\n\nΓια να υπολογίσουμε την εξίσωση της γραμμής παλινδρόμησης στο συγκεκριμένο παράδειγμα, πρέπει πρώτα από όλα να υπολογίσουμε τα \\(\\bar{x}\\) και \\(\\bar{y}\\). Αν γυρίσετε πίσω στις προηγούμενες εξισώσεις θα δείτε ότι οι ποσότητες αυτές χρησιμοποιούνται αρκετές φορές. Το \\(\\bar{x}\\) είναι ο μέσος όρος του ύψους των 5 μαθητών και υπολογίζεται ως \\[\n\\bar{x} = \\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = \\frac{92 + 98 + 100 + 98 +94}{5} = 96.4\n\\]\nΑντίστοιχα, ο μέσος όρος του βάρους των μαθητών είναι: \\[\n\\bar{y} = \\frac{y_1+y_2+y_3+y_4+y_5}{5} = \\frac{16+18+17+20+19}{5} = 18\n\\]\nΤώρα μπορούμε να κατασκευάσουμε προοδευτικά τα πιο πολύπλοκα αθροίσματα:\nΤώρα μπορούμε να υπολογίσουμε τους συντελεστές της γραμμής παλινδρόμησης που μπορούμε με βάση αυτό το μικρό δείγμα των πέντγε παιδιών: \\[\n\\hat{\\beta}_1=\\frac{\\sum_{i=1}^n(x_i-\\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n{(x_i - \\bar{x})^2}} = \\frac{5.8}{43.2} \\approx 0.13\n\\]\n\\[\n\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x} = 18 - 0.13\\times 96.4\\approx 5.47\n\\]\nΕπομένως, η εξίσωση της γραμμής παλινδρόμησης είναι: \\[\n\\text{βάρος} = 5.47 + 0.13 \\times \\text{ύψος}\n\\]"
   }
 ]
