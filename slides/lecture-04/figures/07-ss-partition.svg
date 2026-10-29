@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="830.8pt" height="239.996562pt" viewBox="0 0 830.8 239.996562" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-29T09:42:28.438095</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 239.996562
+L 830.8 239.996562
+L 830.8 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 39.426316 144.353319
+L 361.689474 144.353319
+L 361.689474 81.02359
+L 39.426316 81.02359
+z
+" clip-path="url(#pcf846aef26)" style="fill: #4a6fa5"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 361.689474 144.353319
+L 791.373684 144.353319
+L 791.373684 81.02359
+L 361.689474 81.02359
+z
+" clip-path="url(#pcf846aef26)" style="fill: #c74440"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="200.557895" y="119.310954" transform="rotate(-0 200.557895 119.310954)">SSW = 30</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="576.531579" y="119.310954" transform="rotate(-0 576.531579 119.310954)">SSB = 40</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 787.138305 173.8344
+Q 415.400203 173.8344 43.6621 173.8344
+" style="fill: none; stroke: #1e3a5f; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 780.338305 170.4344
+L 787.138305 173.8344
+L 780.338305 177.2344
+" style="fill: none; stroke: #1e3a5f; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 50.4621 177.2344
+L 43.6621 173.8344
+L 50.4621 170.4344
+" style="fill: none; stroke: #1e3a5f; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3a5f" x="415.4" y="206.662306" transform="rotate(-0 415.4 206.662306)">SST = 70</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3a5f" x="415.4" y="24.796562" transform="rotate(-0 415.4 24.796562)">Συνολική = μεταξύ + εντός ομάδων</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcf846aef26">
+   <rect x="7.2" y="30.796562" width="816.4" height="202"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="825.757969pt" height="312.4pt" viewBox="0 0 825.757969 312.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-29T09:42:28.388899</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 312.4
+L 825.757969 312.4
+L 825.757969 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="LineCollection_1">
+    <path d="M 132.420236 268.523077
+L 644.189895 268.523077
+" clip-path="url(#pfe4bcb85a0)" style="fill: none; stroke: #8995a5; stroke-opacity: 0.75; stroke-width: 2.2"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 132.420236 176.830769
+L 644.189895 176.830769
+" clip-path="url(#pfe4bcb85a0)" style="fill: none; stroke: #4a6fa5; stroke-opacity: 0.75; stroke-width: 2.2"/>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 132.420236 85.138462
+L 644.189895 85.138462
+" clip-path="url(#pfe4bcb85a0)" style="fill: none; stroke-dasharray: 8.14,3.52; stroke-dashoffset: 0; stroke: #1e3a5f; stroke-opacity: 0.75; stroke-width: 2.2"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #8995a5" x="660.522969" y="273.258077" transform="rotate(-0 660.522969 273.258077)">Παιδί: y = 2</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #4a6fa5" x="660.522969" y="181.549519" transform="rotate(-0 660.522969 181.549519)">Μέσος αφήγησης: 4</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3a5f" x="660.522969" y="89.864712" transform="rotate(-0 660.522969 89.864712)">Γενικός μέσος: 6</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 203.196891 178.831502
+Q 203.196891 222.676854 203.196891 262.05007
+" style="fill: none; stroke: #4a6fa5; stroke-width: 4; stroke-linecap: round"/>
+    <path d="M 206.596891 255.25007
+L 203.196891 262.05007
+L 199.796891 255.25007
+z
+" style="fill: #4a6fa5; stroke: #4a6fa5; stroke-width: 4; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #4a6fa5" transform="translate(183.536316 259.465673) rotate(-90)">μέσα: −2</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 350.194559 87.139194
+Q 350.194559 130.984546 350.194559 170.357762
+" style="fill: none; stroke: #c74440; stroke-width: 4; stroke-linecap: round"/>
+    <path d="M 353.594559 163.557762
+L 350.194559 170.357762
+L 346.794559 163.557762
+z
+" style="fill: #c74440; stroke: #c74440; stroke-width: 4; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #c74440" transform="translate(330.501485 176.609615) rotate(-90)">μεταξύ: −2</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 497.192227 87.139194
+Q 497.192227 176.830612 497.192227 262.049895
+" style="fill: none; stroke: #1e3a5f; stroke-width: 4; stroke-linecap: round"/>
+    <path d="M 500.592227 255.249895
+L 497.192227 262.049895
+L 493.792227 255.249895
+z
+" style="fill: #1e3a5f; stroke: #1e3a5f; stroke-width: 4; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #1e3a5f" transform="translate(477.531653 230.355769) rotate(-90)">συνολικά: −4</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3a5f" x="339.305843" y="30.123077" transform="rotate(-0 339.305843 30.123077)">yᵢⱼ − μ = (yᵢⱼ − μⱼ) + (μⱼ − μ)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfe4bcb85a0">
+   <rect x="7.2" y="7.2" width="724.099624" height="298"/>
+  </clipPath>
+ </defs>
+</svg>
