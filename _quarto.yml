@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "**/*.qmd"
+    - "!exercises/"
 
 website:
   title: "Στατιστική στην εκπαιδευτική έρευνα"
@@ -12,8 +15,6 @@ website:
         href: slides-index.qmd
       - text: "Σημειώσεις"
         href: notes-index.qmd
-      - text: "Ασκήσεις"
-        href: exercises-index.qmd
 
 format:
   html:
