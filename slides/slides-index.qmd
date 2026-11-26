@@ -1,0 +1,13 @@
+---
+title: "Lecture Slides"
+format: html
+---
+
+# Available Lectures
+
+Click on any lecture below to view the slides:
+
+- [Διάλεξη 4: ANOVA ενός παράγοντα](slides/lecture-04/index.qmd)
+- [Διάλεξη 5: ANOVA — μέγεθος επίδρασης και πολλαπλές συγκρίσεις](slides/lecture-05/index.qmd)
+- [Διάλεξη 6: ANOVA δύο παραγόντων](slides/lecture-06/index.qmd)
+- [Διάλεξη 7: ANOVA επαναλαμβανόμενων μετρήσεων](slides/lecture-07/index.qmd)

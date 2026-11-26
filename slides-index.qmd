@@ -8,5 +8,8 @@ format: html
 Click on any lecture below to view the slides:
 
 - [Lecture 4: One-way ANOVA](slides/lecture-04/index.qmd)
+- [Lecture 5: One-way ANOVA](slides/lecture-05/index.qmd)
+- [Lecture 6: Two-way ANOVA](slides/lecture-06/index.qmd)
+- [Lecture 7: Repeated measures ANOVA](slides/lecture-07/index.qmd)
 
 *More lectures will be added throughout the semester.*

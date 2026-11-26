@@ -1,0 +1,151 @@
+{
+  "dataset": {
+    "N": 48,
+    "seed": 7102026,
+    "outcome": "Συμμετοχή στο συνεργατικό παιχνίδι (0–30)",
+    "factor": "Χρόνος",
+    "levels": [
+      "Πριν",
+      "2 εβδομάδες",
+      "4 εβδομάδες",
+      "6 εβδομάδες"
+    ],
+    "format": "wide"
+  },
+  "descriptives": [
+    {
+      "occasion": "Πριν",
+      "column": "participation_pre",
+      "n": 48,
+      "mean": 13.825000000000001,
+      "sd": 3.3395438597942326,
+      "median": 13.8,
+      "min": 7.5,
+      "max": 24.3
+    },
+    {
+      "occasion": "2 εβδομάδες",
+      "column": "participation_w2",
+      "n": 48,
+      "mean": 14.508333333333333,
+      "sd": 4.318975121402157,
+      "median": 14.3,
+      "min": 6.6,
+      "max": 26.0
+    },
+    {
+      "occasion": "4 εβδομάδες",
+      "column": "participation_w4",
+      "n": 48,
+      "mean": 17.002083333333335,
+      "sd": 3.0059861966057655,
+      "median": 16.95,
+      "min": 8.4,
+      "max": 23.8
+    },
+    {
+      "occasion": "6 εβδομάδες",
+      "column": "participation_w6",
+      "n": 48,
+      "mean": 17.410416666666666,
+      "sd": 3.5052689570121305,
+      "median": 17.05,
+      "min": 8.7,
+      "max": 26.2
+    }
+  ],
+  "anova": {
+    "SS_total": 2861.744791666667,
+    "SS_time": 458.68354166666666,
+    "SS_children": 1894.7797916666666,
+    "SS_error": 508.2814583333336,
+    "df_time": 3,
+    "df_children": 47,
+    "df_error": 141,
+    "MS_time": 152.8945138888889,
+    "MS_error": 3.604833037825061,
+    "F": 42.413757387536656,
+    "p_uncorrected": 1.3462327401126138e-19,
+    "partial_eta_squared": 0.47435382011413707,
+    "residual_shapiro_W": 0.9902371448277763,
+    "residual_shapiro_p": 0.2171466605545086
+  },
+  "sphericity": {
+    "W": 0.7624338435962822,
+    "chi_square": 12.401674375254263,
+    "df": 5.0,
+    "p": 0.02967973449735003,
+    "epsilon_GG": 0.8328464042507454,
+    "epsilon_HF": 0.8833409070614977
+  },
+  "corrected_tests": {
+    "Greenhouse_Geisser_df1": 2.4985392127522363,
+    "Greenhouse_Geisser_df2": 117.43134299935511,
+    "Greenhouse_Geisser_p": 1.0144296207112037e-16,
+    "Huynh_Feldt_df1": 2.6500227211844933,
+    "Huynh_Feldt_df2": 124.55106789567118,
+    "Huynh_Feldt_p": 1.3694286610569406e-17
+  },
+  "pairwise_paired_t_holm": [
+    {
+      "first": "Πριν",
+      "second": "2 εβδομάδες",
+      "difference_second_minus_first": 0.6833333333333335,
+      "sd_difference": 3.065826280163611,
+      "t": 1.5442075886642486,
+      "df": 47,
+      "p_unadjusted": 0.1292452595689506,
+      "p_holm": 0.2584905191379012
+    },
+    {
+      "first": "Πριν",
+      "second": "4 εβδομάδες",
+      "difference_second_minus_first": 3.1770833333333335,
+      "sd_difference": 2.2371371887790965,
+      "t": 9.839127936926884,
+      "df": 47,
+      "p_unadjusted": 5.39110788850071e-13,
+      "p_holm": 2.695553944250355e-12
+    },
+    {
+      "first": "Πριν",
+      "second": "6 εβδομάδες",
+      "difference_second_minus_first": 3.585416666666667,
+      "sd_difference": 2.255394439563551,
+      "t": 11.013814211890415,
+      "df": 47,
+      "p_unadjusted": 1.2953685207844455e-14,
+      "p_holm": 7.772211124706673e-14
+    },
+    {
+      "first": "2 εβδομάδες",
+      "second": "4 εβδομάδες",
+      "difference_second_minus_first": 2.49375,
+      "sd_difference": 3.257881196977112,
+      "t": 5.303203450614019,
+      "df": 47,
+      "p_unadjusted": 2.9969164075025226e-06,
+      "p_holm": 8.990749222507569e-06
+    },
+    {
+      "first": "2 εβδομάδες",
+      "second": "6 εβδομάδες",
+      "difference_second_minus_first": 2.9020833333333336,
+      "sd_difference": 2.760934900504301,
+      "t": 7.282396669641214,
+      "df": 47,
+      "p_unadjusted": 3.0530887788463024e-09,
+      "p_holm": 1.221235511538521e-08
+    },
+    {
+      "first": "4 εβδομάδες",
+      "second": "6 εβδομάδες",
+      "difference_second_minus_first": 0.4083333333333335,
+      "sd_difference": 2.351715836551373,
+      "t": 1.2029583995903697,
+      "df": 47,
+      "p_unadjusted": 0.23501734491705675,
+      "p_holm": 0.2584905191379012
+    }
+  ]
+}
