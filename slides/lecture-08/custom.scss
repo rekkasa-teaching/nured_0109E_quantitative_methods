@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+// The palette, dimensions and structure mirror the lecture style in the source repository.
+$primary-color: #1e3a5f;
+$secondary-color: #4a6fa5;
+$accent-color: #c74440;
+$text-color: #253447;
+$light-gray: #f5f7fa;
+$border-gray: #d9e1ea;
+$font-family-sans-serif: "Noto Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-font: "Noto Sans", "Segoe UI", Arial, sans-serif;
+$presentation-font-size-root: 29px;
+
+/*-- scss:rules --*/
+.reveal {
+  font-family: $font-family-sans-serif;
+  color: $text-color;
+  .slides { text-align: left; }
+  .slides section { line-height: 1.27; }
+  h1, h2, h3 {
+    color: $primary-color;
+    text-transform: none;
+    font-weight: 650;
+    letter-spacing: -.02em;
+  }
+  h1 { font-size: 1.72em; }
+  h2 { font-size: 1.35em; border-bottom: 2px solid $primary-color; padding-bottom: .22em; margin-bottom: .62em; }
+  h3 { font-size: 1.1em; }
+  p, li { line-height: 1.30; }
+  li { margin: .30em 0; }
+  table { font-size: .75em; width: 100%; border-collapse: collapse; }
+  th, td { padding: .25em .45em; border-bottom: 1px solid $border-gray; }
+  th { background: #f1f5fa; color: $primary-color; }
+  .slide-number { background: rgba(30,58,95,.91); padding: .25em .48em; border-radius: 4px; color: white; }
+  .footer { color: #7b8593; font-size: .48em; }
+  .slide-logo { max-height: 45px; }
+  .columns { align-items: stretch; gap: 1.1rem; }
+  img.plot { margin: .15em auto .25em auto !important; display: block; max-height: 475px; }
+  blockquote { border-left: 5px solid $secondary-color; background: $light-gray; padding: .3em 1em; color: $primary-color; margin: 1.0em 0; }
+  .small-note { font-size: .61em; color: #596779; margin-top: .48em; line-height: 1.35; }
+  .takeaway { padding: .65em .78em; background: #eef4fa; border-left: 5px solid $secondary-color; border-radius: .25em; margin-top: .7em; font-size: .82em; }
+  .discussion { border-left: 5px solid #e2a552; background: #fff9e9; padding: .38em .7em; border-radius: .2em; font-size: .83em; }
+  .answer-note { background: #edf8f5; border-left: 4px solid #249786; font-size: .74em; padding: .3em .65em; }
+  .mini-card { background: white; border: 1px solid $border-gray; border-left: 5px solid $secondary-color; padding: .72em .85em; border-radius: .24em; height: auto; font-size: .88em; }
+  .between-card { border-left-color: $accent-color; }
+  .within-card { border-left-color: $secondary-color; }
+  .mini-card p { margin-top: .35em; }
+  .hero-equation { background: #f3f7fb; padding: .35em .55em; border: 1px solid #dce7f1; border-radius: .2em; margin: .6em 0; text-align: center; font-size: 1.13em; }
+  .three-terms { display: flex; gap: .65em; margin: 1em 0; }
+  .term { flex: 1; border: 1px solid $border-gray; border-top: 5px solid $secondary-color; padding: .6em .65em; border-radius: 4px; text-align: center; font-size: .85em; }
+  .term-abbr { display: block; color: $primary-color; font-size: 1.38em; font-weight: bold; margin-bottom: .35em; }
+  .objectives { font-size: .95em; }
+  .reporting { font-size: 1.0em; background: $light-gray; padding: 1em; border-left: 5px solid $primary-color; border-radius: .25em; line-height: 1.44; }
+  .quiz { background: $light-gray; padding: .85em 1.1em; border-left: 4px solid $secondary-color; }
+  .quiz p { margin: .75em 0; }
+  .math { color: $primary-color; }
+}
